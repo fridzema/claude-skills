@@ -11,7 +11,7 @@ distributable `.skill` archives on demand.
 
 | Skill | Description |
 |---|---|
-| [`dutch-humanizer`](./dutch-humanizer) | Verwijdert AI-schrijfpatronen uit Nederlandstalige tekst. Detecteert 37 patronen (opgeblazen belang, vulzinnen, vertalings-Nederlands, ...). |
+| [`dutch-humanizer`](./dutch-humanizer) | Verwijdert AI-schrijfpatronen uit Nederlandstalige tekst. Register-detectie, niet-aanraken-regels, anti-fabricatie. Volledige patroon-catalogus + register-specifieke voorbeelden (essay, zakelijk, LinkedIn, docs) + stemkalibratie in `references/`. |
 
 ## Install
 
