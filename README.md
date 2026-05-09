@@ -79,6 +79,11 @@ license: MIT
 Output goes to `dist/<skill-name>.skill` (a zip archive containing the skill
 directory).
 
+## Versioning
+
+Repo follows [SemVer](https://semver.org/). See [CHANGELOG.md](./CHANGELOG.md)
+for release history.
+
 ## License
 
 MIT — see [LICENSE](./LICENSE).
