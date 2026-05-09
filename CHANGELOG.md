@@ -11,6 +11,46 @@ its own version metadata if present.
 
 ## [Unreleased]
 
+## [0.4.0] — 2026-05-09
+
+Grote heroriëntatie van `dutch-humanizer` op basis van een externe deep-research review. De skill verandert van zuiver subtractief ("verwijder AI-tells") naar additief plus subtractief: verwijder AI-patronen, en hanteer tegelijk een positief stijlmodel verankerd in Taaladvies.net, Team Taaladvies en de Rijksoverheid/Vlaamse Overheid klare-taal-richtlijnen. Plus: drie modi, locale-bewustzijn (nl-NL/nl-BE), formele fact-inventory, severity-gestructureerde patroon-catalogus, en register-specifieke voorbeelden voor support en Slack.
+
+De ene contentieuze externe aanbeveling, "soften de hard-zero em-dash regel naar context-aware", is na expliciete user-keuze afgewezen. De hard-zero regel blijft, nu duidelijk gemarkeerd als bewuste huisstijl-keuze in plaats van als Taaladvies-regel.
+
+### Added
+
+- **`references/principes.md`**: positief stijlmodel met tien principes (lezer eerst, doel boven onderwerp, concreet boven abstract, belangrijkste eerst, ritme variëren, channel-fit, actief boven passief, gewone woorden, eerlijk over onzekerheid, stem boven stijl-regels). Verankerd in Taaladvies.net en klare-taal-richtlijnen. Adres voor het vroegere gat "skill zegt wel wat niet, niet wat wel".
+- **`references/bronnen.md`**: bron-hiërarchie. Niveau 1 (Woordenlijst Nederlandse Taal, Taaladvies.net) > niveau 2 (Team Taaladvies, Rijksoverheid klare taal, Vlaamse Overheid heerlijk helder) > niveau 3 (Van Dale, Onze Taal) > niveau 4 (dit repository) > niveau 5 (gebruiker-context). Conflict-resolutie: hogere niveaus winnen.
+- **`references/locale.md`**: nl-NL/nl-BE-bewustzijn. Detectie-heuristieken, lexicale verschilstabel, juridische false-positives (wedde, schepen, OCMW), datum/cijfer-conventies (geen verschil tussen variaties), wanneer wel/niet automatisch converteren.
+- **`references/voorbeeld-support.md`**: subtle voorbeeld voor customer support reply. AI-bad: "Het spijt ons oprecht ... wij begrijpen volkomen". Na: directe oplossing + concrete actie + naam in plaats van "het supportteam".
+- **`references/voorbeeld-slack.md`**: extreme voorbeeld voor incident-update in chat. Toont fragmentaire chat-stijl met expliciete `feit/vermoeden/onderzoek/volgende update`-structuur in plaats van AI-formele incident-rapportage.
+- **Drie modi in `SKILL.md`**: `rewrite` (default, bestaande tekst), `create` (uit bullets/brief, vraag om missende feiten), `voice-match` (met schrijfvoorbeeld). Vroeger werkte de skill impliciet alleen in rewrite-mode, ook als input bullets waren.
+- **Formele fact-inventory in `SKILL.md` workflow-stap 5**: extract names/dates/amounts/percentages/versions/quotes/code/URLs → mark vaststaand/afgeleid/ontbrekend → herschrijf alleen binnen "safe rewrite zone" → final audit vergelijkt output tegen inventory. Vervangt eerdere informele "niet verzinnen"-tekst door uitvoerbare procedure.
+- **Locale-detectie in workflow-stap 4**: `auto` → nl-NL fallback. Behoud bestaande locale; converteer niet automatisch.
+- **Uitgebreide trigger-set in frontmatter**: voegt Engelse triggers toe (`make this sound like native Dutch`, `rewrite in idiomatic Dutch`, `translate and make it sound Dutch`, `don't translate literally`, `make this read like it was written in Dutch originally`). Skill activeert nu ook bij Engelstalige verzoeken om Nederlandse output.
+- **Uitgebreide register-tabel in `SKILL.md`**: van 5 naar 9 registers. Toegevoegd: support reply, Slack/chat, vacaturetekst, beleids-/overheidstekst.
+- **Bron-referentie in `SKILL.md`**: expliciete vermelding van Taaladvies.net, Woordenlijst Nederlandse Taal, Rijksoverheid en Vlaamse Overheid als gezaghebbende bronnen.
+
+### Changed
+
+- **`references/patronen.md` volledig gereorganiseerd op severity** in plaats van platte 44-genummerde lijst. Vijf nieuwe niveaus: Blockers (must-fix; raken betekenis/veiligheid), Major signals (sterke AI-tells), Moderate signals (contextueel), Contextual signals (channel-/huisstijl-afhankelijk), Communicatie-tics, Algemene spelcontrole. Plus expliciete "False positives" sectie tegen overcorrectie. Resultaat: makkelijker om top-3 dominante tells te kiezen in plaats van alle 44 mechanisch toepassen.
+- **Per-pattern template** ingevoerd in `patronen.md`: Symptoom, Waarom AI, Niet fixen wanneer, Vervanging, Voorbeeld. Eerdere entries hadden alleen Voor/Na zonder false-positive guidance.
+- **`references/voorbeeld-zakelijk.md`, `voorbeeld-linkedin.md`, `voorbeeld-docs.md` herschreven met two-NA-variant pattern**: variant A (input bevat geen specifieke feiten, output blijft algemeen) en variant B (input bevat concrete feiten, output gebruikt ze). Lost training-signal-conflict op waarbij eerdere voorbeelden tegelijk "voeg specificiteit toe" toonden en "verzin geen feiten" vertelden. Twee voorbeelden, dezelfde voor-tekst, twee correcte na-versies afhankelijk van wat in de input staat.
+- **`SKILL.md` "Hard regels" sectie nu expliciet als huisstijl-keuze gemarkeerd**, niet als Taaladvies-regel. Tekst nu: "Dit is een huisstijl-keuze, bewust restrictiever dan officiële Nederlandstalige stijladvies (zoals Taaladvies.net), omdat AI-modellen 2024-2026 deze elementen produceren als visuele tic." Inclusief noot voor gebruikers die literaire/redactionele dashes wel willen: "dan is dit niet de juiste skill".
+- **`SKILL.md` workflow van 6 naar 9 stappen** met expliciete modus-detectie en fact-inventory als aparte stappen. Volgorde: input lezen → modus → register → locale → fact-inventory → top-3 tells → herschrijven → zelf-audit (met fact-inventory-vergelijking) → opleveren.
+- **`SKILL.md` zelf-audit-stap (8) breed uitgebreid** met expliciete check-list (kernboodschap, em-dashes, fact-inventory-vergelijking, register/locale-fit, "wat is hier nog AI-achtig").
+
+### Fixed
+
+- **Voorbeeld-conflict opgelost**: eerdere `voorbeeld-{zakelijk,linkedin,docs}.md` toonden NA-versies met verzonnen specifics ("twee weken eerder", "18% naar 12%", "90 dagen rotatie"), terwijl de aandachtspunt-noot onderaan tegen exact die fabricatie waarschuwde. Nu opgesplitst in variant A (zonder verzonnen specifics) en variant B (alleen als feiten uit input komen). Lost de strongest-learning-signal-versus-explicit-rule contradictie op.
+- **Frontmatter description hercht**: vermeldt nu Taaladvies.net en Team Taaladvies-verankering, expliciete locale-modus, drie modi, fact-inventory, en huisstijl-positie van de hard-zero regel. Eerder vooral een opsomming van patroon-categorieën zonder positief frame.
+
+### Note (over de scope-keuzes)
+
+Het externe rapport adviseerde ook: een eval-rubric, gestructureerde test-corpus (`tests/cases/*.yaml`), output-linter (`scripts/lint_output.py`), publish-time regression-checks, en tien nieuwe register-voorbeelden. Deze zijn **niet** opgenomen. Reden: kosten-baten klopt niet voor een persoonlijke skill-collectie. Twee voorbeelden zijn toegevoegd (support, slack); de overige acht zijn als toekomstige uitbreiding gemarkeerd als gewenst, niet als blocker.
+
+Het rapport baseerde zijn aanbevelingen ook op "OpenAI skill best practices" en "agents/openai.yaml metadata"; deze zijn voor Anthropic/Claude-skills niet van toepassing en niet gevolgd. Algemene principes (clear structure, eval-driven, edge-case coverage) wel.
+
 ## [0.3.0] — 2026-05-09
 
 Hard regel toegevoegd: geen em-dashes (`—`) of en-dashes (`–`) in de output. Aanleiding: gebruiker rapporteerde dat gehumaniseerde tekst nog steeds AI-typische em-dashes bevatte. Onderzoek toonde drie root causes — twee NA-block bugs die het verkeerde gedrag voorbeeldden, plus ~50 em-dashes verspreid door de skill-instructies zelf, wat het model leerde dat matig em-dash-gebruik acceptabel is.
@@ -150,7 +190,8 @@ Initial bootstrap of the `claude-skills` collection.
   "Signs of AI writing" plus NL-specifieke patronen. 37 patronen, register-
   detectie, voice-calibration via een `references/voorbeeld.md`.
 
-[Unreleased]: https://github.com/fridzema/claude-skills/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/fridzema/claude-skills/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/fridzema/claude-skills/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/fridzema/claude-skills/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/fridzema/claude-skills/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/fridzema/claude-skills/releases/tag/v0.1.0

@@ -17,7 +17,29 @@ Zakelijk Nederlands is van nature direct. AI maakt er vaak een verzameling belee
 > Met vriendelijke groet,
 > Marieke
 
-## Na (gehumaniseerd)
+## Na, variant A: input bevat geen specifieke feiten
+
+Gebruik deze variant als de input alleen vage formuleringen bevat ("vooruitgang", "uitdagingen", "aandachtspunten"). De rewrite blijft op hetzelfde abstractie-niveau, maar zonder AI-toon.
+
+> Hoi team,
+>
+> Korte update over Q2 en een vraag over Q3.
+>
+> De belangrijkste mijlpalen staan. Een paar dingen liepen niet volgens plan; daar willen we volgende sprint op terugkomen.
+>
+> Voor Q3 wil ik twee opties met jullie doornemen:
+>
+> 1. Doorgaan met huidige scope.
+> 2. Scope inkrimpen.
+>
+> Donderdag een halfuurtje plannen?
+>
+> Groet,
+> Marieke
+
+## Na, variant B: input bevat wel concrete feiten
+
+Gebruik deze variant *alleen* als de gebruiker (in de input of als context) deze specifieke feiten heeft aangedragen: bijvoorbeeld dat de migratie twee weken eerder klaar was, dat de testfase is ingekort, en dat een meeting op donderdag 14:00 wordt voorgesteld.
 
 > Hoi team,
 >
@@ -41,10 +63,18 @@ Zakelijk Nederlands is van nature direct. AI maakt er vaak een verzameling belee
 * **Vulzinnen**: "wil graag van de gelegenheid gebruikmaken", "met betrekking tot", "teneinde", "het is vermeldenswaard dat".
 * **Hedging**: "wellicht", "enkele aandachtspunten die nadere bespreking behoeven".
 * **Officialese**: "echter, ...", "breed gedragen besluit", "diverse fronten".
-* **Vaag**: "aanzienlijke vooruitgang", "waardevolle inzichten" → vervangen door concrete feiten en cijfers.
-* **Geen call to action** → vervangen door specifiek voorstel met dag en tijd.
+* **Vaag → concreet (alleen variant B)**: "aanzienlijke vooruitgang", "waardevolle inzichten" → vervangen door concrete feiten alleen als die feiten in de input stonden.
+* **Geen call to action** → vervangen door specifiek voorstel (variant A: "donderdag een halfuurtje"; variant B: "donderdag 14:00 een halfuur").
 * **Generieke positieve afsluiter**: "kijk uit naar onze samenwerking ... mooie resultaten" → weg.
 
 ## Aandachtspunt
 
-In email behoud je natuurlijk *altijd*: namen, datums, projectnamen, deadlines en concrete cijfers. Als de AI-versie geen specifieke cijfers had en de gehumaniseerde versie ook niet kan invullen, blijf algemeen. Verzin geen "twee weken eerder" als dat niet in de input stond.
+Beslisregel **wanneer welke variant**:
+
+- Input is vaag → variant A. Maak het direct, behoud abstractie-niveau.
+- Input bevat concrete feiten of de gebruiker geeft die als context → variant B. Gebruik die feiten.
+- Input is vaag, maar gebruiker vraagt om concreet te maken → vraag de gebruiker om de feiten. Verzin ze niet.
+
+Behoud altijd: namen, datums, projectnamen, deadlines en concrete cijfers die in de input stonden.
+
+**Dit is de belangrijkste regel van de skill**: een rewrite mag specifieker maken alleen waar de input dat toelaat. "Twee weken eerder", "donderdag 14:00", "einde Q3 livegang" zijn hallucinaties zodra ze niet uit de input komen, hoe goed ze ook leesbaar maken.

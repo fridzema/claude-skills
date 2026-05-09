@@ -11,7 +11,7 @@ distributable `.skill` archives on demand.
 
 | Skill | Description |
 |---|---|
-| [`dutch-humanizer`](./dutch-humanizer) | Verwijdert AI-schrijfpatronen uit Nederlandstalige tekst. Register-detectie, niet-aanraken-regels, anti-fabricatie. Volledige patroon-catalogus + register-specifieke voorbeelden (essay, zakelijk, LinkedIn, docs) + stemkalibratie in `references/`. |
+| [`dutch-humanizer`](./dutch-humanizer) | Verwijdert AI-schrijfpatronen uit Nederlandstalige tekst en hanteert positief stijlmodel. Verankerd in Taaladvies.net en Team Taaladvies. Drie modi (rewrite/create/voice-match), locale-bewust (nl-NL/nl-BE), formele fact-inventory, severity-gestructureerde patroon-catalogus, six register-voorbeelden, plus principes/bronnen/locale references. |
 
 ## Install
 

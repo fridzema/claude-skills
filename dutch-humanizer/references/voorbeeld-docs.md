@@ -22,7 +22,34 @@ Technische tekst wil precies zijn, niet vriendelijk. AI maakt er marketing-met-e
 >
 > Mocht je problemen ervaren, aarzel dan niet om contact op te nemen met ons toegewijde supportteam. We staan altijd klaar om je te helpen!
 
-## Na (gehumaniseerd)
+## Na, variant A: input bevat geen specifieke product-details
+
+Gebruik deze variant als de input alleen het marketing-proza bevat (geen genoemd dashboard-pad, geen genoemde token-rotatie, geen genoemde response-codes). Houd de tekst feitelijk en algemeen.
+
+> ## API quickstart
+>
+> Deze handleiding beschrijft hoe je een eerste request stuurt.
+>
+> ### Authenticatie
+>
+> De API gebruikt bearer-tokens. Maak een token aan in het dashboard en stuur deze mee in de `Authorization`-header:
+>
+> ```
+> Authorization: Bearer YOUR_TOKEN
+> ```
+>
+> ### Eerste request
+>
+> ```bash
+> curl https://api.example.com/v1/users \
+>   -H "Authorization: Bearer YOUR_TOKEN"
+> ```
+>
+> Een ongeldig token wordt geweigerd. Voor andere problemen: open een ticket of mail support@example.com.
+
+## Na, variant B: input of bron-documentatie bevat concrete details
+
+Gebruik deze variant *alleen* als deze details daadwerkelijk uit de productdocumentatie of de input komen: dashboard-pad `Settings → API tokens`, 90-dagen token-lifetime, response-codes `200 OK` / `401 Unauthorized`, support-emailadres.
 
 > ## API quickstart
 >
@@ -55,10 +82,17 @@ Technische tekst wil precies zijn, niet vriendelijk. AI maakt er marketing-met-e
 * **Promotioneel taalgebruik**: "krachtige en flexibele", "naadloos", "robuuste, schaalbare", "intuïtieve, ontwikkelaar-vriendelijke" → weg. Documentatie verkoopt niet.
 * **Bijvoeglijk-naamwoord-stapeling** + Engelse koppeltekens ("data-gedreven") → weg/aaneen ("datagedreven").
 * **AI-vocabulaire**: "optimaliseren", "in staat stellen", "een breed scala aan", "essentieel voor het waarborgen" → weg.
-* **Tokencode-blok ongewijzigd** behouden. Code raak je nooit aan.
+* **Code-blok ongewijzigd** behouden. Code raak je nooit aan.
 * **Slijmerige supportclaim**: "ons toegewijde supportteam staat altijd klaar" → vervangen door concreet kanaal.
-* **Concrete details toegevoegd waar de input ze impliceerde** (90-dagen rotatie, response-codes), alleen als die feiten daadwerkelijk uit de productdocumentatie komen. Anders blijven generiek.
+* **Concrete details (variant B)** alleen toegevoegd als ze uit de echte productdocumentatie komen.
 
 ## Aandachtspunt
 
-In docs is **precies > prettig**. Als je niet weet welke statuscode het systeem teruggeeft, schrijf dat niet op. Verzin geen endpoint-paden, parameter-namen of foutcodes om de tekst "completer" te maken.
+In docs is **precies > prettig**. De grootste valkuil is dat een rewrite "completer" wil voelen. Concreet noemen wat je niet zeker weet is een hallucinatie:
+
+- ❌ Verzin geen endpoint-paden ("`POST /v1/users/create`" als je niet weet of dat klopt).
+- ❌ Verzin geen parameter-namen, response-velden of foutcodes.
+- ❌ Verzin geen lifetimes ("tokens vervallen na 90 dagen") als die niet gedocumenteerd zijn.
+- ❌ Verzin geen support-kanalen ("mail support@example.com" als dat niet de echte werkwijze is).
+
+Bij twijfel: variant A. Algemener is veiliger dan onjuist.

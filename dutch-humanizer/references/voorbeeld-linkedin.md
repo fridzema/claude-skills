@@ -20,7 +20,26 @@ LinkedIn-AI heeft een heel eigen smaak: hook → drieslag → "lesson learned" �
 >
 > #sales #leadership #growth #mindset
 
-## Na (gehumaniseerd)
+## Na, variant A: input bevat geen specifieke cijfers
+
+Gebruik deze variant als de input alleen vaag spreekt over "conversie liep terug" en "we hebben het opgelost". Geen specifieke percentages, geen concrete oorzaken.
+
+> Onze sales-conversie zakte vorig kwartaal flink. We dachten dat het aan de markt lag.
+>
+> Dat klopte niet.
+>
+> Toen we verloren deals nabelden, kwam er één ding terug: ons offertetraject duurde te lang. Veel langer dan dat van concurrenten.
+>
+> We hebben twee dingen aangepast:
+>
+> 1. Standaard-offerte voor de meest voorkomende cases. Veel sneller dan elke offerte van scratch.
+> 2. Salesteam mag tot een vooraf afgesproken bedrag zelf akkoord geven, zonder approval-loop.
+>
+> Conversie staat nu boven het oude niveau. Niet door een nieuwe tool. Door minder wachten.
+
+## Na, variant B: input bevat concrete cijfers
+
+Gebruik deze variant *alleen* als de gebruiker deze specifieke cijfers heeft aangedragen: 18% naar 12% gezakt, 19% nu, 11 vs 3 werkdagen, 30 verloren deals nagebeld, twee dagen → één uur.
 
 > Onze sales-conversie zakte vorig kwartaal van 18% naar 12%. We dachten dat het aan de markt lag.
 >
@@ -43,9 +62,15 @@ LinkedIn-AI heeft een heel eigen smaak: hook → drieslag → "lesson learned" �
 * **Bijvoeglijk-naamwoord-stapeling**: "datagedreven, klantgerichte en innovatieve" → weg.
 * **Drieledige opsomming** met inline-vetgedrukte koppen ("Luisteren / Itereren / Vertrouwen") → vervangen door twee concrete acties.
 * **Negatief parallellisme** ("het gaat niet om X, het gaat om Y") → weg.
-* **Generieke conclusie** ("hoger dan ooit") → vervangen door specifieke percentages.
-* **Engagement-baiting vraag** ("wat is jouw belangrijkste les?") → weg. Niet elke post hoeft een vraag.
+* **Generieke conclusie** ("hoger dan ooit") → vervangen door concretere formulering (variant A: "boven het oude niveau"; variant B: "19%").
+* **Engagement-baiting vraag** ("wat is jouw belangrijkste les?") → weg.
 
 ## Aandachtspunt
 
-Cijfers in de "Na"-versie (18% → 12% → 19%, 11 vs 3 werkdagen) zijn alleen legitiem als ze in de input stonden. Anders: blijf algemeen ("conversie zakte fors") in plaats van getallen verzinnen.
+Beslisregel:
+
+- Geen cijfers in input → variant A. Concrete-genoeg om geloofwaardig te lezen, zonder hallucinatie.
+- Specifieke cijfers in input → variant B. Gebruik ze.
+- Vage input + gebruiker wil concrete post → vraag om de cijfers. Verzin ze niet.
+
+LinkedIn-posts zijn een hoog-risico-context voor fabricatie omdat het format om concrete claims vraagt. Goede post zonder cijfers is bijna altijd beter dan goede post met verzonnen cijfers.
