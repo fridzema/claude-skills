@@ -1,4 +1,4 @@
-# Voorbeeld — zakelijk (email/notitie)
+# Voorbeeld: zakelijk (email/notitie)
 
 Zakelijk Nederlands is van nature direct. AI maakt er vaak een verzameling beleefdheidsformules en hedging van.
 
@@ -47,4 +47,4 @@ Zakelijk Nederlands is van nature direct. AI maakt er vaak een verzameling belee
 
 ## Aandachtspunt
 
-In email behoud je natuurlijk *altijd*: namen, datums, projectnamen, deadlines en concrete cijfers. Als de AI-versie geen specifieke cijfers had en de gehumaniseerde versie ook niet kan invullen, blijf algemeen — verzin geen "twee weken eerder" als dat niet in de input stond.
+In email behoud je natuurlijk *altijd*: namen, datums, projectnamen, deadlines en concrete cijfers. Als de AI-versie geen specifieke cijfers had en de gehumaniseerde versie ook niet kan invullen, blijf algemeen. Verzin geen "twee weken eerder" als dat niet in de input stond.

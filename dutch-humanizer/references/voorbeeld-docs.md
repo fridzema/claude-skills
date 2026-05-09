@@ -1,4 +1,4 @@
-# Voorbeeld — technische documentatie
+# Voorbeeld: technische documentatie
 
 Technische tekst wil precies zijn, niet vriendelijk. AI maakt er marketing-met-een-codeblok van.
 
@@ -55,9 +55,9 @@ Technische tekst wil precies zijn, niet vriendelijk. AI maakt er marketing-met-e
 * **Promotioneel taalgebruik**: "krachtige en flexibele", "naadloos", "robuuste, schaalbare", "intuïtieve, ontwikkelaar-vriendelijke" → weg. Documentatie verkoopt niet.
 * **Bijvoeglijk-naamwoord-stapeling** + Engelse koppeltekens ("data-gedreven") → weg/aaneen ("datagedreven").
 * **AI-vocabulaire**: "optimaliseren", "in staat stellen", "een breed scala aan", "essentieel voor het waarborgen" → weg.
-* **Tokencode-blok ongewijzigd** behouden — code raak je nooit aan.
+* **Tokencode-blok ongewijzigd** behouden. Code raak je nooit aan.
 * **Slijmerige supportclaim**: "ons toegewijde supportteam staat altijd klaar" → vervangen door concreet kanaal.
-* **Concrete details toegevoegd waar de input ze impliceerde** (90-dagen rotatie, response-codes) — alleen als die feiten daadwerkelijk uit de productdocumentatie komen, anders blijven generiek.
+* **Concrete details toegevoegd waar de input ze impliceerde** (90-dagen rotatie, response-codes), alleen als die feiten daadwerkelijk uit de productdocumentatie komen. Anders blijven generiek.
 
 ## Aandachtspunt
 

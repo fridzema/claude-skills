@@ -6,7 +6,8 @@ description: >
   Nederlands (samenstellings-regels, vertalings-Nederlands, "welke"/"middels"/"echter",
   anglicismen, formele tics). Bevat register-detectie, behoud-regels (code, citaten,
   cijfers, namen blijven onaangetast) en een anti-fabricatie-regel (verzin nooit
-  bronnen of feiten).
+  bronnen of feiten). Hard regel: geen em-dashes (`—`), en-dashes (`–`), emoji's of
+  gekrulde aanhalingstekens in de output.
   Triggert bij: "humaniseer", "maak menselijker", "klinkt als ChatGPT", "klinkt
   als AI", "de-AI dit", "herschrijf natuurlijker", "verbeter de toon", "minder AI"
   en vergelijkbare verzoeken in het Nederlands.
@@ -19,14 +20,14 @@ Je herschrijft Nederlandstalige tekst om AI-schrijfpatronen te verwijderen zonde
 
 ## Werkwijze
 
-1. **Lees de input volledig** — inclusief context, register en eventuele expliciete instructies van de gebruiker.
+1. **Lees de input volledig**, inclusief context, register en eventuele expliciete instructies van de gebruiker.
 2. **Detecteer het register** (zie tabel hieronder). Bij echte twijfel: vraag het kort.
-3. **Identificeer de drie dominante AI-tells** in deze tekst — niet alle patronen mechanisch doorlopen.
-4. **Herschrijf** — feiten, cijfers, datums, eigennamen, citaten en code blijven onveranderd (zie *Niet aanraken*).
-5. **Zelf-audit** intern: "wat is hier nog AI-achtig?" — corrigeer voor je oplevert.
+3. **Identificeer de drie dominante AI-tells** in deze tekst. Niet alle patronen mechanisch doorlopen.
+4. **Herschrijf.** Feiten, cijfers, datums, eigennamen, citaten en code blijven onveranderd (zie *Niet aanraken*).
+5. **Zelf-audit** intern: "wat is hier nog AI-achtig?" Corrigeer voor je oplevert. Check expliciet: staan er nog em-dashes (`—`), en-dashes (`–`) of spatie-hyphen-spatie als gedachtestreepje in de output? Zo ja: vervangen.
 6. **Lever op**: alleen de herschrijving. Geen toelichting, geen samenvatting, tenzij gevraagd.
 
-**Verbose-modus** — als de gebruiker `--verbose`, `--toon-proces` of "toon proces" / "laat zien hoe" zegt:
+**Verbose-modus.** Als de gebruiker `--verbose`, `--toon-proces` of "toon proces" / "laat zien hoe" zegt:
 
 1. Eerste herschrijving.
 2. Maximaal drie bullets: wat was nog AI-achtig.
@@ -44,15 +45,28 @@ Je herschrijft Nederlandstalige tekst om AI-schrijfpatronen te verwijderen zonde
 
 Niet elke tekst heeft "persoonlijkheid" nodig. Zakelijke en technische tekst wil vooral helderheid en directheid.
 
+## Hard regels
+
+Deze regels gelden in **alle** registers, ongeacht context:
+
+- **Geen em-dashes** (`—`) of en-dashes (`–`) in lopende tekst. Vervang door komma, punt of dubbele punt.
+- **Geen spatie-hyphen-spatie** (` - `) als em-dash-substituut.
+- **Hyphens alleen in samenstellingen** (`data-analyse`, `e-mail`, `niet-roker`, `Nederlands-Duits`). Zie pattern #29 voor de regels.
+- **Geen emoji's** in lopende tekst.
+- **Geen gekrulde aanhalingstekens** (`"` `"`). Gebruik rechte (`"`).
+- **Sentence case** in koppen (alleen eerste letter en eigennamen met hoofdletter).
+
+Reden: dit zijn de hardste, meest herkenbare AI-tells in Nederlandstalige output. Een fix voor één tell mag geen andere introduceren.
+
 ## Niet aanraken
 
 Behoud onveranderd:
 
 - **Code-blokken** (```\`\`\`...\`\`\```` of inline `\`code\``).
-- **Citaten** en tekst tussen aanhalingstekens — kunnen letterlijke bron-citaten zijn.
+- **Citaten** en tekst tussen aanhalingstekens. Dit zijn vaak letterlijke bron-citaten.
 - **Cijfers, datums, percentages, geldbedragen, eigennamen, voetnoten, bronvermeldingen.**
 - **Domeinjargon dat lijkt op een AI-signaalwoord maar het niet is** (bijvoorbeeld een productnaam *Robust BV*, of een term die de gebruiker zelf consistent definieert).
-- **Markdown-structuur die de gebruiker bewust koos** (kop-niveaus, tabellen, code) — *tenzij* die structuur zélf een AI-tell is (zie patronen.md, stijlsectie).
+- **Markdown-structuur die de gebruiker bewust koos** (kop-niveaus, tabellen, code), tenzij die structuur zélf een AI-tell is (zie patronen.md, stijlsectie).
 
 ## Niet verzinnen
 
@@ -68,21 +82,21 @@ Als de input een **vage bron** noemt ("experts zeggen", "uit onderzoek blijkt", 
 
 Volledige lijst met voor/na-voorbeelden: [`references/patronen.md`](references/patronen.md). Categorieën:
 
-- **Inhoud** — opgeblazen belang, promotioneel taalgebruik, vage bronnen, formulaire conclusies, oppervlakkige deelwoord-analyses.
-- **Taal en grammatica** — AI-vocabulaire, koppelwerkwoord-vermijding, negatieve parallellismen, drieledige opsommingen, synoniemroulette, passief.
-- **Stijl** — gedachtestreepjes, vetdruk, Title Case, emoji's, gekrulde aanhalingstekens, verticale lijsten met inline koppen.
-- **Communicatie** — assistent-tics (chatbot-artefacten + slijmerige toon), kennisgrens-disclaimers.
-- **Opvulling** — vulzinnen, hedging, wegwijzers, "het is vermeldenswaard", retorische autoriteitsfrases, generieke positieve conclusies.
-- **NL-specifiek** — samenstellings-regels, vertalings-Nederlands ("welke", "middels", "echter", "men"), anglicismen, datum/cijfer-format, onnodige Engelse termen, formele tics ("derhalve", "aldus"), verbindingswoord-stapeling, "er"-gebruik, cliché-openers, bijvoeglijk-naamwoord-stapeling.
+- **Inhoud**: opgeblazen belang, promotioneel taalgebruik, vage bronnen, formulaire conclusies, oppervlakkige deelwoord-analyses.
+- **Taal en grammatica**: AI-vocabulaire, koppelwerkwoord-vermijding, negatieve parallellismen, drieledige opsommingen, synoniemroulette, passief.
+- **Stijl**: gedachtestreepjes (em-dash en en-dash), vetdruk, Title Case, emoji's, gekrulde aanhalingstekens, verticale lijsten met inline koppen.
+- **Communicatie**: assistent-tics (chatbot-artefacten + slijmerige toon), kennisgrens-disclaimers.
+- **Opvulling**: vulzinnen, hedging, wegwijzers, "het is vermeldenswaard", retorische autoriteitsfrases, generieke positieve conclusies.
+- **NL-specifiek**: samenstellings-regels, vertalings-Nederlands ("welke", "middels", "echter", "men"), anglicismen, datum/cijfer-format, onnodige Engelse termen, formele tics ("derhalve", "aldus"), verbindingswoord-stapeling, "er"-gebruik, cliché-openers, bijvoeglijk-naamwoord-stapeling.
 
 Lees `patronen.md` als je een patroon niet zeker herkent of een nuance nodig hebt (bijvoorbeeld: wanneer wel/geen koppelteken in samenstellingen).
 
 ## Voorbeelden per register
 
-- [`references/voorbeeld-essay.md`](references/voorbeeld-essay.md) — lange beschouwing.
-- [`references/voorbeeld-zakelijk.md`](references/voorbeeld-zakelijk.md) — email, notitie, memo.
-- [`references/voorbeeld-linkedin.md`](references/voorbeeld-linkedin.md) — socials, korte post.
-- [`references/voorbeeld-docs.md`](references/voorbeeld-docs.md) — technische documentatie.
+- [`references/voorbeeld-essay.md`](references/voorbeeld-essay.md): lange beschouwing.
+- [`references/voorbeeld-zakelijk.md`](references/voorbeeld-zakelijk.md): email, notitie, memo.
+- [`references/voorbeeld-linkedin.md`](references/voorbeeld-linkedin.md): socials, korte post.
+- [`references/voorbeeld-docs.md`](references/voorbeeld-docs.md): technische documentatie.
 
 ## Stemkalibratie
 
@@ -90,7 +104,7 @@ Als de gebruiker een eigen schrijfvoorbeeld aanlevert: lees [`references/stem-ka
 
 ## Karakter
 
-AI-tells weghalen is de helft. Steriel, karakterloos proza is óók een tell. Maar: niet elke tekst heeft "persoonlijkheid" nodig — pas het aan op het register.
+AI-tells weghalen is de helft. Steriel, karakterloos proza is óók een tell. Maar: niet elke tekst heeft "persoonlijkheid" nodig. Pas het aan op het register.
 
 - **Zakelijk/technisch**: helderheid en directheid, geen geforceerde stem.
 - **Blog/column/persoonlijk**: ritme variëren (korte zinnen afgewisseld met langere), complexiteit erkennen ("dit is indrukwekkend en tegelijk verontrustend"), specifiek zijn ("om drie uur 's nachts code draaien" niet "zorgwekkende implicaties"), lichte rommeligheid mag.

@@ -1,4 +1,4 @@
-# Voorbeeld — LinkedIn / socials
+# Voorbeeld: LinkedIn / socials
 
 LinkedIn-AI heeft een heel eigen smaak: hook → drieslag → "lesson learned" → cliché-vraag aan de lezer. Vaak met emoji's en bullets met fat-bolded koppen.
 
@@ -30,7 +30,7 @@ LinkedIn-AI heeft een heel eigen smaak: hook → drieslag → "lesson learned" �
 >
 > We hebben twee dingen aangepast:
 >
-> 1. Standaard-offerte voor de drie meest voorkomende cases — kost nu een uur in plaats van twee dagen.
+> 1. Standaard-offerte voor de drie meest voorkomende cases. Kost nu een uur in plaats van twee dagen.
 > 2. Salesteam mag tot een vooraf afgesproken bedrag zelf akkoord geven, zonder approval-loop.
 >
 > Conversie staat nu op 19%. Niet door een nieuwe tool. Door minder wachten.
@@ -42,7 +42,7 @@ LinkedIn-AI heeft een heel eigen smaak: hook → drieslag → "lesson learned" �
 * **"Echter"-mid-zin** + "in plaats van te wanhopen" → weg.
 * **Bijvoeglijk-naamwoord-stapeling**: "datagedreven, klantgerichte en innovatieve" → weg.
 * **Drieledige opsomming** met inline-vetgedrukte koppen ("Luisteren / Itereren / Vertrouwen") → vervangen door twee concrete acties.
-* **Negatief parallellisme**: "Het gaat niet om de tools — het gaat om de mindset" → weg.
+* **Negatief parallellisme** ("het gaat niet om X, het gaat om Y") → weg.
 * **Generieke conclusie** ("hoger dan ooit") → vervangen door specifieke percentages.
 * **Engagement-baiting vraag** ("wat is jouw belangrijkste les?") → weg. Niet elke post hoeft een vraag.
 

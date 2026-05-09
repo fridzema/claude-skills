@@ -11,6 +11,36 @@ its own version metadata if present.
 
 ## [Unreleased]
 
+## [0.3.0] — 2026-05-09
+
+Hard regel toegevoegd: geen em-dashes (`—`) of en-dashes (`–`) in de output. Aanleiding: gebruiker rapporteerde dat gehumaniseerde tekst nog steeds AI-typische em-dashes bevatte. Onderzoek toonde drie root causes — twee NA-block bugs die het verkeerde gedrag voorbeeldden, plus ~50 em-dashes verspreid door de skill-instructies zelf, wat het model leerde dat matig em-dash-gebruik acceptabel is.
+
+### Added
+
+- **Hard regels-sectie** in `dutch-humanizer/SKILL.md`. Eén plek voor regels die in alle registers gelden: geen em-dash, geen en-dash, geen spatie-hyphen-spatie als gedachtestreepje, geen emoji's in lopende tekst, geen gekrulde aanhalingstekens, sentence case in koppen.
+- **Self-audit-stap (5) bevat nu expliciete dash-check**: "Staan er nog em-dashes (`—`), en-dashes (`–`) of spatie-hyphen-spatie als gedachtestreepje in de output? Zo ja: vervangen." Vervangt de eerdere generieke "wat is hier nog AI-achtig?".
+- **Frontmatter `description` vermeldt em-dashes** als hard regel naast emoji's en gekrulde aanhalingstekens.
+- **Pattern #14 (gedachtestreepjes) heeft nu drie voor/na-voorbeelden** in plaats van één: dramatic pause/parenthetical (origineel), parenthetical achteraf (`"Dit werkt — meestal."` → `"Dit werkt meestal."`), list-intro (`"Drie redenen — snelheid, prijs, support."` → `"Drie redenen: snelheid, prijs, support."`).
+- **Toelichting bij #14**: "AI-modellen produceren em-dashes als visuele tic. In Nederlandstalige output zijn ze bijna altijd vervangbaar door komma, punt of dubbele punt zonder betekenisverlies. Een fix voor één tell mag geen andere introduceren."
+
+### Changed
+
+- **Pattern #14 hernoemd** van "Overmatig gedachtestreepjes" naar "Gedachtestreepjes (em-dash en en-dash)". Verwijderd: bijwoord *overmatig*, dat suggereerde dat matig gebruik acceptabel was.
+- **`SKILL.md` instructie-em-dashes (~18 stuks) vervangen** door komma, punt of dubbele punt. Skill modelt nu het gewenste gedrag.
+- **`references/patronen.md` instructie-em-dashes (~9 buiten voor/na-blokken) vervangen.** "Subtieler — voor:" → "Subtieler. Voor:" (5×). "Probleem A — gesplitst" → "Probleem A. Gesplitst" (2×). Inline em-dashes in pattern-uitleg (#5, #29, #34, dt-fouten) vervangen door komma of punt.
+- **`references/voorbeeld-{zakelijk,linkedin,docs}.md` titels gebruiken nu dubbele punt** in plaats van em-dash.
+- **`references/stem-kalibratie.md` instructie-em-dashes (9 stuks) vervangen** door dubbele punt of punt.
+
+### Fixed
+
+- **`patronen.md` pattern #37 (echter) NA-block introduceerde em-dash** terwijl pattern #14 die juist verbiedt. Voorbeeld `"Dit werkt — meestal."` is verplaatst naar pattern #14 als VOOR-voorbeeld; #37 NA leest nu `"Dit werkt niet altijd." of "Dit werkt meestal."`.
+- **`voorbeeld-linkedin.md` NA-blok bevatte em-dash** op regel 33 (`"Standaard-offerte ... — kost nu een uur..."`). Vervangen door punt + nieuwe zin.
+- **`voorbeeld-linkedin.md` audit-bullet** quoteerde de VOOR-tekst inclusief em-dash. Vervangen door placeholder ("het gaat niet om X, het gaat om Y").
+
+### Note
+
+Em-dashes blijven aanwezig in expliciete VOOR-blokken (de slechte AI-voorbeelden) en in code-fenced illustraties van de regel zelf (bijvoorbeeld `\`—\`` in de tekst van de hard regel). Dat is bedoeld: de skill leert het patroon herkennen door het ALS BAD voorbeeld te tonen.
+
 ## [0.2.0] — 2026-05-09
 
 Major rework of `dutch-humanizer` for correctness, maintainability and
@@ -120,6 +150,7 @@ Initial bootstrap of the `claude-skills` collection.
   "Signs of AI writing" plus NL-specifieke patronen. 37 patronen, register-
   detectie, voice-calibration via een `references/voorbeeld.md`.
 
-[Unreleased]: https://github.com/fridzema/claude-skills/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/fridzema/claude-skills/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/fridzema/claude-skills/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/fridzema/claude-skills/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/fridzema/claude-skills/releases/tag/v0.1.0

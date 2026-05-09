@@ -6,18 +6,18 @@ Als de gebruiker een eigen schrijfvoorbeeld aanlevert, imiteer hun stem. Dat is 
 
 1. **Lees het voorbeeld twee keer.** Eerste keer voor inhoud, tweede voor stijl.
 2. **Maak intern een stijlprofiel** (niet opleveren tenzij de gebruiker erom vraagt). Let op:
-   * **Zinslengte** — kort, lang, sterk wisselend?
+   * **Zinslengte**: kort, lang, sterk wisselend?
    * **Lid-/vulwoorden** die deze schrijver wél gebruikt: "eigenlijk", "gewoon", "best wel", "trouwens", "overigens"? Welke zijn typisch voor deze persoon?
-   * **Leestekens** — komma's, puntkommas, gedachtestreepjes (de echte, niet de AI-versie), drie puntjes?
-   * **Persoonsvorm** — "ik", "we", "je", afstandelijk?
-   * **Overgangen** — hoe verbindt deze schrijver alinea's? Met losse zinnen? Met "en", "maar"? Met witregels zonder verbinding?
-   * **Eigenaardigheden** — terugkerende woorden, syntactische tics, registerwisseling, ironie, understatement.
-   * **Wat ontbreekt** — geen drieslag-opsommingen? geen vetdruk? geen bullets? Dat is óók signaal.
+   * **Leestekens**: komma's, puntkommas, gedachtestreepjes (de echte, niet de AI-versie), drie puntjes?
+   * **Persoonsvorm**: "ik", "we", "je", afstandelijk?
+   * **Overgangen**: hoe verbindt deze schrijver alinea's? Met losse zinnen? Met "en", "maar"? Met witregels zonder verbinding?
+   * **Eigenaardigheden**: terugkerende woorden, syntactische tics, registerwisseling, ironie, understatement.
+   * **Wat ontbreekt**: geen drieslag-opsommingen? geen vetdruk? geen bullets? Dat is óók signaal.
 3. **Vervang AI-patronen met patronen uit het voorbeeld.**
    * Een opgeblazen zin van AI vervang je door iets dat past bij hun gemiddelde zinslengte en woordkeuze.
-   * Een drieledige opsomming? Kijk hoe deze schrijver opsommingen doet — soms helemaal niet.
+   * Een drieledige opsomming? Kijk hoe deze schrijver opsommingen doet. Soms helemaal niet.
    * Een formele kop? Misschien gebruikt deze schrijver helemaal geen koppen.
-4. **Behoud hun feiten en standpunten.** Stem aanpassen ≠ inhoud aanpassen. Als de input een mening bevat die niet in het stem-voorbeeld staat, verander de mening niet — alleen de toon.
+4. **Behoud hun feiten en standpunten.** Stem aanpassen ≠ inhoud aanpassen. Als de input een mening bevat die niet in het stem-voorbeeld staat, verander de mening niet, alleen de toon.
 
 ## Wat NIET doen
 
@@ -33,7 +33,7 @@ Bij twijfel kun je kort vragen:
 
 > Wil je dat ik de stijl van het voorbeeld letterlijk overneem (zinsritme, woordkeuze, leestekens) of alleen het register? En mag ik kortere zinnen maken dan in het voorbeeld als de inhoud daarom vraagt?
 
-Niet automatisch vragen — alleen als het echt nodig is voor het resultaat.
+Niet automatisch vragen, alleen als het echt nodig is voor het resultaat.
 
 ## Zonder voorbeeld
 

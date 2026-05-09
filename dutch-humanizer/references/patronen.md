@@ -1,4 +1,4 @@
-# Patronen — volledig overzicht
+# Patronen: volledig overzicht
 
 Volledige catalogus van patronen waar AI-gegenereerd Nederlands op valt. Per patroon: signaalwoorden (waar zinvol), voor/na-voorbeeld, en eventuele uitzondering.
 
@@ -34,7 +34,7 @@ Doorloop deze lijst niet mechanisch. Gebruik haar om een patroon te herkennen of
 **Voor:** "Gelegen in het bruisende hart van de Randstad, biedt Gouda een betoverend samenspel van rijke historie en eigentijdse dynamiek."
 **Na:** "Gouda is een stad in Zuid-Holland, bekend om de kaasmarkt en de Sint-Janskerk."
 
-### 5. Vage bronvermeldingen — niet verzinnen
+### 5. Vage bronvermeldingen: niet verzinnen
 
 **Signaalwoorden:** experts zijn van mening, onderzoek wijst uit (zonder bron), studies tonen aan, het is algemeen bekend dat, men gaat ervan uit.
 
@@ -78,7 +78,7 @@ Drie correcte aanpakken:
 **Voor:** "Het gaat niet alleen om technologie, het gaat om mensen."
 **Na:** "De tool automatiseert rapportages, waardoor het team meer tijd heeft voor analyse."
 
-**Subtieler — voor:** "Het draait niet zozeer om snelheid, maar om betrouwbaarheid."
+**Subtieler. Voor:** "Het draait niet zozeer om snelheid, maar om betrouwbaarheid."
 **Na:** "Betrouwbaarheid is belangrijker dan snelheid."
 
 ### 10. Drieledige opsommingen
@@ -86,7 +86,7 @@ Drie correcte aanpakken:
 **Voor:** "Het evenement biedt inspiratie, innovatie en interactie."
 **Na:** "Het evenement bestaat uit lezingen en workshops. Tussendoor is er ruimte om te netwerken."
 
-**Subtieler — voor:** "We focussen op kwaliteit, efficiëntie en klanttevredenheid."
+**Subtieler. Voor:** "We focussen op kwaliteit, efficiëntie en klanttevredenheid."
 **Na:** "We focussen op kwaliteit en efficiëntie." *(Als klanttevredenheid niet apart onderbouwd wordt, laat het weg.)*
 
 ### 11. Synoniemroulette
@@ -104,17 +104,33 @@ Drie correcte aanpakken:
 **Voor:** "Er wordt verwacht dat de transitie voordelen oplevert."
 **Na:** "Het projectteam verwacht dat de transitie voordelen oplevert."
 
-**Subtieler — voor:** "Er kan worden gesteld dat de resultaten positief zijn."
+**Subtieler. Voor:** "Er kan worden gesteld dat de resultaten positief zijn."
 **Na:** "De resultaten zijn positief."
 
 ---
 
 ## Stijl
 
-### 14. Overmatig gedachtestreepjes
+### 14. Gedachtestreepjes (em-dash en en-dash)
+
+**Hard regel.** Geen em-dash (`—`) of en-dash (`–`) in lopende tekst. Vervang door komma, punt of dubbele punt. Geen ` - ` (spatie-hyphen-spatie) als em-dash-substituut. Hyphens in samenstellingen blijven (`data-analyse`, `e-mail`, `niet-roker`).
+
+AI-modellen produceren em-dashes als visuele tic. In Nederlandstalige output zijn ze bijna altijd vervangbaar door komma, punt of dubbele punt zonder betekenisverlies. Een fix voor één tell mag geen andere introduceren.
+
+**Voorbeeld 1 (dramatic pause / parenthetical):**
 
 **Voor:** "De term wordt gepromoot door instellingen—niet door bewoners. Je zegt niet 'Europa' als adres—toch blijft dit—zelfs in documenten."
 **Na:** "De term wordt gepromoot door instellingen, niet door bewoners. Toch blijft dit voorkomen in officiële documenten."
+
+**Voorbeeld 2 (parenthetical achteraf):**
+
+**Voor:** "Dit werkt — meestal."
+**Na:** "Dit werkt meestal." *of* "Dit werkt. Meestal."
+
+**Voorbeeld 3 (list-intro):**
+
+**Voor:** "Drie redenen — snelheid, prijs, support."
+**Na:** "Drie redenen: snelheid, prijs, support."
 
 ### 15. Overmatig vetdruk
 
@@ -233,14 +249,14 @@ Als iets vermeldenswaard is, vermeld het gewoon.
 
 Twee inverse problemen, één regel: Nederlandse samenstellingen worden **aaneengeschreven**.
 
-**Probleem A — gesplitst (Engelse spatie-stijl):**
+**Probleem A. Gesplitst (Engelse spatie-stijl):**
 
 * "werk gever" → "werkgever"
 * "klant ervaring" → "klantervaring"
 * "project manager" → "projectmanager"
 * "content strategie" → "contentstrategie"
 
-**Probleem B — Engelse koppeltekens waar geen botsing is:**
+**Probleem B. Engelse koppeltekens waar geen botsing is:**
 
 * "data-gedreven" → "datagedreven"
 * "klant-gericht" → "klantgericht"
@@ -251,7 +267,7 @@ Twee inverse problemen, één regel: Nederlandse samenstellingen worden **aaneen
 * **Klinkerbotsing** die leesbaarheid hindert: "data-analyse", "auto-ongeluk", "zee-eend", "na-apen".
 * **Drie gelijke medeklinkers**: "stress-situatie".
 * **Voor-/achtervoegsels die anders verwarren**: "niet-roker", "ex-werkgever", "Nederlands-Duits", "anti-Amerikaans".
-* **Ingeburgerde leenwoorden waar het woordenboek dat voorschrijft**: "e-mail", "online-cursus" (variabel — kies consistent).
+* **Ingeburgerde leenwoorden waar het woordenboek dat voorschrijft**: "e-mail", "online-cursus" (variabel; kies consistent).
 
 ### 30. Anglicismen en vertalings-Nederlands
 
@@ -262,7 +278,7 @@ AI vertaalt Engelse uitdrukkingen letterlijk. Klinkt onnatuurlijk voor moedertaa
 **Voor:** "We moeten de uitdagingen adresseren om impactvolle resultaten te deliveren."
 **Na:** "We moeten de problemen aanpakken om resultaten te boeken die ertoe doen."
 
-**Subtieler — voor:** "Het team heeft goed geperformd dit kwartaal."
+**Subtieler. Voor:** "Het team heeft goed geperformd dit kwartaal."
 **Na:** "Het team heeft dit kwartaal goed gepresteerd."
 
 ### 31. Onnodige Engelse termen
@@ -295,12 +311,12 @@ AI schrijft standaard in ambtelijk jargon, ook als de context dat niet vraagt.
 **Voor:** "Derhalve dient opgemerkt te worden dat de onderhavig beschreven methodologie nadere toelichting behoeft."
 **Na:** "De methode moet beter worden uitgelegd."
 
-**Subtieler — voor:** "Met betrekking tot de planning zijn er enkele aandachtspunten."
+**Subtieler. Voor:** "Met betrekking tot de planning zijn er enkele aandachtspunten."
 **Na:** "Over de planning: er zijn een paar aandachtspunten."
 
 ### 34. "Welke" als betrekkelijk voornaamwoord
 
-In moderne Nederlandse stijl gebruik je "die" of "dat", niet "welke" — tenzij je expliciet kiest voor een formele toon.
+In moderne Nederlandse stijl gebruik je "die" of "dat", niet "welke", tenzij je expliciet kiest voor een formele toon.
 
 **Voor:** "Het rapport welke gepubliceerd is..."
 **Na:** "Het rapport dat gepubliceerd is..."
@@ -331,7 +347,7 @@ In moderne Nederlandse stijl gebruik je "die" of "dat", niet "welke" — tenzij 
 AI plakt "echter" graag tussen komma's. Vaak weglaten of verplaatsen naar zinsbegin.
 
 **Voor:** "Dit werkt, echter, niet altijd."
-**Na:** "Dit werkt niet altijd." *of* "Dit werkt — meestal."
+**Na:** "Dit werkt niet altijd." *of* "Dit werkt meestal."
 
 **Voor:** "De resultaten waren positief, echter er zijn ook risico's."
 **Na:** "De resultaten waren positief. Er zijn ook risico's."
@@ -408,7 +424,7 @@ In korte tekst overbodig. Verwijs alleen meta als de lezer écht terug moet blad
 
 ### D/t-fouten en werkwoordspelling
 
-Niet specifiek een AI-tell — mensen maken deze ook, en moderne modellen zijn er meestal goed in. Wel meenemen in de zelf-audit, omdat een dt-fout de hele tekst onverzorgd laat ogen.
+Niet specifiek een AI-tell. Mensen maken deze ook, en moderne modellen zijn er meestal goed in. Wel meenemen in de zelf-audit, omdat een dt-fout de hele tekst onverzorgd laat ogen.
 
 * "hij word" → "hij wordt"
 * "het gebeurd" → "het gebeurt" (tegenw. tijd) / "het is gebeurd" (volt. deelw.)
