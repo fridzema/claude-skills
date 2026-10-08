@@ -1,48 +1,44 @@
-# Volledig voorbeeld
+# Voorbeeld: beschouwing of blog
 
-## Voor (AI-klinkend):
+In een blog of essay mag een stem: een mening, twijfel, wisselend ritme. Elke bewering uit de bron blijft, ook de vage; ze wordt alleen gewoner gezegd. Een ervaring of feit voeg je niet toe: "Ik heb weleens..." is een feitelijke bewering over de schrijver.
+
+## Voor
 
 > Goede vraag! Hier is een essay over dit onderwerp. Ik hoop dat dit helpt!
 >
-> AI-ondersteund programmeren fungeert als een blijvend testament van het transformatieve potentieel van grote taalmodellen en markeert een cruciaal moment in de evolutie van softwareontwikkeling. In het huidige, snel veranderende technologische landschap hervormen deze baanbrekende tools—gelegen op het snijvlak van onderzoek en praktijk—de manier waarop engineers bedenken, itereren en opleveren, het belang van hun vitale rol in moderne workflows onderstrepend.
+> AI-ondersteund programmeren fungeert als een blijvend testament van het transformatieve potentieel van grote taalmodellen en markeert een cruciaal moment in de evolutie van softwareontwikkeling. In het huidige, snel veranderende technologische landschap hervormen deze baanbrekende tools—gelegen op het snijvlak van onderzoek en praktijk—de manier waarop engineers bedenken, itereren en opleveren.
 >
-> In de kern is de waardepropositie helder: het stroomlijnen van processen, het versterken van samenwerking en het bevorderen van afstemming. Het gaat niet alleen om autocomplete; het gaat om het ontsluiten van creativiteit op schaal, waarmee organisaties wendbaar kunnen blijven terwijl ze naadloze, intuïtieve en krachtige ervaringen leveren. De tool dient als katalysator. De assistent fungeert als partner. Het systeem vormt een fundament voor innovatie.
+> In de kern is de waardepropositie helder: het stroomlijnen van processen, het versterken van samenwerking en het bevorderen van afstemming. Het gaat niet alleen om autocomplete; het gaat om het ontsluiten van creativiteit op schaal. De tool dient als katalysator. De assistent fungeert als partner. Het systeem vormt een fundament voor innovatie.
 >
-> Experts hebben opgemerkt dat de adoptie is versneld van hobbyistische experimenten naar bedrijfsbrede uitrol, van individuele ontwikkelaars naar cross-functionele teams. De technologie is belicht door NRC, de Volkskrant en het FD. Daarnaast laat de mogelijkheid om documentatie, tests en refactors te genereren zien hoe AI kan bijdragen aan betere uitkomsten, waarmee het ingewikkelde samenspel tussen automatisering en menselijk oordeelsvermogen wordt benadrukt.
+> Experts hebben opgemerkt dat de adoptie is versneld van hobbyistische experimenten naar bedrijfsbrede uitrol. De technologie is belicht door NRC, de Volkskrant en het FD. Daarnaast laat de mogelijkheid om documentatie, tests en refactors te genereren zien hoe AI kan bijdragen aan betere uitkomsten.
 >
 > * 💡 **Snelheid:** Codegeneratie is aanzienlijk sneller, waarmee fricties worden verminderd.
-> * 🚀 **Kwaliteit:** De outputkwaliteit is versterkt door verbeterde training.
 > * ✅ **Adoptie:** Het gebruik blijft groeien, wat bredere trends weerspiegelt.
 >
 > Hoewel specifieke details beperkt zijn op basis van beschikbare informatie, zou eventueel beargumenteerd kunnen worden dat deze tools wellicht enig positief effect hebben. Ondanks uitdagingen die typisch zijn voor opkomende technologieën—waaronder hallucinaties, bias en verantwoording—blijft het ecosysteem zich gestaag ontwikkelen. Teneinde dit potentieel volledig te realiseren, moeten teams zich alignen met best practices.
 >
-> Concluderend ziet de toekomst er veelbelovend uit. Spannende tijden liggen voor ons terwijl we onze reis naar uitmuntendheid voortzetten. Laat me weten als je wilt dat ik een sectie verder uitwerk!
+> Concluderend ziet de toekomst er veelbelovend uit. Laat me weten als je wilt dat ik een sectie verder uitwerk!
 
-## Na (gehumaniseerd):
+## Na (volledige herschrijving)
 
-> AI-codeerassistenten maken je sneller bij het saaie werk. Niet bij alles. Bij architectuur al helemaal niet.
+> AI-codeerassistenten zijn een belangrijke stap voor softwareontwikkeling. Ze veranderen hoe ontwikkelaars werken, van het bedenken van een oplossing tot het opleveren ervan. Ze beloven processen te stroomlijnen en samenwerking en afstemming te verbeteren, en ze doen meer dan code aanvullen: ze maken ruimte voor creativiteit, op grote schaal.
 >
-> Ze zijn goed in boilerplate: configbestanden, test-scaffolding, dat soort dingen. Maar ze zijn ook goed in overtuigend klinken als ze fout zitten. Ik heb weleens suggesties geaccepteerd die gewoon compileerden, door de linter kwamen, en pas later bleek dat ze nergens op sloegen. Omdat ik niet meer oplette, eerlijk gezegd.
+> Volgens experts ging de adoptie snel, van hobbyproject tot inzet in hele bedrijven. NRC, de Volkskrant en het FD schreven erover. De tools schrijven documentatie, tests en refactors, ze genereren code een stuk sneller dan voorheen, en het gebruik blijft groeien.
 >
-> De meeste mensen die ik spreek vallen in twee kampen. Of ze gebruiken het als autocomplete voor de vervelende klusjes en checken elke regel. Of ze zetten het uit omdat het steeds dingen voorstelt die ze niet willen. Allebei begrijpelijk.
+> Of ze per saldo helpen, is minder duidelijk; misschien hebben ze een positief effect. Er zijn bekende problemen, zoals hallucinaties, bias en de vraag wie verantwoordelijk is voor de code, maar de ontwikkeling gaat door. Wie het meeste uit deze tools wil halen, moet goede werkafspraken maken.
 >
-> Over de productiviteitscijfers: die zijn nogal glibberig. GitHub zegt dat gebruikers "30% van de suggesties accepteren." Maar accepteren is niet hetzelfde als correct, en correct is niet hetzelfde als waardevol. Zonder tests ben je gewoon aan het gokken.
+> De vooruitzichten zijn goed.
 
-## Welke patronen zijn hersteld:
+## Wat is aangepakt
 
-* Chatbot-artefacten ("Goede vraag!", "Ik hoop dat dit helpt!", "Laat me weten...")
-* Opgeblazen belang ("testament", "cruciaal moment", "veranderend landschap", "vitale rol")
-* Promotioneel taalgebruik ("baanbrekend", "naadloos", "intuïtief en krachtig")
-* Vage bronvermeldingen ("Experts hebben opgemerkt")
-* Oppervlakkige deelwoord-frases ("onderstrepend", "benadrukkend", "weerspiegelend")
-* Negatief parallellisme ("Het gaat niet alleen om X; het gaat om Y")
-* Drieledige opsommingen en synoniemroulette ("katalysator/partner/fundament")
-* Onechte reeksen ("van X naar Y, van A naar B")
-* Gedachtestreepjes, emoji's, vetdruk-koppen en gekrulde aanhalingstekens
-* Koppelwerkwoord-vermijding ("fungeert als", "dient als", "vormt") → "is"/"zijn"
-* Formulaire uitdagingssectie ("Ondanks uitdagingen... blijft het ecosysteem")
-* Kennisgrens-hedging ("Hoewel specifieke details beperkt zijn...")
-* Overmatige hedging ("zou eventueel beargumenteerd kunnen worden dat... wellicht")
-* Vulzinnen en retorische framing ("Teneinde", "In de kern")
-* Generieke positieve conclusie ("de toekomst ziet er veelbelovend uit")
-* Anglicismen ("alignen" → "afstemmen")
+- Chatbot-resten aan begin en eind.
+- Opgeblazen woorden: "testament", "transformatieve potentieel", "baanbrekend", "veranderende landschap". Het oordeel "belangrijke stap" blijft.
+- Diepzinnige formule ("In de kern") en het drietal synoniemen "katalysator, partner, fundament", samengevat in "ruimte voor creativiteit".
+- Gestapelde voorbehouden: één "misschien" blijft, zodat de tekst niet stelliger wordt.
+- Gedachtestreepjes, emoji, vette labels, "Concluderend", "teneinde", "alignen met best practices".
+
+## Bewust behouden
+
+Elke bewering uit de Voor: belang voor softwareontwikkeling, ander werkproces, de beloofde voordelen, meer dan autocomplete, snelle adoptie volgens experts (toeschrijving blijft), de drie kranten, wat de tools maken, snelheid, groei, de onzekerheid over het effect, de drie problemen, voortgaande ontwikkeling, de oproep aan teams en het optimistische slot. De Na is korter doordat opvulling wegviel, niet doordat inhoud wegviel.
+
+Een eerdere versie van dit voorbeeld voegde een eigen ervaring en een cijfer van GitHub toe, en liet een deel van de beweringen vallen. Dat leest overtuigend en is precies wat deze skill niet doet.

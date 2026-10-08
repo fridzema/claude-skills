@@ -1,76 +1,58 @@
-# Voorbeeld: LinkedIn / socials
+# Voorbeeld: LinkedIn-post
 
-LinkedIn-AI heeft een heel eigen smaak: hook → drieslag → "lesson learned" → cliché-vraag aan de lezer. Vaak met emoji's en bullets met fat-bolded koppen.
+AI-posts op LinkedIn volgen een vast recept: haak, drietal met vette labels, "het resultaat?", niet-X-maar-Y, emoji. De herschrijving haalt het recept weg, niet de inhoud. Elke maatregel, elk cijfer en het doel van de post (reacties uitlokken) blijven. Hashtags zijn op LinkedIn functioneel en mogen blijven.
 
-## Voor (AI-klinkend)
+## Voor
 
 > 🚀 Een gamechanger voor onze sales-pipeline!
 >
-> Vorig kwartaal stonden we voor een uitdaging: onze conversie liep terug. Echter, in plaats van te wanhopen, kozen we voor een datagedreven, klantgerichte en innovatieve aanpak.
+> Vorig kwartaal stonden we voor een uitdaging: onze conversie zakte van 18% naar 12%. Echter, in plaats van te wanhopen, kozen we voor een datagedreven, klantgerichte en innovatieve aanpak. We belden 30 verloren deals na en ontdekten dat ons offertetraject gemiddeld 11 werkdagen duurde, terwijl concurrenten het in 3 dagen deden.
 >
 > Drie inzichten die alles veranderden:
 >
-> ✅ **Luisteren**: We zijn écht in gesprek gegaan met onze klanten.
-> ✅ **Itereren**: We hebben snel kunnen testen en bijsturen.
-> ✅ **Vertrouwen**: We gaven het team de ruimte om eigenaarschap te nemen.
+> ✅ **Standaardiseren**: Een standaardofferte voor de drie meest voorkomende cases. Kost nu een uur in plaats van twee dagen.
+> ✅ **Vertrouwen**: Het salesteam mag tot een vooraf afgesproken bedrag zelf akkoord geven.
+> ✅ **Mindset**: We gaven het team de ruimte om eigenaarschap te nemen.
 >
-> Het resultaat? Een conversie die niet alleen hersteld is, maar zelfs hoger ligt dan ooit. Het gaat niet om de tools — het gaat om de mindset.
+> Het resultaat? Een conversie van 19%, hoger dan ooit. Het gaat niet om de tools, het gaat om de mindset.
 >
-> En dat brengt mij bij een vraag voor jullie: wat is jouw belangrijkste les van dit kwartaal? 👇
+> Wat is jouw belangrijkste les van dit kwartaal? 👇
 >
-> #sales #leadership #growth #mindset
+> #sales #leadership #growth
 
-## Na, variant A: input bevat geen specifieke cijfers
+## Na (volledige herschrijving)
 
-Gebruik deze variant als de input alleen vaag spreekt over "conversie liep terug" en "we hebben het opgelost". Geen specifieke percentages, geen concrete oorzaken.
-
-> Onze sales-conversie zakte vorig kwartaal flink. We dachten dat het aan de markt lag.
+> Onze conversie zakte vorig kwartaal van 18% naar 12%. In plaats van te wanhopen zochten we het uit, met data en met onze klanten: we belden 30 verloren deals na. Ons offertetraject bleek gemiddeld 11 werkdagen te duren. Concurrenten deden het in 3.
 >
-> Dat klopte niet.
+> We veranderden drie dingen:
 >
-> Toen we verloren deals nabelden, kwam er één ding terug: ons offertetraject duurde te lang. Veel langer dan dat van concurrenten.
+> 1. Voor de drie meest voorkomende cases is er een standaardofferte. Die kost nu een uur in plaats van twee dagen.
+> 2. Het salesteam mag tot een vooraf afgesproken bedrag zelf akkoord geven.
+> 3. We gaven het team de ruimte om zelf verantwoordelijkheid te nemen.
 >
-> We hebben twee dingen aangepast:
+> De conversie staat nu op 19%, hoger dan ooit. Dat kwam door een andere manier van werken, niet door nieuwe tools.
 >
-> 1. Standaard-offerte voor de meest voorkomende cases. Veel sneller dan elke offerte van scratch.
-> 2. Salesteam mag tot een vooraf afgesproken bedrag zelf akkoord geven, zonder approval-loop.
+> Wat was jouw belangrijkste les dit kwartaal?
 >
-> Conversie staat nu boven het oude niveau. Niet door een nieuwe tool. Door minder wachten.
+> #sales #leadership #growth
 
-## Na, variant B: input bevat concrete cijfers
+## Wat is aangepakt
 
-Gebruik deze variant *alleen* als de gebruiker deze specifieke cijfers heeft aangedragen: 18% naar 12% gezakt, 19% nu, 11 vs 3 werkdagen, 30 verloren deals nagebeld, twee dagen → één uur.
+- Emoji en de haak ("gamechanger", "alles veranderden").
+- "Echter" en de stapel "datagedreven, klantgerichte en innovatieve". De betekenis blijft: de aanpak steunde op data en op klanten.
+- Vette labels met ✅: een genummerde lijst met dezelfde drie maatregelen.
+- "Het resultaat?": een gewone zin.
+- "Het gaat niet om de tools, het gaat om de mindset" wordt een gewone zin met dezelfde bewering. Het contrast blijft, omdat de schrijver echt een tegenstelling bedoelt.
 
-> Onze sales-conversie zakte vorig kwartaal van 18% naar 12%. We dachten dat het aan de markt lag.
->
-> Dat klopte niet.
->
-> Toen we 30 verloren deals nabelden, kwam er één ding terug: ons offertetraject duurde te lang. Gemiddeld 11 werkdagen tussen eerste gesprek en offerte. Concurrenten zaten op 3.
->
-> We hebben twee dingen aangepast:
->
-> 1. Standaard-offerte voor de drie meest voorkomende cases. Kost nu een uur in plaats van twee dagen.
-> 2. Salesteam mag tot een vooraf afgesproken bedrag zelf akkoord geven, zonder approval-loop.
->
-> Conversie staat nu op 19%. Niet door een nieuwe tool. Door minder wachten.
+## Bewust behouden
 
-## Welke patronen zijn hersteld
+- Alle cijfers: 18%, 12%, 30, 11, 3, drie cases, een uur, twee dagen, 19%.
+- Drie aparte maatregelen. Zelf akkoord mogen geven en ruimte voor eigen verantwoordelijkheid lijken op elkaar, maar het zijn twee verschillende dingen. Een eerdere versie van dit voorbeeld voegde ze samen; dat is betekenisverlies.
+- De vraag aan de lezer en de hashtags: ze horen bij het doel van de post.
 
-* **Emoji-overload + visuele opsmuk** (🚀 ✅ 👇 + hashtags) → weg.
-* **Hook-cliché** ("gamechanger", "alles veranderden") → weg.
-* **"Echter"-mid-zin** + "in plaats van te wanhopen" → weg.
-* **Bijvoeglijk-naamwoord-stapeling**: "datagedreven, klantgerichte en innovatieve" → weg.
-* **Drieledige opsomming** met inline-vetgedrukte koppen ("Luisteren / Itereren / Vertrouwen") → vervangen door twee concrete acties.
-* **Negatief parallellisme** ("het gaat niet om X, het gaat om Y") → weg.
-* **Generieke conclusie** ("hoger dan ooit") → vervangen door concretere formulering (variant A: "boven het oude niveau"; variant B: "19%").
-* **Engagement-baiting vraag** ("wat is jouw belangrijkste les?") → weg.
+## Als de input vaag is
 
-## Aandachtspunt
+**Voor:** "🚀 Trots! Ons team heeft het afgelopen jaar een ongelooflijke groei doorgemaakt. Het gaat niet om de cijfers, het gaat om de mensen."
+**Na:** "Ik ben trots op ons team. We zijn het afgelopen jaar enorm gegroeid. Waar het ons om gaat: de mensen, niet de cijfers."
 
-Beslisregel:
-
-- Geen cijfers in input → variant A. Concrete-genoeg om geloofwaardig te lezen, zonder hallucinatie.
-- Specifieke cijfers in input → variant B. Gebruik ze.
-- Vage input + gebruiker wil concrete post → vraag om de cijfers. Verzin ze niet.
-
-LinkedIn-posts zijn een hoog-risico-context voor fabricatie omdat het format om concrete claims vraagt. Goede post zonder cijfers is bijna altijd beter dan goede post met verzonnen cijfers.
+Verzin geen cijfers, oorzaken of voorbeelden om de post overtuigender te maken.

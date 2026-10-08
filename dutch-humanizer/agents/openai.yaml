@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dutch Humanizer"
+  short_description: "Natuurlijk Nederlands zonder de inhoud te veranderen"
+  default_prompt: "Use $dutch-humanizer to make this Dutch text read naturally without changing its meaning."

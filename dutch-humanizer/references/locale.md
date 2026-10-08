@@ -1,91 +1,65 @@
 # Locale: nl-NL en nl-BE
 
-Standaardtaal Nederlands kent twee regionale variëteiten: nl-NL (Nederland) en nl-BE (België, vaak "Vlaams" genoemd, maar bedoeld is *standaardtaal in België*, niet dialect).
+Standaardnederlands heeft twee grote variëteiten: nl-NL (Nederland) en nl-BE (België, standaardtaal, geen dialect). Geen van beide is beter. Ze verschillen in woordkeus, zinsbouw en briefconventies. Een Nederlandse tekst leest in België soms stijf of vreemd; een Belgische tekst leest in Nederland soms formeel.
 
-Beide zijn standaardtaal. Geen variant is "beter". Maar ze verschillen in lexicon, syntaxis en register-conventies. Een nl-NL-tekst leest in België soms als formeel of vreemd; een nl-BE-tekst leest in Nederland soms als ouderwets of literair.
+## Herkennen
 
-## Detectie en default
+1. **Expliciete instructie**: "schrijf in Belgisch Nederlands", "nl-BE", "Vlaams publiek".
+2. **Namen en context**: Vlaamse overheid, OCMW, schepen, KBC, Belgische telefoonnummers (+32, 04xx); of NS, gemeente Utrecht, wethouder, ABN AMRO.
+3. **Woorden uit de tabel hieronder.**
+4. **Geen signaal**: nl-NL.
 
-**Default: `locale=auto`.**
+Is de input Belgisch en vraagt de gebruiker niets anders, dan blijft de output Belgisch. Zet niet om.
 
-Detecteer aan de hand van:
+## Woordkeus
 
-1. **Expliciete instructie** door de gebruiker (`schrijf in Belgisch Nederlands`, `nl-BE`, `nl-NL`, `Vlaamse standaardtaal`).
-2. **Eigennamen en organisatie-context** in de input (Belgastraat, KBC, RTBF, Vlaamse overheid → nl-BE; ABN AMRO, NS, gemeente Utrecht → nl-NL).
-3. **Lexicale tells** in de input zelf (zie tabel hieronder).
-4. **Bij geen signaal: nl-NL** als pragmatische default (grootste publiek), tenzij de gebruiker anders zegt.
-
-Als de input duidelijk `nl-BE` is en de gebruiker geen andere variant vraagt: **behoud nl-BE in de output**. Niet "omzetten" tenzij gevraagd.
-
-## Veelvoorkomende verschillen (kort overzicht)
-
-Niet uitputtend. Bij specifieke twijfel: raadpleeg Taaladvies.net (markeert "standaardtaal in NL", "standaardtaal in BE", of "algemeen").
-
-### Lexicaal
+Niet volledig. Bij twijfel: Taaladvies.net, dat aangeeft of iets "standaardtaal in België", "in Nederland" of "algemeen" is.
 
 | nl-NL | nl-BE |
 |---|---|
-| zo'n / dergelijk(e) | dergelijk(e) (formeler in BE) |
-| binnenkort | weldra (frequenter in BE) |
-| meteen | direct, dadelijk |
-| beneden | onder |
-| vergaderen | vergaderen, samenkomen |
-| salaris | wedde (frequenter in BE) |
-| verbruik | verbruik / consumptie |
-| boterham | boterham (NL ook "broodje" voor belegde versie); BE "broodje" = belegde versie |
-| stoplicht | verkeerslicht |
+| mobiel, mobieltje | gsm |
+| gefeliciteerd | proficiat (ook gefeliciteerd) |
+| rekening (horeca) | rekening, nota |
+| schoolplein | speelplaats |
+| werkzaamheden (aan de weg) | werken |
+| stoep | voetpad |
+| slager | beenhouwer |
 | pinpas | bankkaart |
-| afspraak | afspraak / rendez-vous |
-| betaalbaar | betaalbaar / haalbaar |
+| wethouder | schepen |
+| salaris | loon; wedde (ambtenaren) |
+| straks, zo meteen | straks, dadelijk |
+| "Wilt u...", "Graag..." | "Gelieve..." |
 
-### Syntactisch
+## Brieven en register
 
-- **"Heb"-vorm in onbepaalde tijd**: nl-BE gebruikt vaker "heb" waar nl-NL "ben" gebruikt bij sommige werkwoorden ("ik ben vergeten" vs "ik heb vergeten"). Beide zijn standaardtaal.
-- **Werkwoordvolgorde in eindgroep**: Vlaams kent variatie ("dat hij gegaan is" / "dat hij is gegaan"). Beide zijn standaardtaal.
-- **"Aan het + infinitief"**: in nl-BE soms "bezig met". Beide goed.
-- **Diminutief-vormen**: "boekje" universeel, maar register-gebruik wisselt.
+- **Aanspreekvorm.** In Belgische zakelijke en schoolcommunicatie is u de gewone vorm, ook waar Nederlandse tekst al je gebruikt. Zet u in Belgische tekst niet om naar je.
+- **Werkwoord bij u.** "U kan" en "u zal" zijn in België gangbaar naast "u kunt" en "u zult". Laat ze staan.
+- **Afsluiting.** "Met vriendelijke groeten" is in België gewoon; in Nederland is "Met vriendelijke groet" gebruikelijker. Neem over wat de input heeft.
+- **"Gelieve"** is in België neutraal en klinkt in Nederland stijf. In Belgische tekst is het geen ambtelijk patroon.
 
-### Officialese / juridisch
+## Zinsbouw
 
-België heeft eigen wetgeving en bestuurskundige termen. Niet vertalen naar nl-NL-equivalent als dat de juridische betekenis verandert:
+- Volgorde in de werkwoordelijke eindgroep varieert ("dat hij gegaan is", "dat hij is gegaan"). Beide zijn standaardtaal.
+- Het verkleinwoord is in België wat minder frequent in formele tekst. Voeg er geen toe.
 
-- "wedde" (BE, ambtelijk) ≠ "salaris" (NL, breed).
-- "schepen" (BE, gemeentebestuur) ≠ "wethouder" (NL).
-- "OCMW" (BE): geen NL-equivalent met dezelfde rol.
-- "burgemeester" werkt in beide.
+## Bestuur en recht
+
+België heeft eigen bestuurs- en rechtstermen. Vertaal ze niet naar een Nederlands equivalent als dat de betekenis verandert:
+
+- "schepen" is geen "wethouder" in een Belgische tekst;
+- "OCMW" heeft geen Nederlands equivalent met dezelfde rol;
+- "wedde" is het loon van een ambtenaar.
 
 ## Datum, getal, tijd
 
-Beide locales volgen NL-conventies (zie `patronen.md` "Datum- en cijfer-format"):
+Geen verschil tussen nl-NL en nl-BE: decimaalkomma (`€3,14`), dag-maand-jaar (`15 januari 2026`), 24-uursklok (`14:30` of `14.30 uur`, beide correct; neem de notatie van de input over), maandnamen met kleine letter.
 
-- Decimaal: komma (`€3,14`).
-- Datum: dag-maand-jaar (`15 januari 2026`).
-- Tijd: 24-uurs (`14:30`).
-- Maandnamen: kleine letter.
+## Wanneer wel omzetten
 
-Geen wezenlijk verschil tussen nl-NL en nl-BE op deze punten.
+Alleen als de gebruiker het vraagt of de doelgroep duidelijk de andere variëteit is. Vraag dan wie de lezer is en houd de gekozen variëteit de hele tekst vol. Citaten en eigennamen zet je nooit om: een Vlaamse schepen wordt geen wethouder.
 
-## Wanneer locale-switchen wel zinvol is
+## Controle
 
-Als de tekst voor een specifiek publiek is, en het tegengestelde locale onnatuurlijk klinkt:
-
-- **nl-NL → nl-BE conversie**: als de tekst voor Belgisch publiek is en nu Nederlandse begrippen gebruikt die in BE iets anders betekenen.
-- **nl-BE → nl-NL conversie**: als de tekst voor Nederlands publiek is en nu Belgische begrippen gebruikt die in NL onbekend zijn.
-
-Bij switching: vraag de gebruiker wat het doel-publiek is, en behoud daarna locale consistent door de hele tekst.
-
-## Wanneer locale-switchen NIET zinvol is
-
-- Als de tekst neutraal-Nederlandse termen gebruikt (geldig in beide). Geen switching nodig.
-- Als de gebruiker gewoon "humaniseren" vraagt zonder locale-wens. Behoud bestaande locale.
-- Voor citaten en eigennamen: nooit switchen. Een Vlaamse minister wordt niet "wethouder".
-
-## Output-output van skill bij locale
-
-In zelf-audit (zie `SKILL.md` stap 5):
-
-- Heb ik de input-locale herkend en behouden?
-- Als ik geconverteerd heb: heb ik dat consistent gedaan?
-- Komen er termen uit de andere locale per ongeluk doorheen ("ik heb dat gevraagd aan de wethouder" in een Vlaamse tekst)?
-
-Bij twijfel: behoud is veiliger dan converteren.
+- Heb ik de locale van de input herkend en behouden?
+- Zijn er woorden uit de andere variëteit doorgeglipt ("wethouder" in een Vlaamse tekst)?
+- Heb ik u, "gelieve" en "Met vriendelijke groeten" in Belgische tekst laten staan?

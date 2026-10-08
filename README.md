@@ -11,7 +11,7 @@ distributable `.skill` archives on demand.
 
 | Skill | Description |
 |---|---|
-| [`dutch-humanizer`](./dutch-humanizer) | Verwijdert AI-schrijfpatronen uit Nederlandstalige tekst en hanteert positief stijlmodel. Verankerd in Taaladvies.net en Team Taaladvies. Drie modi (rewrite/create/voice-match), locale-bewust (nl-NL/nl-BE), formele fact-inventory, severity-gestructureerde patroon-catalogus, six register-voorbeelden, plus principes/bronnen/locale references. |
+| [`dutch-humanizer`](./dutch-humanizer) | Redigeert, schrijft of vertaalt Nederlandse tekst zodat die natuurlijk leest, met strikt behoud van betekenis. Licht of volledig redigeren, nl-NL/nl-BE, stemkalibratie op één of meer voorbeelden, controlescript met unittests en 42 redactionele testcases. Zie [`dutch-humanizer/README.md`](./dutch-humanizer/README.md). |
 
 ## Install
 

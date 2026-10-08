@@ -1,46 +1,50 @@
-# Voorbeeld: customer support reply
+# Voorbeeld: antwoord van klantenservice
 
-Korte directe antwoorden op klantvragen. AI maakt er empathie-theater van.
+Klanten willen een oplossing. AI-tekst maakt er empathietheater van. Houd het register van de afzender aan: schrijft die u, dan blijft het u. Een echt excuus in één zin mag blijven.
 
-## Voor (AI-klinkend)
+## Voor
 
 > Beste klant,
 >
 > Allereerst willen wij u hartelijk bedanken voor het contact opnemen met ons supportteam. Het spijt ons oprecht te horen dat u problemen ervaart bij het inloggen op uw account, en wij begrijpen volkomen hoe frustrerend dit voor u kan zijn.
 >
-> Ik heb uw situatie zorgvuldig bekeken en zou u graag willen helpen om dit zo spoedig mogelijk op te lossen. Het lijkt erop dat uw resetlink is verlopen, wat helaas regelmatig kan voorkomen. Geen zorgen echter, dit is iets wat wij eenvoudig voor u kunnen oplossen!
+> Ik heb uw situatie zorgvuldig bekeken. Het lijkt erop dat uw resetlink is verlopen, wat helaas regelmatig kan voorkomen. Geen zorgen echter, dit is iets wat wij eenvoudig voor u kunnen oplossen!
 >
 > Mag ik u vriendelijk verzoeken om een nieuwe resetlink aan te vragen via de "Wachtwoord vergeten"-functie op onze inlogpagina? Vervolgens ontvangt u binnen enkele minuten een nieuwe link in uw inbox.
 >
-> Mocht dit onverhoopt niet werken, of mocht u nog andere vragen hebben, aarzel dan vooral niet om opnieuw contact met ons op te nemen. Wij staan altijd voor u klaar!
+> Mocht dit onverhoopt niet werken, aarzel dan vooral niet om opnieuw contact met ons op te nemen. Wij staan altijd voor u klaar!
 >
 > Met vriendelijke groet,
 > Het supportteam
 
-## Na (gehumaniseerd)
+## Na (volledige herschrijving)
 
-> Hoi,
+> Beste klant,
 >
-> Je resetlink is verlopen. Vraag een nieuwe aan via "Wachtwoord vergeten" op de inlogpagina; je krijgt binnen een paar minuten een nieuwe in je inbox.
+> Dank voor uw bericht, en vervelend dat inloggen niet lukt. Uw resetlink lijkt verlopen te zijn; dat komt vaker voor en is makkelijk op te lossen.
 >
-> Lukt het niet? Mail terug, dan kijk ik mee.
+> Vraag een nieuwe link aan via "Wachtwoord vergeten" op onze inlogpagina. U ontvangt die binnen enkele minuten in uw inbox.
 >
-> Groet,
-> Sanne
+> Werkt het niet, neem dan gerust opnieuw contact met ons op.
+>
+> Met vriendelijke groet,
+> Het supportteam
 
-## Welke patronen zijn hersteld
+## Wat is aangepakt
 
-* **Empathie-theater**: "Het spijt ons oprecht", "wij begrijpen volkomen hoe frustrerend", "Geen zorgen echter" → weg. Klant wil oplossing, geen medeleven-show.
-* **Formaliteit-overshoot**: "Beste klant", "Mag ik u vriendelijk verzoeken", "aarzel dan vooral niet" → weg. Korte support-antwoord is direct.
-* **Hedging**: "het lijkt erop dat", "wat helaas regelmatig kan voorkomen", "mocht dit onverhoopt niet werken" → weg.
-* **Slijmerige afsluiter**: "Wij staan altijd voor u klaar!" → vervangen door concreet kanaal.
-* **Anonieme afzender** ("Het supportteam") → vervangen door naam (warmer, menselijker).
-* **Imperatief gebruikt** ("Vraag een nieuwe aan") in plaats van passief verzoek ("Mag ik u vriendelijk verzoeken").
+- Empathietheater: "Het spijt ons oprecht", "wij begrijpen volkomen hoe frustrerend", "Geen zorgen echter". Eén gewone zin dank en excuus blijft.
+- Omslachtige beleefdheid: "Mag ik u vriendelijk verzoeken" wordt de gebiedende wijs, "aarzel dan vooral niet" wordt "neem gerust contact op".
+- "Wij staan altijd voor u klaar!" is een loze belofte; de concrete uitnodiging om contact op te nemen blijft.
 
-## Aandachtspunt
+## Bewust behouden
 
-Match het register van de klant. Als de klant zelf formeel ("Beste heer/mevrouw, ...") schrijft, blijf je bij "u". Als de klant casual ("Hé, ik kan niet inloggen") schrijft, ga je naar "je".
+- u, de aanhef, de afsluiting en de afzender "Het supportteam". Verzin geen naam.
+- De onzekerheid: "het lijkt erop dat" wordt "lijkt verlopen te zijn", niet "is verlopen".
+- "Regelmatig kan voorkomen" en "eenvoudig op te lossen": allebei informatie voor de klant.
+- "Binnen enkele minuten" en het menulabel "Wachtwoord vergeten" letterlijk.
 
-Behoud altijd: ticketnummers, klantnamen, accountnamen, foutcodes, datums.
+## Let op
 
-Verzin geen oplossing als je niet weet wat het probleem is. Vraag dan om meer info ("Welke melding krijg je precies?") in plaats van te gokken.
+- Schrijft het bedrijf gewoonlijk je, of de klant zelf informeel, dan mag je. Verander het register niet op eigen initiatief.
+- Behoud ticketnummers, klantnamen, foutcodes en datums.
+- Weet je niet wat het probleem is, verzin dan geen oplossing.

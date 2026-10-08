@@ -16,9 +16,9 @@ Bij twijfel over een spelling, woordkeuze of stijlvraag: gebruik deze hiërarchi
 
 ## Niveau 2: register-specifieke gezaghebbende stijlbronnen
 
-**Team Taaladvies** (Taalunie blog/redactie).
-- Stijl- en advies-content; toelichting bij Taaladvies.net-beslissingen.
-- Vooral nuttig bij contextuele vragen ("wanneer wel/geen leesteken?").
+**Team Taaladvies** (Vlaamse overheid).
+- Taaladviesdienst van de Vlaamse overheid; werkt mee aan Taaladvies.net.
+- Vooral nuttig voor Belgisch-Nederlandse en ambtelijke tekst.
 
 **Rijksoverheid: Klare taal richtlijnen**.
 - Voor publieke communicatie en overheidstekst.
@@ -32,24 +32,23 @@ Bij twijfel over een spelling, woordkeuze of stijlvraag: gebruik deze hiërarchi
 ## Niveau 3: vaktechnische woordenboeken en gidsen
 
 - **Van Dale** voor moderne woordbetekenis en register-labels.
-- **Onze Taal** (vereniging) voor stijlvragen, idioom en frequente twijfelgevallen.
-- **Genootschap Onze Taal**: blog en advies-content.
+- **Genootschap Onze Taal** voor stijlvragen, idioom en veelvoorkomende twijfelgevallen.
 
 Deze bronnen volgen Taalunie maar vullen aan op nuance, gebruik en context.
 
-## Niveau 4: dit repository
+## Niveau 4: deze skill
 
-**`patronen.md`**: gestructureerde catalogus van AI-tells in Nederlandstalige output.
-**`principes.md`**: positief stijlmodel.
-**`locale.md`**: nl-NL/nl-BE-conventies.
-**`stem-kalibratie.md`**: voice-matching workflow.
-**`voorbeeld-*.md`**: register-specifieke voor/na-voorbeelden.
+- `principes.md`: betekenisbehoud en wat goed Nederlands is.
+- `patronen.md`: catalogus van constructies die stijf of formulematig kunnen klinken.
+- `locale.md`: nl-NL en nl-BE.
+- `stem-kalibratie.md`: werken met schrijfvoorbeelden en stijlgidsen.
+- `voorbeeld-*.md`: voorbeelden per register.
 
-Deze leggen geen norm op die in conflict komt met niveaus 1-3. Ze codificeren toepassing op AI-output en huisstijl-keuzes (bijvoorbeeld: hard zero em-dashes; zie `SKILL.md` "Hard regels").
+Deze leggen geen taalnorm op die botst met niveau 1 tot 3. Ze beschrijven hoe je die toepast bij het redigeren, plus standaardvoorkeuren zoals terughoudendheid met decoratieve tekens (zie `SKILL.md`, *Voorkeuren*).
 
 ## Niveau 5: door gebruiker aangeleverde context
 
-Schrijfvoorbeeld of style-guide door de gebruiker aangeleverd, voor stem-imitatie of huisstijl-naleving. Wint binnen de scope die de gebruiker definieert (een specifieke tekst of doelgroep), maar niet over niveaus 1-3 heen wanneer die direct conflicteren met taalnorm.
+Een schrijfvoorbeeld of stijlgids van de gebruiker. Die gaat voor op de standaardvoorkeuren van deze skill (zie *Voorrang* in `SKILL.md`), maar niet op spelling en grammatica van niveau 1 tot 3, en nooit op betekenisbehoud.
 
 Voorbeeld: gebruiker zegt "schrijf zoals dit voorbeeld". Voorbeeld gebruikt consequent "welke" als betrekkelijk vnw. Vraag jezelf:
 - Is dit bewuste stijl van de schrijver? Imiteer.
@@ -63,9 +62,9 @@ Als bronnen verschillen:
 
 1. **nl-NL of nl-BE expliciet?** Volg de regionale variant (Taalunie labelt expliciet wat "standaardtaal in BE" of "standaardtaal in NL" is).
 2. **Officiële norm vs. moderne praktijk?** Voor neutrale tekst: officieel. Voor casual/blog: vraag jezelf wat de doelgroep verwacht.
-3. **Dit repository vs. Taalunie?** Taalunie wint. Pas dit repo aan bij conflict.
+3. **Deze skill tegenover de Taalunie?** De Taalunie wint bij spelling en grammatica. Bij stijl is de Taalunie richtinggevend; voorkeuren van de gebruiker gaan voor. Pas de skill aan bij een conflict.
 
-## Cite-praktijk in skill-output
+## Bronnen noemen in de output
 
 De skill levert herschreven tekst, geen bronvermeldingen. Cite uitsluitend als:
 - De gebruiker er expliciet om vraagt.

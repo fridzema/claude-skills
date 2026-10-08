@@ -1,80 +1,57 @@
-# Voorbeeld: zakelijk (email/notitie)
+# Voorbeeld: zakelijke mail
 
-Zakelijk Nederlands is van nature direct. AI maakt er vaak een verzameling beleefdheidsformules en hedging van.
+Zakelijk Nederlands is van nature direct. AI-tekst stapelt beleefdheidsformules en voorbehouden. De herschrijving maakt de mail directer, maar houdt elk feit, elk voorstel en het register (aanhef, afsluiting) vast.
 
-## Voor (AI-klinkend)
+## Voor
 
 > Beste team,
 >
 > Ik hoop dat deze e-mail jullie in goede gezondheid bereikt. Ik wil graag van de gelegenheid gebruikmaken om jullie te informeren over enkele belangrijke ontwikkelingen met betrekking tot het Q2-project.
 >
-> Zoals jullie wellicht weten, hebben we de afgelopen periode aanzienlijke vooruitgang geboekt op diverse fronten. Het is vermeldenswaard dat het projectteam, ondanks uitdagingen op het gebied van resourcing, erin geslaagd is om de belangrijkste mijlpalen te realiseren. Daarnaast hebben we waardevolle inzichten opgedaan die zullen bijdragen aan toekomstige initiatieven.
+> Het is vermeldenswaard dat het projectteam, ondanks uitdagingen op het gebied van resourcing, erin geslaagd is om de belangrijkste mijlpalen te realiseren. Zo was de migratie maar liefst twee weken eerder afgerond dan gepland. Echter, om dit te bereiken is de testfase ingekort, hetgeen nadere bespreking behoeft.
 >
-> Echter, er zijn nog enkele aandachtspunten die nadere bespreking behoeven. Met betrekking tot de planning zou ik graag een aantal scenario's met jullie willen verkennen, teneinde tot een breed gedragen besluit te komen. Ik stel voor dat we hiervoor een meeting inplannen.
+> Met betrekking tot de planning voor Q3 zou ik graag twee scenario's met jullie willen verkennen, teneinde tot een breed gedragen besluit te komen: doorgaan met de huidige scope met livegang eind Q3, of de scope inkrimpen met livegang half augustus. Ik stel voor dat we hiervoor donderdag om 14:00 een meeting van een halfuur inplannen.
 >
 > Mochten jullie nog vragen of opmerkingen hebben, aarzel dan niet om contact met mij op te nemen. Ik kijk uit naar onze samenwerking en heb er alle vertrouwen in dat we samen tot mooie resultaten zullen komen.
 >
 > Met vriendelijke groet,
 > Marieke
 
-## Na, variant A: input bevat geen specifieke feiten
+## Na (volledige herschrijving)
 
-Gebruik deze variant als de input alleen vage formuleringen bevat ("vooruitgang", "uitdagingen", "aandachtspunten"). De rewrite blijft op hetzelfde abstractie-niveau, maar zonder AI-toon.
-
-> Hoi team,
+> Beste team,
 >
-> Korte update over Q2 en een vraag over Q3.
+> Een korte update over het Q2-project en een vraag over Q3.
 >
-> De belangrijkste mijlpalen staan. Een paar dingen liepen niet volgens plan; daar willen we volgende sprint op terugkomen.
+> Ondanks de krappe bezetting heeft het team de belangrijkste mijlpalen gehaald. De migratie was zelfs twee weken eerder klaar dan gepland. Daarvoor hebben we wel de testfase ingekort, en daar wil ik het met jullie over hebben.
 >
-> Voor Q3 wil ik twee opties met jullie doornemen:
+> Voor Q3 zie ik twee opties, en ik wil daar graag samen een besluit over nemen:
 >
-> 1. Doorgaan met huidige scope.
-> 2. Scope inkrimpen.
+> 1. Doorgaan met de huidige scope, livegang eind Q3.
+> 2. De scope inkrimpen, livegang half augustus.
 >
-> Donderdag een halfuurtje plannen?
+> Zullen we daarvoor donderdag om 14:00 een halfuur plannen?
 >
-> Groet,
+> Vragen of opmerkingen? Laat het me weten. Ik heb er vertrouwen in dat we samen mooie resultaten halen.
+>
+> Met vriendelijke groet,
 > Marieke
 
-## Na, variant B: input bevat wel concrete feiten
+## Als de input vaag is
 
-Gebruik deze variant *alleen* als de gebruiker (in de input of als context) deze specifieke feiten heeft aangedragen: bijvoorbeeld dat de migratie twee weken eerder klaar was, dat de testfase is ingekort, en dat een meeting op donderdag 14:00 wordt voorgesteld.
+**Voor:** "We hebben de afgelopen periode aanzienlijke vooruitgang geboekt op diverse fronten. Er zijn echter nog enkele aandachtspunten die nadere bespreking behoeven. Ik stel voor dat we hiervoor een meeting inplannen."
+**Na:** "We zijn op verschillende fronten flink opgeschoten. Er zijn nog een paar punten die we moeten bespreken. Ik stel voor dat we daar een overleg voor plannen."
 
-> Hoi team,
->
-> Korte update over Q2 en een vraag.
->
-> De belangrijkste mijlpalen staan, ondanks de krappe bezetting. Wat goed liep: de migratie was twee weken eerder klaar dan gepland. Wat minder liep: we hebben de testfase ingekort, en daar moeten we volgende sprint nog op terugkomen.
->
-> Voor de planning van Q3 wil ik twee opties met jullie doornemen:
->
-> 1. Doorgaan met huidige scope, einde Q3 livegang.
-> 2. Scope inkrimpen, livegang half augustus.
->
-> Donderdag 14:00 een halfuur plannen?
->
-> Groet,
-> Marieke
+De Na wordt niet concreter dan de Voor: geen dag, geen tijd, geen opties. Wil de gebruiker een concretere mail, vraag dan om de feiten.
 
-## Welke patronen zijn hersteld
+## Wat is aangepakt
 
-* **Assistent-tics / pleasantries**: "Ik hoop dat deze e-mail jullie in goede gezondheid bereikt", "aarzel dan niet contact op te nemen", "heb er alle vertrouwen in".
-* **Vulzinnen**: "wil graag van de gelegenheid gebruikmaken", "met betrekking tot", "teneinde", "het is vermeldenswaard dat".
-* **Hedging**: "wellicht", "enkele aandachtspunten die nadere bespreking behoeven".
-* **Officialese**: "echter, ...", "breed gedragen besluit", "diverse fronten".
-* **Vaag → concreet (alleen variant B)**: "aanzienlijke vooruitgang", "waardevolle inzichten" → vervangen door concrete feiten alleen als die feiten in de input stonden.
-* **Geen call to action** → vervangen door specifiek voorstel (variant A: "donderdag een halfuurtje"; variant B: "donderdag 14:00 een halfuur").
-* **Generieke positieve afsluiter**: "kijk uit naar onze samenwerking ... mooie resultaten" → weg.
+- Beleefdheidsformules zonder inhoud: "in goede gezondheid bereikt", "van de gelegenheid gebruikmaken".
+- Ambtelijke woorden: "met betrekking tot", "teneinde", "hetgeen", "het is vermeldenswaard dat", "echter".
+- De keuze uit de lopende tekst als genummerde lijst gezet.
 
-## Aandachtspunt
+## Bewust behouden
 
-Beslisregel **wanneer welke variant**:
-
-- Input is vaag → variant A. Maak het direct, behoud abstractie-niveau.
-- Input bevat concrete feiten of de gebruiker geeft die als context → variant B. Gebruik die feiten.
-- Input is vaag, maar gebruiker vraagt om concreet te maken → vraag de gebruiker om de feiten. Verzin ze niet.
-
-Behoud altijd: namen, datums, projectnamen, deadlines en concrete cijfers die in de input stonden.
-
-**Dit is de belangrijkste regel van de skill**: een rewrite mag specifieker maken alleen waar de input dat toelaat. "Twee weken eerder", "donderdag 14:00", "einde Q3 livegang" zijn hallucinaties zodra ze niet uit de input komen, hoe goed ze ook leesbaar maken.
+- Aanhef "Beste team" en afsluiting "Met vriendelijke groet": geen AI-patroon.
+- Elk feit: Q2-project, krappe bezetting, mijlpalen, twee weken eerder, ingekorte testfase, beide opties met hun datum, donderdag 14:00, een halfuur.
+- Het doel "een breed gedragen besluit" ("samen een besluit nemen"), de uitnodiging voor vragen en het vertrouwen van de schrijver. Die zeggen iets; ze worden alleen gewoner geformuleerd.

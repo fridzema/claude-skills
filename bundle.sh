@@ -13,7 +13,7 @@ bundle_one() {
   [[ -f "$src/SKILL.md" ]] || { echo "skip: $name (no SKILL.md)"; return; }
   local out="$DIST/$name.skill"
   rm -f "$out"
-  (cd "$ROOT" && zip -qr "$out" "$name" -x "*.DS_Store")
+  (cd "$ROOT" && zip -qr "$out" "$name" -x "*.DS_Store" "*/__pycache__/*" "*.pyc")
   echo "built: $out"
 }
 

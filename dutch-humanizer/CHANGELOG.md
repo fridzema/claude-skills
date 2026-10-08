@@ -1,19 +1,59 @@
-# Changelog
+# Changelog dutch-humanizer
 
-All notable changes to this repository are documented here.
-
-The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this
-project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-The version applies to the repository as a whole. Each skill keeps its own
-detailed history in its directory, for example
-[`dutch-humanizer/CHANGELOG.md`](dutch-humanizer/CHANGELOG.md).
-
-## [Unreleased]
+Alle noemenswaardige wijzigingen aan deze skill. Formaat volgens [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), versies volgens [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.6.0] — 2026-10-08
 
-`dutch-humanizer` v0.6.0: betekenisbehoud als hoogste prioriteit, contextuele voorkeuren in plaats van verboden, herschreven controlescript met unittests, 42 redactionele testcases, en een skillmap met eigen `README.md`, `CHANGELOG.md`, `LICENSE` en `agents/openai.yaml`. Details in [`dutch-humanizer/CHANGELOG.md`](dutch-humanizer/CHANGELOG.md).
+Semantische gelijkwaardigheid is nu de hoogste redactionele prioriteit. De skill is een redacteur, geen samenvatter: een patroon weghalen mag nooit informatie, voorwaarden, zekerheid of technische precisie kosten.
+
+### Semantische veiligheid
+
+- **Onveilige uitzondering verwijderd.** v0.5.0 liet een verloren bewering toe "tenzij een patroon het schrappen vraagt". Geen enkel patroon gaat nog voor betekenisbehoud.
+- **Invarianten vooraf vastleggen** (werkwijzestap 2): feiten, getallen, eenheden, bronnen, actoren, voorwaarden, uitzonderingen, ontkenningen, toezeggingen, termijnen, zekerheid, oorzaak, vergelijking, rangorde, volgorde, vaktermen, code en elk afzonderlijk punt.
+- **Verplichte semantische zelfcontrole** op twaalf dimensies, met herstellen en opnieuw controleren voor het opleveren.
+- **`principes.md` deel 1: betekenis behouden**, met wat nooit mag en zes uitgewerkte gevallen (technische afweging, percentage en bron, voorwaarde, zekerheid, termijn, binnen tegenover na).
+- **Voorbeelden die betekenis verloren gecorrigeerd**: de cronjob-afweging (patroon 5), "73%" dat "veel bedrijven" werd (patroon 18), bewijs over mislukte imports (patroon 35), drie LinkedIn-maatregelen die er twee werden, "en meer" dat verdween (patroon 24), de kennisgrens-gok die werd geschrapt (patroon 34), oordelen die verdwenen in patroon 2, 16, 17 en 21, de Slack-prioriteit en "vooral bij de betaalstap", de klantenservice-zin "komt vaker voor", en het essay dat de helft van de beweringen liet vallen.
+
+### Natuurlijk Nederlands
+
+- **Twee intensiteiten**: licht redigeren (standaard) en volledig herschrijven. Natuurlijk betekent niet vanzelf korter of informeler; lengte blijft ongeveer gelijk.
+- **Voorkeuren in plaats van verboden**: gedachtestreepjes, emoji en pijlen zijn afhankelijk van context. De strikte huisstijl van eerdere versies is op verzoek beschikbaar (`--style strict`).
+- **Hoofdletter na dubbele punt** gecorrigeerd: kleine letter is gebruikelijk; citaat en eigennaam krijgen een hoofdletter, bij een zelfstandige zin komen beide voor.
+- Spelling en grammatica (normen) staan nu los van typografische voorkeuren.
+
+### Patronen
+
+- Drie soorten: sterk signaal, zwak signaal, legitieme constructie. Ook een sterk signaal vraagt een oordeel in context.
+- Elk patroon heeft nu *Waarom het kan storen*, *Passend als*, *Herschrijf als* en *Bewaak*.
+- Nieuwe sectie G met legitieme constructies (niet X maar Y, retorische vraag, korte zin, herhaling, drietal, passief, jargon, nadruk, opmaak, Engelse termen, marketing- en zakelijke taal).
+- Claims over herkomst verwijderd, waaronder "tekst van voor 30 november 2022 is niet door een chatbot geschreven" en "mensen herkennen AI nauwelijks beter dan gokken".
+
+### Stem
+
+- Meerdere schrijfvoorbeelden, voorbeelden uit verschillende kanalen, expliciete voorkeuren en stijlgidsen.
+- Onderscheid tussen vaste stem (woordkeus, ritme, directheid, humor) en register per context.
+- Waarborgen: geen feiten of ervaringen uit voorbeelden, geen fouten overnemen, geen karikatuur, geen eerdere voorbeelden zonder toestemming, helderheid voor in technische en veiligheidskritische tekst.
+
+### Validatie
+
+- **`scripts/check.py` herschreven** met offset-bewuste maskering: fenced code (``` en ~~~), ingesprongen code, inline code, Markdown-links, URL's, e-mail, escapes, YAML-frontmatter en citaten. Regelnummers blijven kloppen.
+- **Niveaus ERROR, WARNING, INFO** en gedocumenteerde exitcodes (0, 1, 2). Nieuw: `--style`, `--source-lang`, `--fail-on-warning`. `--allow-dashes` en de oude aanroep werken nog.
+- **Nieuwe signalen**: verdwenen of nieuwe getallen, gewijzigde percentages, datums, tijden en weekdagen (ook Engelse notatie), eenheden en valuta, URL's, e-mailadressen, namen, gewijzigde code of frontmatter, niet letterlijk overgenomen citaten, en verdwenen ontkenningen, voorwaarden, onzekerheid, verplichtingen en termijnwoorden (zoals "binnen" dat "na" wordt).
+- **Gedragswijziging**: nieuwe streepjes, emoji, pijlen en gekrulde aanhalingstekens zijn standaard INFO in plaats van fout. Gebruik `--style strict` voor het oude gedrag. Meldingen beginnen met `ERROR`, `WARNING` of `INFO` in plaats van `FOUT` en `LET OP`.
+
+### Tests
+
+- `tests/test_check.py`: 50 unittests voor het controlescript (standaardbibliotheek).
+- `tests/fixtures/semantische-cases.md`: 42 redactionele cases, waaronder negatieve voorbeelden, nl-BE, vertalingen, Jira, incident, formele brieven en meerdere schrijfvoorbeelden.
+- `tests/evaluation.md`: rubric (acht dimensies, 0 tot 3), procedure, en wat wel en niet automatisch te testen is.
+- `tests/eval-v0.6.0.md`: evaluatieronde met drie uitvoerende agents en een beoordelende agent (hetzelfde model, geen menselijke beoordeling). 40 van 42 cases geslaagd; beide mislukte cases kwamen door fouten in referentievoorbeelden, die zijn gecorrigeerd en opnieuw getest.
+
+### Pakket
+
+- Frontmatter bevat alleen `name` en `description`; versiegeschiedenis staat in dit bestand.
+- Nieuw in de skillmap: `LICENSE`, `README.md`, `CHANGELOG.md`, `agents/openai.yaml`, `tests/`.
+- Description beschrijft taak, triggers en het behoud van betekenis, en sluit gewone schrijfverzoeken en een losse spellingcontrole uit.
+- `SKILL.md` groeit van ongeveer 1200 naar 1900 woorden, door de verplichte zelfcontrole, de registerregels en de opleveringsgevallen. Uitleg, gevallen en voorbeelden staan in de referenties en worden alleen geladen als de taak erom vraagt.
 
 ## [0.5.0] — 2026-10-08 (niet apart uitgebracht, onderdeel van release 0.6.0)
 
@@ -237,7 +277,6 @@ Initial bootstrap of the `claude-skills` collection.
   "Signs of AI writing" plus NL-specifieke patronen. 37 patronen, register-
   detectie, voice-calibration via een `references/voorbeeld.md`.
 
-[Unreleased]: https://github.com/fridzema/claude-skills/compare/v0.6.0...HEAD
 [0.6.0]: https://github.com/fridzema/claude-skills/compare/v0.4.0...v0.6.0
 [0.4.0]: https://github.com/fridzema/claude-skills/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/fridzema/claude-skills/compare/v0.2.0...v0.3.0
