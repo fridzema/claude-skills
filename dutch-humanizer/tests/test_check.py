@@ -4,7 +4,8 @@ Draaien vanuit de skillmap:
     python3 -m unittest discover -s tests -v
 
 Deze tests controleren de mechanische signalen. Ze bewijzen niet dat een
-herschrijving dezelfde betekenis heeft; zie tests/evaluation.md.
+herschrijving dezelfde betekenis heeft; de redactionele evaluatie staat in de
+repository onder evals/dutch-humanizer/.
 """
 
 from __future__ import annotations
@@ -167,9 +168,13 @@ class Typography(unittest.TestCase):
         self.assertEqual(msgs(neutral, "ERROR"), [])
         self.assertIn("em-dash", joined(neutral, "INFO"))
 
-    def test_dash_already_in_input_is_not_new(self):
-        src = "Het werkt — meestal."
-        self.assertEqual(msgs(check("Dit werkt — meestal.", src, style="strict"), "ERROR"), [])
+    def test_dash_already_in_input_is_checked_in_strict(self):
+        # Gewijzigd in v0.7.0. Deze test heette test_dash_already_in_input_is_not_new en eiste dat
+        # --style strict een streepje uit de input negeerde. De strikte huisstijl geldt voor alle
+        # bewerkbare output; alleen citaten en code zijn uitgezonderd (opdracht v0.7.0, 6D).
+        src = "Het werkt \u2014 meestal."
+        self.assertTrue(msgs(check("Dit werkt \u2014 meestal.", src, style="strict"), "ERROR"))
+        self.assertEqual(msgs(check("Dit werkt \u2014 meestal.", src), "ERROR"), [])
 
     def test_15_unicode_quotation_marks(self):
         src = "Hij zei „het project ligt op schema” en vertrok."
@@ -233,10 +238,13 @@ class MeaningSignals(unittest.TestCase):
         f = check("Om 09:40 was de vermoedelijke oorzaak gevonden.", "Om 09:40 bleek de oorzaak vermoedelijk gevonden.")
         self.assertNotIn("onzekerheid", joined(f, "WARNING"))
 
-    def test_condition_synonym_is_info(self):
+    def test_mits_to_als_is_reviewed(self):
+        # Gewijzigd in v0.7.0. Deze test heette test_condition_synonym_is_info en eiste dat "mits" naar
+        # "als" alleen INFO gaf ("meestal gelijkwaardig"). "Mits" betekent "alleen als"; "als" is
+        # zwakker. De gelijkwaardigheidsgroepen zijn verwijderd (opdracht v0.7.0, 6C).
         f = check("Zondag kan wel, als jij dan tijd hebt.", "Zondag zou wel kunnen, mits jij dan tijd hebt.")
-        self.assertNotIn("voorwaarde", joined(f, "WARNING"))
-        self.assertIn("vervangen door", joined(f, "INFO"))
+        self.assertIn("voorwaarde", joined(f, "WARNING"))
+        self.assertNotIn("gelijkwaardig", joined(f, "WARNING") + joined(f, "INFO"))
 
     def test_obligation_synonym_is_info(self):
         f = check("Alle teamleads moeten deelnemen.", "Deelname is verplicht voor alle teamleads.")

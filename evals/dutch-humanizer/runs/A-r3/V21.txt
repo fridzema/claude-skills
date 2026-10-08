@@ -1,0 +1,1 @@
+Hoi Lisa, de release staat gepland voor week 48, mits de pentest geen kritieke bevindingen oplevert. Komen die er wel, dan schuift de release minstens een week op.

@@ -1,0 +1,3 @@
+Hoi allemaal, de nightly build lijkt te falen op de integratietests. Ik kijk er vanmiddag naar en hou jullie op de hoogte.
+
+De tekst leest al natuurlijk en past bij lezer en kanaal; er viel weinig tot niets te verbeteren.

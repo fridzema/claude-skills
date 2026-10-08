@@ -1,0 +1,7 @@
+Zet voor de stabiliteit `MAX_RETRIES` in `config/app.yaml` op 3. De waarde mag niet hoger zijn dan 5, want dan gaat de upstream-API requests blokkeren. Herstart daarna de service:
+
+```bash
+systemctl restart orders-api
+```
+
+De tekst leest al natuurlijk en past bij lezer en kanaal; er viel weinig tot niets te verbeteren.

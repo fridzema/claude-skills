@@ -1,0 +1,11 @@
+Als beheerder wil ik gebruikers efficiënt kunnen deactiveren, om de beveiliging te waarborgen.
+
+Acceptatiecriteria:
+- Gedeactiveerde gebruikers kunnen niet meer inloggen.
+- Deactiveren is alleen mogelijk voor de rol Beheerder.
+- Een gebruiker wordt niet verwijderd, tenzij de beheerder dat expliciet bevestigt.
+- Er kunnen maximaal 50 gebruikers tegelijk worden gedeactiveerd.
+
+Let op: "Deactiveren is alleen mogelijk voor de rol Beheerder" kan betekenen wie mag deactiveren of wie gedeactiveerd kan worden. Ik heb de zin daarom ongewijzigd gelaten; maak hem zo nodig specifieker.
+
+De tekst leest al natuurlijk en past bij lezer en kanaal; er viel weinig tot niets te verbeteren.

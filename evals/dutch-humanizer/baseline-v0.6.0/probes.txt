@@ -1,0 +1,27 @@
+P01 FAIL decimal-shift                -
+P02 FAIL coverage-shift               -
+P03 FAIL negative-sign                -
+P04 FAIL precision-only               WARNING getal uit de input ontbreekt: 0,040 mm; WARNING getal staat niet in de input: 0,04 mm
+P05 FAIL decimal-equivalent           WARNING percentage mogelijk veranderd: 1,50% wordt 1,5%
+P06 FAIL unit-case                    -
+P07 FAIL unit-removed                 -
+P08 FAIL unit-added                   -
+P09 PASS locale-en-to-nl              INFO input lijkt niet Nederlands; controles op ontkenning, voorwaarden, onz
+P10 FAIL locale-ambiguous             -
+P11 FAIL tenzij-to-mits               INFO voorwaarde of uitzondering: 'tenzij' vervangen door 'mits'; meestal ge
+P12 FAIL tenzij-to-mits-geen          WARNING ontkenning: nieuw in de output: 'niet'; controleer of geen bewering is; INFO voorwaarde of uitzondering: 'tenzij' vervangen door 'mits'; meestal ge
+P13 FAIL obligation-to-prohibition    INFO verplichting: 'moet' vervangen door 'verboden'; meestal gelijkwaardig,
+P14 FAIL permission-to-obligation     -
+P15 FAIL added-uncertainty            -
+P16 PASS moet-niet-to-hoeft-niet      WARNING verplichting: 'moet' komt niet meer voor. Mogelijk is de betekenis ver
+P17 FAIL removed-occurrence           -
+P18 PASS swapped-values               -
+P19 FAIL api-path                     -
+P20 FAIL code-string-space            -
+P21 FAIL code-indent                  -
+P22 FAIL repeated-inline-code         -
+P23 FAIL added-code-in-rewrite        -
+P24 FAIL quoted-single-word           -
+P25 FAIL empty-create                 -
+P26 PASS good-preserved               -
+4/26 PASS

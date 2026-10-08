@@ -1,0 +1,464 @@
+{
+ "schema": 1,
+ "bevroren": "2026-10-08",
+ "note": "Validatieset v0.7.0. Bevroren: niet gebruiken voor het tunen van de skill. Een case die voor reparatie wordt gebruikt, verhuist naar de ontwikkelset en wordt vervangen. Synthetische teksten.",
+ "cases": [
+  {
+   "id": "V01",
+   "type": "mail",
+   "task": "rewrite",
+   "verzoek": "Kun je deze mail natuurlijker maken?",
+   "input": "Beste Johan,\n\nGraag zou ik willen informeren of het wellicht mogelijk zou zijn om de evaluatie van het project te verplaatsen naar dinsdag 12 november. Mijn voorstel zou zijn om hiervoor 45 minuten te reserveren. Zou u kunnen aangeven of dit voor u schikt?\n\nMet vriendelijke groet,\nAnouk",
+   "invarianten": [
+    "vraag/voorstel blijft vraag of voorstel, geen besluit",
+    "dinsdag 12 november",
+    "45 minuten",
+    "u-vorm",
+    "aanhef en afsluiting"
+   ],
+   "niet": [
+    "'We verplaatsen de evaluatie' als besluit",
+    "je-vorm"
+   ]
+  },
+  {
+   "id": "V02",
+   "type": "klantreactie",
+   "task": "rewrite",
+   "verzoek": "Maak dit antwoord minder stijf.",
+   "input": "Beste meneer Visser,\n\nOnze oprechte excuses voor de vertraging van uw bestelling. Op dit moment kunnen wij helaas nog niet aangeven wanneer het pakket bij u zal worden bezorgd. Zodra wij meer informatie van de vervoerder ontvangen, zullen wij u hiervan per e-mail op de hoogte stellen.\n\nMet vriendelijke groet,\nKlantenservice Tuinwereld",
+   "invarianten": [
+    "excuses blijft excuses, geen nieuwe toezegging",
+    "bezorgmoment onbekend",
+    "zodra informatie van vervoerder komt: bericht per e-mail",
+    "u-vorm",
+    "afzender"
+   ],
+   "niet": [
+    "een verzonnen bezorgdatum of termijn",
+    "'we zorgen dat het snel komt' als nieuwe belofte"
+   ]
+  },
+  {
+   "id": "V03",
+   "type": "chat",
+   "task": "rewrite",
+   "verzoek": "Klinkt stijf, maak er een normaal Teams-bericht van.",
+   "input": "Hallo allemaal, ik wil jullie graag informeren dat het erop lijkt dat de nightly build faalt op de integratietests. Ik zal hier vanmiddag naar kijken en jullie op de hoogte houden.",
+   "invarianten": [
+    "'lijkt' (aanwijzing, niet zeker en niet 'waarschijnlijk')",
+    "nightly build",
+    "integratietests",
+    "vanmiddag kijken",
+    "op de hoogte houden"
+   ],
+   "niet": [
+    "'de build faalt' als zekerheid",
+    "'waarschijnlijk'"
+   ]
+  },
+  {
+   "id": "V04",
+   "type": "technische instructie",
+   "task": "rewrite",
+   "verzoek": "Herschrijf deze instructie natuurlijker.",
+   "input": "Om de stabiliteit te waarborgen, dient de waarde van `MAX_RETRIES` in het bestand `config/app.yaml` te worden ingesteld op 3. Het is van belang om op te merken dat deze waarde niet hoger dan 5 mag zijn, aangezien de upstream-API anders requests gaat blokkeren. Herstart daarna de service met:\n\n```bash\nsystemctl restart orders-api\n```",
+   "invarianten": [
+    "MAX_RETRIES op 3",
+    "config/app.yaml",
+    "niet hoger dan 5",
+    "reden: upstream-API blokkeert anders",
+    "codeblok letterlijk",
+    "herstart na de wijziging"
+   ],
+   "niet": [
+    "code of pad gewijzigd",
+    "reden weggelaten",
+    "'maximaal 3'"
+   ]
+  },
+  {
+   "id": "V05",
+   "type": "Jira-ticket",
+   "task": "rewrite",
+   "verzoek": "Maak dit ticket leesbaarder.",
+   "input": "Als beheerder wil ik op een efficiënte wijze gebruikers kunnen deactiveren, teneinde de beveiliging te waarborgen.\n\nAcceptatiecriteria:\n- Gedeactiveerde gebruikers kunnen niet meer inloggen.\n- Deactiveren is alleen mogelijk voor de rol Beheerder.\n- Een gebruiker wordt niet verwijderd, tenzij de beheerder dit expliciet bevestigt.\n- Er kunnen maximaal 50 gebruikers tegelijk worden gedeactiveerd.",
+   "invarianten": [
+    "vier criteria",
+    "niet meer inloggen",
+    "alleen Beheerder",
+    "niet verwijderd tenzij expliciete bevestiging",
+    "maximaal 50 tegelijk"
+   ],
+   "niet": [
+    "'tenzij' omgezet in een andere voorwaarde",
+    "een criterium samengevoegd of weg"
+   ]
+  },
+  {
+   "id": "V06",
+   "type": "vertaling",
+   "task": "translate",
+   "verzoek": "Translate this into natural Dutch, not literally.",
+   "input": "Refunds are processed within 14 days, unless the item was damaged by the customer. The maximum refund is $1,250.00 per order. Please keep your receipt.",
+   "invarianten": [
+    "binnen 14 dagen",
+    "tenzij door klant beschadigd",
+    "maximaal $1.250,00 (of $1250) per bestelling",
+    "bon bewaren als verzoek"
+   ],
+   "niet": [
+    "'na 14 dagen'",
+    "bedrag veranderd",
+    "'mits'"
+   ]
+  },
+  {
+   "id": "V07",
+   "type": "formele brief",
+   "task": "rewrite",
+   "verzoek": "Kun je dit iets vriendelijker formuleren?",
+   "input": "Geachte heer, mevrouw,\n\nIndien u het niet eens bent met dit besluit, kunt u binnen zes weken na de dagtekening van deze brief schriftelijk bezwaar maken. Uw bezwaarschrift dient ten minste uw naam, adres, handtekening en de reden van uw bezwaar te bevatten.\n\nHoogachtend,\nGemeente Zwolle",
+   "invarianten": [
+    "u-vorm, formeel",
+    "voorwaarde (indien/als u het niet eens bent)",
+    "binnen zes weken na dagtekening",
+    "schriftelijk",
+    "vier verplichte onderdelen, ten minste",
+    "afsluiting en afzender"
+   ],
+   "niet": [
+    "je-vorm",
+    "'na zes weken'",
+    "onderdeel weg"
+   ]
+  },
+  {
+   "id": "V08",
+   "type": "stemvoorbeeld",
+   "task": "rewrite",
+   "verzoek": "Herschrijf dit in mijn stijl. Twee voorbeelden van mij: (1) \"Kort update: migratie draait. Nog twee issues open, niks engs. Morgen meer.\" (2) \"Vandaag mijn laatste dag bij Fietsplek. Fijne club, slechte koffie.\" Tekst: \"Graag informeer ik u dat de nieuwe versie van het klantportaal per maandag beschikbaar zal zijn. Gebruikers dienen opnieuw in te loggen. Bij vragen kunt u contact opnemen met de servicedesk.\"",
+   "input": "zie verzoek",
+   "invarianten": [
+    "nieuwe versie klantportaal",
+    "per maandag",
+    "opnieuw inloggen (verplichting)",
+    "vragen naar servicedesk",
+    "korte droge stijl"
+   ],
+   "niet": [
+    "Fietsplek, koffie, migratie, issues",
+    "verzonnen details"
+   ]
+  },
+  {
+   "id": "V09",
+   "type": "al goed nl-BE",
+   "task": "rewrite",
+   "verzoek": "Maak dit natuurlijker.",
+   "input": "Dag Inge, bedankt voor je mail. Ik bezorg je de documenten morgen voor de middag. Laat gerust iets weten als er nog iets ontbreekt. Groetjes, Wim",
+   "invarianten": [
+    "ongewijzigd of vrijwel ongewijzigd",
+    "nl-BE 'bezorg' blijft"
+   ],
+   "niet": [
+    "'bezorg' naar 'stuur' of 'lever'",
+    "toelichting dat er niets veranderde"
+   ]
+  },
+  {
+   "id": "V10",
+   "type": "al goed technisch",
+   "task": "rewrite",
+   "verzoek": "Humaniseer deze tekst.",
+   "input": "Draai `make migrate` voordat je de app start. De migratie duurt ongeveer twee minuten en is niet terug te draaien.",
+   "invarianten": [
+    "ongewijzigd of vrijwel ongewijzigd",
+    "make migrate voor start",
+    "ongeveer twee minuten",
+    "niet terug te draaien"
+   ],
+   "niet": [
+    "'ongeveer' weg",
+    "onomkeerbaarheid weg"
+   ]
+  },
+  {
+   "id": "V11",
+   "type": "nl-BE",
+   "task": "rewrite",
+   "verzoek": "Kan je dit wat vlotter maken?",
+   "input": "Geachte klant, gelieve het ingevulde formulier ons te bezorgen vóór 15 maart. Indien u vragen heeft, kan u ons bereiken op het nummer 03 123 45 67 tijdens de kantooruren.",
+   "invarianten": [
+    "gelieve of gelijkwaardig verzoek",
+    "bezorgen (nl-BE)",
+    "vóór 15 maart",
+    "kan u (nl-BE)",
+    "nummer letterlijk",
+    "tijdens kantooruren"
+   ],
+   "niet": [
+    "omzetting naar nl-NL ('kunt u', 'sturen' is toegestaan maar niet nodig)",
+    "datum veranderd"
+   ]
+  },
+  {
+   "id": "V12",
+   "type": "nl-BE school",
+   "task": "rewrite",
+   "verzoek": "Maak dit minder stijf.",
+   "input": "Beste ouders, graag delen wij u mee dat de leerlingen hun rapport ontvangen op vrijdag 20 december. Proficiat aan alle leerlingen voor hun inzet dit trimester. Wij wensen u alvast een fijne kerstvakantie.",
+   "invarianten": [
+    "vrijdag 20 december",
+    "rapport",
+    "proficiat (nl-BE)",
+    "trimester",
+    "u-vorm naar ouders",
+    "kerstwens"
+   ],
+   "niet": [
+    "'gefeliciteerd' afgedwongen",
+    "'je'"
+   ]
+  },
+  {
+   "id": "V13",
+   "type": "nl-BE gemeente",
+   "task": "rewrite",
+   "verzoek": "Herschrijf dit natuurlijker.",
+   "input": "Het college van burgemeester en schepenen nodigt u uit op de nieuwjaarsreceptie in het gemeentehuis op zondag 12 januari om 11 uur. Schepen De Smet zal er een toespraak houden.",
+   "invarianten": [
+    "burgemeester en schepenen",
+    "schepen De Smet",
+    "zondag 12 januari 11 uur",
+    "gemeentehuis",
+    "uitnodiging"
+   ],
+   "niet": [
+    "'wethouder'"
+   ]
+  },
+  {
+   "id": "V14",
+   "type": "je/u",
+   "task": "rewrite",
+   "verzoek": "Maak dit consistenter en natuurlijker.",
+   "input": "Bedankt voor uw aanvraag. Je ontvangt binnen twee werkdagen een bevestiging per e-mail. Als jouw gegevens niet kloppen, kunt u ons bellen.",
+   "invarianten": [
+    "één aanspreekvorm (u ligt voor de hand)",
+    "binnen twee werkdagen",
+    "bevestiging per e-mail",
+    "voorwaarde gegevens kloppen niet: bellen"
+   ],
+   "niet": [
+    "mix van je en u",
+    "'twee dagen'"
+   ]
+  },
+  {
+   "id": "V15",
+   "type": "anglicismen",
+   "task": "rewrite",
+   "verzoek": "Haal het Engels-Nederlands eruit.",
+   "input": "We moeten de openstaande issues adresseren en de deliverables alignen met de stakeholders, zodat we de deadline van 1 juni kunnen halen.",
+   "invarianten": [
+    "openstaande problemen aanpakken",
+    "resultaten afstemmen met betrokkenen",
+    "doel: deadline 1 juni halen"
+   ],
+   "niet": [
+    "1 juni weg",
+    "nieuwe acties"
+   ]
+  },
+  {
+   "id": "V16",
+   "type": "dubbele punt",
+   "task": "rewrite",
+   "verzoek": "Corrigeer en verbeter dit.",
+   "input": "Let op: De wijziging geldt alleen voor nieuwe klanten. Bestaande klanten: Zij behouden hun huidige tarief tot 31 december.",
+   "invarianten": [
+    "kleine letter na dubbele punt bij verklaring",
+    "alleen nieuwe klanten",
+    "bestaande klanten behouden tarief tot 31 december"
+   ],
+   "niet": [
+    "'alleen' weg",
+    "datum veranderd"
+   ]
+  },
+  {
+   "id": "V17",
+   "type": "mits",
+   "task": "rewrite",
+   "verzoek": "Formuleer dit natuurlijker.",
+   "input": "U ontvangt 10% korting, mits u de factuur voor 1 mei betaalt.",
+   "invarianten": [
+    "10% korting",
+    "voorwaarde: alleen als u voor 1 mei betaalt"
+   ],
+   "niet": [
+    "'tenzij'",
+    "voorwaarde zwakker ('als' is acceptabel, 'en' niet)",
+    "percentage veranderd"
+   ]
+  },
+  {
+   "id": "V18",
+   "type": "samenstellingen",
+   "task": "rewrite",
+   "verzoek": "Maak hier correct en vlot Nederlands van.",
+   "input": "De project manager heeft de klant ervaring onderzocht. Uit de data analyse blijkt dat 62 procent van de klanten tevreden is.",
+   "invarianten": [
+    "projectmanager",
+    "klantervaring",
+    "data-analyse",
+    "62 procent",
+    "onderzocht"
+   ],
+   "niet": [
+    "percentage veranderd",
+    "'meer dan de helft'"
+   ]
+  },
+  {
+   "id": "V19",
+   "type": "samenvatting",
+   "task": "summarize",
+   "verzoek": "Vat dit samen in twee zinnen.",
+   "input": "In het derde kwartaal steeg de omzet met 8% tot € 4,2 miljoen. De kosten stegen met 3%, vooral door hogere energieprijzen. Het aantal klanten groeide van 1.200 naar 1.350. Voor het vierde kwartaal verwacht de directie een vergelijkbare groei, mits de energieprijzen stabiel blijven.",
+   "invarianten": [
+    "hooguit twee zinnen",
+    "wat erin staat klopt precies",
+    "geen nieuwe feiten",
+    "verwachting blijft verwachting"
+   ],
+   "niet": [
+    "onjuiste cijfers",
+    "verwachting als zekerheid",
+    "voorwaarde omgedraaid"
+   ]
+  },
+  {
+   "id": "V21",
+   "type": "verwachting",
+   "task": "rewrite",
+   "verzoek": "Maak dit bericht aan mijn manager directer.",
+   "input": "Hoi Lisa, we verwachten de release in week 48, maar dat is afhankelijk van de uitkomst van de pentest. Als daar kritieke bevindingen uitkomen, schuift de release minimaal een week op.",
+   "invarianten": [
+    "verwachting, geen garantie",
+    "week 48",
+    "afhankelijk van pentest",
+    "bij kritieke bevindingen minimaal een week later"
+   ],
+   "niet": [
+    "'de release is in week 48'",
+    "'minimaal' weg"
+   ]
+  },
+  {
+   "id": "V22",
+   "type": "precisie",
+   "task": "rewrite",
+   "verzoek": "Haal de AI-toon eruit.",
+   "input": "Het is van cruciaal belang om te benadrukken dat de tolerantie van het onderdeel 0,050 mm bedraagt. Daarnaast mag de bedrijfstemperatuur in geen geval hoger zijn dan 85 °C.",
+   "invarianten": [
+    "0,050 mm (precisie)",
+    "niet hoger dan 85 °C",
+    "verbod blijft verbod"
+   ],
+   "niet": [
+    "0,05 mm",
+    "'maximaal ongeveer'"
+   ]
+  },
+  {
+   "id": "V23",
+   "type": "waarde bij zaak",
+   "task": "rewrite",
+   "verzoek": "Maak deze update natuurlijker.",
+   "input": "Graag informeer ik jullie over de stand van zaken: server A registreerde gisteren 12 fouten, terwijl server B slechts 3 fouten registreerde. Server A wordt vanavond om 22:00 herstart.",
+   "invarianten": [
+    "A=12, B=3",
+    "gisteren",
+    "A herstart vanavond 22:00"
+   ],
+   "niet": [
+    "waarden verwisseld",
+    "verkeerde server herstart"
+   ]
+  },
+  {
+   "id": "V24",
+   "type": "briefing",
+   "task": "create",
+   "verzoek": "Schrijf hier een korte mail van aan de klant.",
+   "input": "- afspraak verzet: van dinsdag 4 november naar donderdag 6 november 10:00\n- locatie blijft hetzelfde\n- graag bevestigen\n- contactpersoon: meneer Jansen",
+   "invarianten": [
+    "dinsdag 4 november naar donderdag 6 november 10:00",
+    "locatie hetzelfde",
+    "verzoek om bevestiging",
+    "meneer Jansen"
+   ],
+   "niet": [
+    "verzonnen reden, locatie of tijd",
+    "bevestiging als besluit"
+   ]
+  },
+  {
+   "id": "V25",
+   "type": "informeel met emoji",
+   "task": "rewrite",
+   "verzoek": "Maak dit iets vlotter, het is een appje aan vrienden.",
+   "input": "Hey allemaal! Zaterdag om 8 uur vertrekken we naar de Veluwe 🚴 Neem allemaal je eigen lunch mee, want er is onderweg niks open.",
+   "invarianten": [
+    "zaterdag 8 uur",
+    "Veluwe",
+    "eigen lunch meenemen",
+    "reden: onderweg niks open",
+    "informele toon"
+   ],
+   "niet": [
+    "formeel worden",
+    "reden weg"
+   ]
+  },
+  {
+   "id": "V26",
+   "type": "onbewezen bronclaim",
+   "task": "rewrite",
+   "verzoek": "Herschrijf dit natuurlijker.",
+   "input": "Volgens onze leverancier zorgt de nieuwe software ervoor dat de verwerkingstijd met 40% afneemt. Dit is echter nog niet door ons zelf getest.",
+   "invarianten": [
+    "toeschrijving aan leverancier",
+    "40%",
+    "nog niet zelf getest"
+   ],
+   "niet": [
+    "40% als vaststaand feit",
+    "'getest' weggelaten"
+   ]
+  },
+  {
+   "id": "V27",
+   "type": "inkorten",
+   "task": "shorten",
+   "verzoek": "Kan dit korter?",
+   "input": "Hierbij willen wij u er graag op attenderen dat de jaarlijkse onderhoudsbeurt van uw cv-ketel gepland staat op woensdag 14 januari tussen 8.00 en 12.00 uur. Wij verzoeken u vriendelijk om ervoor te zorgen dat de ketel vrij toegankelijk is. Indien deze datum u niet schikt, kunt u tot uiterlijk 7 januari een nieuwe afspraak maken via onze website.",
+   "invarianten": [
+    "woensdag 14 januari 8.00-12.00 uur",
+    "ketel vrij toegankelijk (verzoek)",
+    "andere datum mogelijk tot uiterlijk 7 januari via website",
+    "u-vorm"
+   ],
+   "niet": [
+    "termijn weg",
+    "verzoek wordt verplichting zonder grond",
+    "onnodige toelichting als alleen opvulling wegviel"
+   ]
+  }
+ ],
+ "wijzigingen": [
+  "2026-10-08: V20 gebruikt voor reparatie (opleveringsregel bij inkorten) en naar de ontwikkelset verplaatst; vervangen door V27."
+ ]
+}

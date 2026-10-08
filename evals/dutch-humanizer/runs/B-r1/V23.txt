@@ -1,0 +1,1 @@
+Stand van zaken: server A registreerde gisteren 12 fouten, server B maar 3. Server A wordt vanavond om 22:00 herstart.

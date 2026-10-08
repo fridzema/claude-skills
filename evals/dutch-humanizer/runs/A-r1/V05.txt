@@ -1,0 +1,7 @@
+Als beheerder wil ik snel gebruikers kunnen deactiveren, zodat de beveiliging op orde blijft.
+
+Acceptatiecriteria:
+- Gedeactiveerde gebruikers kunnen niet meer inloggen.
+- Alleen de rol Beheerder kan gebruikers deactiveren.
+- Een gebruiker wordt niet verwijderd, tenzij de beheerder dat expliciet bevestigt.
+- Je kunt maximaal 50 gebruikers tegelijk deactiveren.

@@ -1,0 +1,103 @@
+{
+ "schema": 1,
+ "status": "NOT_RUN",
+ "note": "Activatietestset (12 wel, 12 niet). Echte activatie is niet gemeten: dat vraagt headless runs met de skill geregistreerd en zichtbare Skill-aanroepen, wat in deze omgeving een wijziging van de globale agentconfiguratie zou vergen. Zelfrapportage van een model is geen routingtest. Procedure: agentskills.io/skill-creation/optimizing-descriptions (3 runs per query, drempel 0,5, vaste train/validatie-split).",
+ "queries": [
+  {
+   "query": "Kun je deze mail aan mijn klant natuurlijker laten klinken? Hij leest nu heel stijf: [mail]",
+   "should_trigger": true
+  },
+  {
+   "query": "humaniseer dit even pls, klinkt echt als chatgpt: [tekst]",
+   "should_trigger": true
+  },
+  {
+   "query": "Herschrijf deze LinkedIn-post in mijn eigen stijl. Hier zijn twee oude posts van mij: [posts] [concept]",
+   "should_trigger": true
+  },
+  {
+   "query": "Mijn manager zegt dat dit vertaald klinkt. Kun je er vlot Nederlands van maken zonder de inhoud te veranderen? [tekst]",
+   "should_trigger": true
+  },
+  {
+   "query": "Make this sound like natural Dutch, it's for our Belgian customers: [Dutch text]",
+   "should_trigger": true
+  },
+  {
+   "query": "Translate this release note into idiomatic Dutch, not word for word: [English text]",
+   "should_trigger": true
+  },
+  {
+   "query": "Verbeter de toon van dit antwoord aan een klant, maar verander niks aan wat we beloven: [antwoord]",
+   "should_trigger": true
+  },
+  {
+   "query": "Deze Jira-beschrijving is één brij AI-taal. Maak er normaal Nederlands van, acceptatiecriteria moeten exact blijven. [ticket]",
+   "should_trigger": true
+  },
+  {
+   "query": "Kan je dit Teams-bericht wat minder formeel maken? [bericht]",
+   "should_trigger": true
+  },
+  {
+   "query": "Schrijf op basis van deze bullets een natuurlijke mail in mijn stijl (voorbeeld hieronder): [bullets] [voorbeeld]",
+   "should_trigger": true
+  },
+  {
+   "query": "rewrite this in idiomatic Dutch: [stijve Nederlandse tekst]",
+   "should_trigger": true
+  },
+  {
+   "query": "Dit klinkt te gemaakt, kun je het menselijker maken? Het is een brief van de gemeente. [brief]",
+   "should_trigger": true
+  },
+  {
+   "query": "Controleer deze tekst alleen op spelfouten en d/t-fouten: [tekst]",
+   "should_trigger": false
+  },
+  {
+   "query": "Fix de bug in deze Python-functie die datums verkeerd parseert: [code]",
+   "should_trigger": false
+  },
+  {
+   "query": "Wat is het verschil tussen mits en tenzij?",
+   "should_trigger": false
+  },
+  {
+   "query": "Vertaal deze Nederlandse tekst naar het Engels: [tekst]",
+   "should_trigger": false
+  },
+  {
+   "query": "Hoeveel inwoners heeft Antwerpen?",
+   "should_trigger": false
+  },
+  {
+   "query": "Schrijf een unittest voor scripts/check.py die negatieve getallen test.",
+   "should_trigger": false
+  },
+  {
+   "query": "Maak een samenvatting van dit Engelse paper in het Engels: [paper]",
+   "should_trigger": false
+  },
+  {
+   "query": "Is deze tekst door AI geschreven? Geef een percentage.",
+   "should_trigger": false
+  },
+  {
+   "query": "Zet deze tabel om naar CSV: [tabel]",
+   "should_trigger": false
+  },
+  {
+   "query": "Schrijf een gedicht over de zee.",
+   "should_trigger": false
+  },
+  {
+   "query": "Review deze pull request op bugs.",
+   "should_trigger": false
+  },
+  {
+   "query": "Hoe installeer ik deze skill in Claude Code?",
+   "should_trigger": false
+  }
+ ]
+}

@@ -1,0 +1,1172 @@
+[
+ {
+  "id": "V01",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V01",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V01",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V02",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V02",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 2,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'Het spijt ons dat uw bestelling vertraging heeft' -> stroef: 'bestelling vertraging heeft' is stijf",
+  "twijfel": ""
+ },
+ {
+  "id": "V02",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 2,
+   "register_stem": 2,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'Onze oprechte excuses' -> 'Sorry dat uw bestelling vertraging heeft': Sorry met u-vorm is registermix; 'vertraging heeft' stroef",
+  "twijfel": ""
+ },
+ {
+  "id": "V03",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V03",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V03",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V04",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V04",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V04",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V05",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 2,
+   "natuurlijk": 3,
+   "register_stem": 2,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'niet verwijderd, tenzij de beheerder dit expliciet bevestigt' -> 'pas verwijderd als ... bevestigt': 'pas' suggereert dat verwijdering volgt; 'Er kunnen maximaal 50 ... worden gedeactiveerd' -> 'Je kunt maximaal 50': je-vorm in acceptatiecriterium, passend bij ticketstijl niet",
+  "twijfel": ""
+ },
+ {
+  "id": "V05",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 2,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 2,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'om de beveiliging te waarborgen' en 'worden gedeactiveerd' blijven stijf; weinig leesbaarder",
+  "twijfel": ""
+ },
+ {
+  "id": "V05",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 2,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 2,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'om de beveiliging te waarborgen' en 'worden gedeactiveerd' blijven stijf; weinig leesbaarder",
+  "twijfel": ""
+ },
+ {
+  "id": "V06",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 2,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'Terugbetalingen worden binnen 14 dagen verwerkt ... wordt maximaal ... terugbetaald' -> twee passieve zinnen, dicht bij het Engels; 'receipt' -> 'kassabon' (specifieker)",
+  "twijfel": ""
+ },
+ {
+  "id": "V06",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 2,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'damaged by the customer' -> 'de klant het artikel zelf heeft beschadigd': 'zelf' toegevoegd, nuance",
+  "twijfel": "twijfel of 'zelf' meetelt"
+ },
+ {
+  "id": "V06",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V07",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V07",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 2,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'Zet in uw bezwaarschrift in elk geval uw naam, adres, handtekening en de reden' -> telegrafisch, 'zet de reden' stroef",
+  "twijfel": ""
+ },
+ {
+  "id": "V07",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 2,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'Hoogachtend' -> 'Met vriendelijke groet': afsluiting van gemeentebrief gewijzigd",
+  "twijfel": "twijfel: past bij verzoek om vriendelijker, maar invariant noemt afsluiting"
+ },
+ {
+  "id": "V08",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 2,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'Gebruikers dienen opnieuw in te loggen' -> 'Iedereen moet opnieuw inloggen': doelgroep verbreed",
+  "twijfel": "kleine nuance"
+ },
+ {
+  "id": "V08",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 2,
+   "correctheid": 3,
+   "taak": 2,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "stem: korte droge stijl -> 'Gebruikers moeten wel opnieuw inloggen ... Neem contact op met de servicedesk' te volledig/zakelijk; 'wel' voegt contrast toe",
+  "twijfel": ""
+ },
+ {
+  "id": "V08",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 2,
+   "correctheid": 3,
+   "taak": 2,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "stem: korte droge stijl -> 'Gebruikers moeten wel opnieuw inloggen ... Neem contact op met de servicedesk' te volledig/zakelijk; 'wel' voegt contrast toe",
+  "twijfel": ""
+ },
+ {
+  "id": "V09",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V09",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V09",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 2,
+   "onnodig": 2
+  },
+  "kritiek": false,
+  "bewijs": "toelichting 'Deze tekst leest al natuurlijk; er viel niets te verbeteren.' toegevoegd aan de tekst",
+  "twijfel": ""
+ },
+ {
+  "id": "V10",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V10",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 2,
+   "onnodig": 2
+  },
+  "kritiek": false,
+  "bewijs": "toelichting 'Deze tekst leest al natuurlijk; er viel niets te verbeteren.' toegevoegd aan de tekst",
+  "twijfel": ""
+ },
+ {
+  "id": "V10",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V11",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": "'gelieve' -> 'graag' en 'Geachte' -> 'Beste': acceptabel bij vlotter"
+ },
+ {
+  "id": "V11",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 2,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 2,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'Geachte klant, gelieve ons ... te bezorgen' bijna ongewijzigd, nauwelijks vlotter",
+  "twijfel": ""
+ },
+ {
+  "id": "V11",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 2,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 2,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'Geachte klant, gelieve ... Dan kan u ons ... bereiken op het nummer' blijft stijf, nauwelijks vlotter",
+  "twijfel": ""
+ },
+ {
+  "id": "V12",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V12",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V12",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V13",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V13",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 2
+  },
+  "kritiek": false,
+  "bewijs": "'nodigt u uit' -> 'nodigt u graag uit': overbodige toevoeging",
+  "twijfel": ""
+ },
+ {
+  "id": "V13",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V14",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 2,
+   "natuurlijk": 3,
+   "register_stem": 2,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'kunt u ons bellen' -> 'Bel ons dan': mogelijkheid wordt bevel, abrupt bij u-vorm",
+  "twijfel": ""
+ },
+ {
+  "id": "V14",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 2,
+   "natuurlijk": 3,
+   "register_stem": 2,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'kunt u ons bellen' -> 'Bel ons dan': mogelijkheid wordt bevel, abrupt bij u-vorm",
+  "twijfel": ""
+ },
+ {
+  "id": "V14",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V15",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V15",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 2,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'de deadline van 1 juni kunnen halen' -> 'de deadline van 1 juni halen': 'kunnen' weg, mogelijkheid wordt zekerheid",
+  "twijfel": ""
+ },
+ {
+  "id": "V15",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V16",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V16",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V16",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V17",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V17",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V17",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 2,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "verzoek om natuurlijker formuleren; 'mits' blijft, tekst ongewijzigd",
+  "twijfel": "twijfel: tekst was al redelijk"
+ },
+ {
+  "id": "V18",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V18",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V18",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V19",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 2,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "eerste zin lang met haakjes en drie onderdelen",
+  "twijfel": ""
+ },
+ {
+  "id": "V19",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 2,
+   "natuurlijk": 2,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 2,
+   "onnodig": 2
+  },
+  "kritiek": false,
+  "bewijs": "'De kosten stegen met 3%' -> 'terwijl de kosten met 3% stegen': contrast toegevoegd; extra regel 'Inhoudelijk is niets weggevallen.' niet gevraagd; lange zin met meervoudige komma's",
+  "twijfel": ""
+ },
+ {
+  "id": "V19",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V20",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 2,
+   "onnodig": 2
+  },
+  "kritiek": false,
+  "bewijs": "extra regel 'Weggevallen: alleen de inleidende beleefdheidsformule...' niet gevraagd",
+  "twijfel": ""
+ },
+ {
+  "id": "V20",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 2,
+   "onnodig": 2
+  },
+  "kritiek": false,
+  "bewijs": "extra regel 'Weggevallen: alleen de inleidende formule...' niet gevraagd",
+  "twijfel": ""
+ },
+ {
+  "id": "V20",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V21",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 2,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "verzoek 'directer': bijna gelijk aan input ('afhankelijk van de uitkomst' -> 'hangt af van de uitkomst')",
+  "twijfel": ""
+ },
+ {
+  "id": "V21",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V21",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V22",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V22",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V22",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V23",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V23",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V23",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V24",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": "Let op-regel is inhoudelijk terecht (rol Jansen onduidelijk)"
+ },
+ {
+  "id": "V24",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 2,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'contactpersoon: meneer Jansen' -> aanhef 'Beste meneer Jansen' zonder te melden dat dit een aanname is (kan contactpersoon aan eigen kant zijn)",
+  "twijfel": "twijfel: aanname is plausibel"
+ },
+ {
+  "id": "V24",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V25",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V25",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V25",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V26",
+  "label": "X",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 2,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "'daalt de verwerkingstijd met de nieuwe software met 40%' -> dubbele 'met', stroef",
+  "twijfel": ""
+ },
+ {
+  "id": "V26",
+  "label": "Y",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ },
+ {
+  "id": "V26",
+  "label": "Z",
+  "scores": {
+   "inhoudsbehoud": 3,
+   "natuurlijk": 3,
+   "register_stem": 3,
+   "correctheid": 3,
+   "taak": 3,
+   "onnodig": 3
+  },
+  "kritiek": false,
+  "bewijs": "",
+  "twijfel": ""
+ }
+]

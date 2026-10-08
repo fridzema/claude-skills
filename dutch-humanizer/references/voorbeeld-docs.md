@@ -1,6 +1,6 @@
 # Voorbeeld: technische documentatie
 
-Documentatie moet precies zijn. AI-tekst maakt er marketing met een codeblok van. Een herschrijving haalt de verkoopzinnen weg en houdt elke technische bewering, elk pad en elke code letterlijk.
+Documentatie moet precies zijn. Formulematige documentatie leest als marketing met een codeblok. Een herschrijving haalt de verkoopzinnen weg en houdt elke technische bewering, elk pad en elke code letterlijk.
 
 ## Voor
 
@@ -24,17 +24,17 @@ Documentatie moet precies zijn. AI-tekst maakt er marketing met een codeblok van
 
 > ## Aan de slag met de API
 >
-> Deze handleiding is bedoeld voor zowel ervaren als beginnende ontwikkelaars.
+> Deze handleiding is bedoeld voor zowel ervaren als beginnende ontwikkelaars en bevat alles om zonder moeite te beginnen.
 >
 > ### Authenticatie
 >
-> Authenticatie beveiligt je integratie. De API werkt met tokens: maak een API-token aan in het dashboard onder *Settings > API tokens* en stuur het mee in de `Authorization`-header:
+> Authenticatie is nodig om je integratie te beveiligen. De API werkt met tokens: maak een API-token aan in het dashboard onder *Settings > API tokens* en stuur het mee in de `Authorization`-header:
 >
 > ```
 > Authorization: Bearer YOUR_TOKEN
 > ```
 >
-> Let op: tokens vervallen na 90 dagen. Vervang ze op tijd.
+> Let op: tokens vervallen na 90 dagen, dus roteer ze op tijd.
 >
 > Een geslaagd request geeft `200 OK` met een JSON-array terug. Bij een ongeldig token krijg je `401 Unauthorized`.
 >
@@ -42,16 +42,23 @@ Documentatie moet precies zijn. AI-tekst maakt er marketing met een codeblok van
 
 ## Wat is aangepakt
 
-- Welkomstpraat en promotietaal: "Welkom!", "nemen we je mee in de wereld van", "krachtige en flexibele", "naadloos", "robuust", "We staan altijd klaar".
+- Welkomstpraat en promotietaal: "Welkom!", "nemen we je mee in de wereld van", "krachtige en flexibele", "robuust", "We staan altijd klaar". "Naadloos aan de slag" wordt "zonder moeite beginnen": de bewering blijft, het modewoord gaat.
 - Title Case in de kop, hoofdletter na "Let op:", uitroeptekens.
 - "dien je ... aan te maken" wordt de gebiedende wijs.
 
 ## Bewust behouden
 
 - Het codeblok, het menupad (met `>`, een functionele pijl), 90 dagen, de statuscodes, het e-mailadres en de inline code.
-- De doelgroep (ervaren en beginnende ontwikkelaars) en de functie van authenticatie (beveiliging): dat zijn beweringen, geen opsmuk.
-- "Roteren" wordt "vervangen": voor deze lezers hetzelfde. Is "roteren" de vaste term in jouw organisatie, laat het dan staan.
+- De doelgroep, de belofte dat de handleiding alles bevat om te beginnen, en dat authenticatie nodig is voor beveiliging: dat zijn beweringen, geen opsmuk. Ze worden gewoner gezegd, niet geschrapt.
+- "Roteren" blijft staan. Het is een vakterm en zegt iets anders dan "vervangen" of "herstarten"; verzin er ook geen uitleg bij die niet in de bron staat.
 
 ## Let op
 
 Verzin geen endpoints, parameters, responsvelden, foutcodes, geldigheidsduur of supportkanalen. Een voorbeeldrequest met een verzonnen URL is ook een verzonnen feit.
+
+## Bewust laten staan
+
+**Input:** "Maak een API-token aan onder *Instellingen > Tokens*. Stuur het token mee in de `Authorization`-header. Tokens zijn 90 dagen geldig."
+**Output:** dezelfde tekst, ongewijzigd.
+
+Precies, kort en in de gebiedende wijs. De pijl in het menupad is functioneel, geen versiering.

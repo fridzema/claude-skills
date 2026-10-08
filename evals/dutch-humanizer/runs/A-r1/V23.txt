@@ -1,0 +1,1 @@
+Even een update: server A registreerde gisteren 12 fouten, server B maar 3. Server A herstarten we vanavond om 22:00.

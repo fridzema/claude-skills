@@ -1,0 +1,188 @@
+{
+ "schema": 1,
+ "note": "Correcte parafrases (synthetisch). Verwachting: geen WARNING of ERROR, behalve de codes in known_fp. Die bekende vals-positieven zijn gedocumenteerd; een nieuw vals-positief laat de test falen.",
+ "cases": [
+  {
+   "id": "E01",
+   "source": "De export wordt niet meegenomen.",
+   "output": "De export gaat niet mee."
+  },
+  {
+   "id": "E02",
+   "source": "Deelname is verplicht voor alle teamleads.",
+   "output": "Alle teamleads moeten deelnemen."
+  },
+  {
+   "id": "E03",
+   "source": "Wij storten het bedrag binnen 10 werkdagen terug.",
+   "output": "We storten het bedrag binnen tien werkdagen terug."
+  },
+  {
+   "id": "E04",
+   "source": "Het lijkt erop dat de synchronisatie is mislukt.",
+   "output": "De synchronisatie lijkt mislukt."
+  },
+  {
+   "id": "E05",
+   "source": "Indien u het niet eens bent, kunt u bezwaar maken.",
+   "output": "Bent u het er niet mee eens, dan kunt u bezwaar maken.",
+   "known_fp": [
+    "SIG_CONDITION"
+   ],
+   "why": "voorwaarde via inversie ('Bent u ..., dan') heeft geen signaalwoord"
+  },
+  {
+   "id": "E06",
+   "source": "Het project wordt naar verwachting op 1 december afgerond.",
+   "output": "We verwachten het project op 1 december af te ronden."
+  },
+  {
+   "id": "E07",
+   "source": "Zodra de goedkeuring binnen is, ontvangt de klant de bestanden.",
+   "output": "De klant ontvangt de bestanden zodra de goedkeuring binnen is."
+  },
+  {
+   "id": "E08",
+   "source": "De kosten zijn €1.250,00.",
+   "output": "De kosten bedragen € 1.250,00."
+  },
+  {
+   "id": "E09",
+   "source": "Support is bereikbaar van 9-17 uur.",
+   "output": "Support is bereikbaar van 9 tot 17 uur."
+  },
+  {
+   "id": "E10",
+   "source": "Lever de wijziging uiterlijk vrijdag om 17.00 uur in.",
+   "output": "Lever de wijziging uiterlijk vrijdag 17:00 in."
+  },
+  {
+   "id": "E11",
+   "source": "Er is geen klantdata gelekt.",
+   "output": "Er zijn geen klantgegevens gelekt."
+  },
+  {
+   "id": "E12",
+   "source": "Gebruik `make test` om de tests te draaien.",
+   "output": "Draai de tests met `make test`."
+  },
+  {
+   "id": "E13",
+   "source": "Volgens Joost is dit de enige optie.",
+   "output": "Dit is volgens Joost de enige optie."
+  },
+  {
+   "id": "E14",
+   "source": "Het nieuwe beleid geldt vanaf 1 april.",
+   "output": "Vanaf 1 april geldt het nieuwe beleid."
+  },
+  {
+   "id": "E15",
+   "source": "De uptime bedroeg 99,95% in Q3.",
+   "output": "In Q3 was de uptime 99,95%."
+  },
+  {
+   "id": "E16",
+   "source": "Het is mogelijk dat de levering vertraagd is.",
+   "output": "De levering is mogelijk vertraagd."
+  },
+  {
+   "id": "E17",
+   "source": "U ontvangt de link binnen enkele minuten.",
+   "output": "De link komt binnen enkele minuten."
+  },
+  {
+   "id": "E18",
+   "source": "We leveren maandag, tenzij het regent.",
+   "output": "Als het regent, leveren we maandag niet.",
+   "known_fp": [
+    "SIG_CONDITION",
+    "SIG_NEGATION"
+   ],
+   "why": "'als ... niet' drukt de uitzondering uit; 'als' telt bewust niet mee omdat het te vaak in andere betekenis voorkomt"
+  },
+  {
+   "id": "E19",
+   "source": "Je hoeft niets te betalen.",
+   "output": "Betalen is niet nodig."
+  },
+  {
+   "id": "E20",
+   "source": "Je mag de auto niet gebruiken.",
+   "output": "Het is niet toegestaan de auto te gebruiken."
+  },
+  {
+   "id": "E21",
+   "source": "Do not delete the volume unless the backup has completed.",
+   "output": "Verwijder het volume niet, tenzij de back-up klaar is.",
+   "options": {
+    "source_lang": "other"
+   }
+  },
+  {
+   "id": "E22",
+   "source": "The job runs at 2 AM UTC and retries up to three times.",
+   "output": "De taak draait om 02:00 UTC en probeert het maximaal drie keer opnieuw.",
+   "options": {
+    "source_lang": "other"
+   }
+  },
+  {
+   "id": "E23",
+   "source": "It makes sense to start small.",
+   "output": "Het is verstandig om klein te beginnen.",
+   "options": {
+    "source_lang": "other"
+   }
+  },
+  {
+   "id": "E24",
+   "source": "De migratie loopt mogelijk vertraging op.",
+   "output": "Mogelijk loopt de migratie vertraging op."
+  },
+  {
+   "id": "E25",
+   "source": "Hij zei: \"we zijn klaar\".",
+   "output": "Hij zei: “we zijn klaar”."
+  },
+  {
+   "id": "E26",
+   "source": "Stuur het rapport naar info@example.nl.",
+   "output": "Mail het rapport naar info@example.nl."
+  },
+  {
+   "id": "E27",
+   "source": "Het bestand staat in docs/handleiding.md.",
+   "output": "Je vindt het bestand in docs/handleiding.md."
+  },
+  {
+   "id": "E28",
+   "source": "Binnen 30 dagen na ontvangst van de factuur dient u te betalen.",
+   "output": "U moet binnen 30 dagen nadat u de factuur hebt ontvangen betalen."
+  },
+  {
+   "id": "E29",
+   "source": "Er zijn twee opties: doorgaan of stoppen.",
+   "output": "Je kunt doorgaan of stoppen.",
+   "known_fp": [
+    "QTY_REMOVED"
+   ],
+   "why": "het aantal opties blijkt uit de opsomming"
+  },
+  {
+   "id": "E30",
+   "source": "Ik kocht 3, 4 en 5 appels.",
+   "output": "Ik kocht 3, 4 en 5 appels."
+  },
+  {
+   "id": "E31",
+   "source": "De dikte is minimaal 2 mm.",
+   "output": "De dikte is ten minste 2 mm."
+  },
+  {
+   "id": "E32",
+   "source": "Het totaal is € 3.400 en de korting 15%.",
+   "output": "De korting is 15% en het totaal € 3.400."
+  }
+ ]
+}

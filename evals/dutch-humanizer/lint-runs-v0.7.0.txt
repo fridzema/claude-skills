@@ -1,0 +1,10 @@
+A-r1 {'ERROR': 0, 'WARNING': 23, 'INFO': 10, 'ontbreekt': 1}
+A-r2 {'ERROR': 0, 'WARNING': 16, 'INFO': 10, 'ontbreekt': 1}
+A-r3 {'ERROR': 0, 'WARNING': 24, 'INFO': 10, 'ontbreekt': 1}
+B-r1 {'ERROR': 0, 'WARNING': 12, 'INFO': 4, 'ontbreekt': 1}
+B-r2 {'ERROR': 0, 'WARNING': 16, 'INFO': 7, 'ontbreekt': 1}
+B-r3 {'ERROR': 0, 'WARNING': 12, 'INFO': 4, 'ontbreekt': 1}
+C-r1 {'ERROR': 0, 'WARNING': 9, 'INFO': 3, 'ontbreekt': 1}
+C-r2 {'ERROR': 0, 'WARNING': 10, 'INFO': 4, 'ontbreekt': 1}
+C-r3 {'ERROR': 0, 'WARNING': 10, 'INFO': 3, 'ontbreekt': 1}
+D-r1 {'ERROR': 0, 'WARNING': 10, 'INFO': 5, 'ontbreekt': 1}

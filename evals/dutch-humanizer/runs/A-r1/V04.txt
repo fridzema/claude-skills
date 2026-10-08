@@ -1,0 +1,5 @@
+Zet voor de stabiliteit `MAX_RETRIES` in `config/app.yaml` op 3. Ga niet hoger dan 5, anders gaat de upstream-API requests blokkeren. Herstart daarna de service:
+
+```bash
+systemctl restart orders-api
+```

@@ -11,6 +11,10 @@ detailed history in its directory, for example
 
 ## [Unreleased]
 
+## [0.7.0] — 2026-10-08
+
+`dutch-humanizer` v0.7.0: controlescript herbouwd (Decimal-getallen, eenheden, multipliciteit, letterlijke code en citaten, signaalfamilies zonder gelijkwaardigheidsgroepen, JSON-uitvoer, stdin), redactioneel contract met communicatieve handelingen en taken `shorten` en `summarize`, voorbeelden geaudit, en een eerste vergelijkende evaluatie (`evals/dutch-humanizer/`). Details in [`dutch-humanizer/CHANGELOG.md`](dutch-humanizer/CHANGELOG.md).
+
 ## [0.6.0] — 2026-10-08
 
 `dutch-humanizer` v0.6.0: betekenisbehoud als hoogste prioriteit, contextuele voorkeuren in plaats van verboden, herschreven controlescript met unittests, 42 redactionele testcases, en een skillmap met eigen `README.md`, `CHANGELOG.md`, `LICENSE` en `agents/openai.yaml`. Details in [`dutch-humanizer/CHANGELOG.md`](dutch-humanizer/CHANGELOG.md).
@@ -237,7 +241,8 @@ Initial bootstrap of the `claude-skills` collection.
   "Signs of AI writing" plus NL-specifieke patronen. 37 patronen, register-
   detectie, voice-calibration via een `references/voorbeeld.md`.
 
-[Unreleased]: https://github.com/fridzema/claude-skills/compare/v0.6.0...HEAD
+[Unreleased]: https://github.com/fridzema/claude-skills/compare/v0.7.0...HEAD
+[0.7.0]: https://github.com/fridzema/claude-skills/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/fridzema/claude-skills/compare/v0.4.0...v0.6.0
 [0.4.0]: https://github.com/fridzema/claude-skills/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/fridzema/claude-skills/compare/v0.2.0...v0.3.0

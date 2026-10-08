@@ -1,0 +1,1 @@
+De tolerantie van het onderdeel is 0,050 mm. De bedrijfstemperatuur mag nooit hoger zijn dan 85 °C.

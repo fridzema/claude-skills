@@ -1,11 +1,13 @@
-# Evaluatie
+# Evaluatie (rubric v0.6.0)
+
+Dit is de rubric en procedure van v0.6.0, met acht dimensies. Sinds v0.7.0 geldt voor de vergelijkende evaluatie `prompts/beoordelaar.md` (zes dimensies plus kritiek) en `rapport-v0.7.0.md`.
 
 Twee soorten tests, met verschillende zekerheid.
 
 | Soort | Bestand | Automatisch? | Wat het aantoont |
 |---|---|---|---|
-| Mechanisch | `tests/test_check.py` | Ja: `python3 -m unittest discover -s tests -v` | Dat `scripts/check.py` getallen, datums, code, citaten, URL's, namen en signaalwoorden correct vergelijkt. Niet dat een herschrijving dezelfde betekenis heeft. |
-| Redactioneel | `tests/fixtures/semantische-cases.md` (42 cases) | Nee: een model voert de skill uit, een beoordelaar scoort | Of de skill natuurlijk Nederlands oplevert zonder betekenis te veranderen. |
+| Mechanisch | `dutch-humanizer/tests/` | Ja: `python3 -m unittest discover -s tests -v` | Dat `scripts/check.py` getallen, datums, code, citaten, URL's, namen en signaalwoorden correct vergelijkt. Niet dat een herschrijving dezelfde betekenis heeft. |
+| Redactioneel | `ontwikkelset.md` (42 cases, sinds v0.7.0 plus 1 uit de validatieset) | Nee: een model voert de skill uit, een beoordelaar scoort | Of de skill natuurlijk Nederlands oplevert zonder betekenis te veranderen. |
 
 Een geslaagde mechanische test zegt niets over semantische trouw. Een WARNING van het script is geen bewijs van betekenisverandering, en het ontbreken van een WARNING is geen bewijs van trouw.
 
@@ -27,7 +29,7 @@ Uitsplitsen van de cases:
 ```bash
 python3 - <<'EOF'
 import re, pathlib
-s = pathlib.Path("tests/fixtures/semantische-cases.md").read_text()
+s = pathlib.Path("evals/dutch-humanizer/ontwikkelset.md").read_text()
 out = pathlib.Path("eval/cases"); out.mkdir(parents=True, exist_ok=True)
 for block in re.split(r"^## ", s, flags=re.M)[1:]:
     body = block.split("**Invarianten:**")[0].split("\n", 1)[1]

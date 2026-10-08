@@ -2,6 +2,18 @@
 
 Constructies die Nederlandse tekst stijf, formulematig of vertaald kunnen laten klinken. Het is redactieadvies, geen zwarte lijst, en geen bewijs dat een tekst door AI is geschreven. Mensen gebruiken al deze constructies ook, vaak terecht.
 
+## Inhoud
+
+- Zo gebruik je deze catalogus
+- A. Belang aankondigen in plaats van iets zeggen (1-5)
+- B. Ritme en opmaak volgens regel (6-14)
+- C. Opblazen en geleende autoriteit (15-24)
+- D. Nederlands-specifiek en vertaal-Nederlands (25-32)
+- E. Restjes uit de chat en het concept (33-35)
+- F. Overcorrectie
+- G. Legitieme constructies
+- Wanneer je niet ingrijpt
+
 ## Zo gebruik je deze catalogus
 
 Elk patroon heeft een soort:
@@ -39,14 +51,14 @@ Een patroonadvies gaat nooit voor betekenisbehoud. Kan een zin alleen natuurlijk
 **Waarom het kan storen**: de lezer moet pauzeren op iets wat al gezegd is.
 **Passend als**: de korte zin een nieuw feit, gevolg of oordeel toevoegt, of in een betoog of column bewust ritme geeft.
 **Herschrijf als**: de zin herhaalt of alleen aankondigt. Vouw een oordeel in de zin ervoor in plaats van het te schrappen.
-**Bewaak**: een oordeel van de schrijver ("dat maakt echt verschil") is een bewering. Die blijft, in gewone vorm.
+**Bewaak**: een oordeel van de schrijver ("dat maakt het verschil") is een bewering. Die blijft, in gewone vorm en even sterk.
 
 **Voor:**
 > We hebben de offerteprocedure ingekort van elf naar vijf dagen.
 >
 > Dat maakt het verschil.
 
-**Na:** "We hebben de offerteprocedure ingekort van elf naar vijf dagen, en dat maakt echt verschil."
+**Na:** "We hebben de offerteprocedure ingekort van elf naar vijf dagen, en juist dat maakt het verschil."
 
 **Voor:** "De planner rekent zelf de routes uit. Geen spreadsheets meer. Geen gebel. Gewoon rust."
 **Na:** "De planner rekent zelf de routes uit. Spreadsheets en telefoontjes zijn niet meer nodig, en dat geeft rust."
@@ -60,7 +72,7 @@ Een patroonadvies gaat nooit voor betekenisbehoud. Kan een zin alleen natuurlijk
 **Bewaak**: als de formule een rangorde aangeeft ("vooral", "het belangrijkste"), blijft die.
 
 **Voor:** "Waar het werkelijk om gaat is of teams zich kunnen aanpassen. In de kern draait het om bereidheid."
-**Na:** "De vraag is of teams zich kunnen aanpassen, en dat hangt vooral af van hun bereidheid."
+**Na:** "Het gaat er vooral om of teams zich kunnen aanpassen, en in de kern of ze daartoe bereid zijn."
 
 ### 4. Aanloop en gespeelde eerlijkheid *(sterk signaal)*
 
@@ -74,7 +86,7 @@ Een patroonadvies gaat nooit voor betekenisbehoud. Kan een zin alleen natuurlijk
 **Na:** "Of het de prijs waard is, hangt af van hoe vaak je het gebruikt."
 
 **Voor:** "Het resultaat? Een conversie die hoger ligt dan ooit."
-**Na:** "De conversie ligt hoger dan ooit."
+**Na:** "Het resultaat: de conversie ligt hoger dan ooit."
 
 ### 5. Discussie met niemand *(sterk signaal)*
 
@@ -85,12 +97,12 @@ Een patroonadvies gaat nooit voor betekenisbehoud. Kan een zin alleen natuurlijk
 **Bewaak**: afwegingen, gevolgen en redenen voor een ontwerpkeuze.
 
 **Voor:** "Begrijp me niet verkeerd, ik zeg niet dat documentatie onbelangrijk is. Het punt is of de agent de instructie kan gebruiken."
-**Na:** "Documentatie blijft belangrijk, maar de vraag is of de agent de instructie kan gebruiken."
+**Na:** "Dat wil niet zeggen dat documentatie onbelangrijk is; de vraag is of de agent de instructie kan gebruiken."
 
 **Voor:** "Sessietokens worden elke 24 uur vernieuwd. Een voor de hand liggende aanpak zou zijn om de authenticatiedienst via een cronjob te herstarten, maar dan vallen alle actieve sessies weg. De vernieuwing gebeurt daarom zonder herstart en clients verversen automatisch."
-**Na:** "Sessietokens worden elke 24 uur vernieuwd. De authenticatiedienst via een cronjob herstarten kan ook, maar dan vallen alle actieve sessies weg. Daarom gebeurt de vernieuwing zonder herstart en verversen clients automatisch."
+**Na:** "Sessietokens worden elke 24 uur vernieuwd. De voor de hand liggende aanpak is de authenticatiedienst via een cronjob herstarten, maar dan vallen alle actieve sessies weg. Daarom gebeurt de vernieuwing zonder herstart en verversen clients automatisch."
 
-Hier verdwijnt alleen de aankondiging ("een voor de hand liggende aanpak zou zijn"). De afgewezen optie, het gevolg en het oorzakelijke "daarom" blijven, want samen verklaren ze het ontwerp.
+Hier verdwijnt alleen de omslachtige vorm ("zou zijn"). De afgewezen optie, dat die voor de hand ligt, het gevolg en het oorzakelijke "daarom" blijven, want samen verklaren ze het ontwerp.
 
 ---
 
@@ -105,7 +117,7 @@ Hier verdwijnt alleen de aankondiging ("een voor de hand liggende aanpak zou zij
 **Bewaak**: elk element. Een drietal mag anders gebouwd worden; een item schrappen omdat drie te veel klinkt mag niet.
 
 **Voor:** "Een carrière kan veelbelovend lijken en mislukken. Een relatie kan belangrijk voelen en eindigen. Een vaardigheid kan jaren kosten en nutteloos blijken. Zulke keuzes verklaren zichzelf zelden."
-**Na:** "Een carrière kan veelbelovend lijken en toch mislukken. Hetzelfde geldt voor een relatie die belangrijk voelde en eindigde, of een vaardigheid die jaren kostte en nutteloos bleek. Zulke keuzes verklaren zichzelf zelden."
+**Na:** "Een carrière kan veelbelovend lijken en toch mislukken, een relatie kan belangrijk voelen en toch eindigen, en een vaardigheid kan jaren kosten en nutteloos blijken. Zulke keuzes verklaren zichzelf zelden."
 
 ### 7. Herhaalde openingen en stapels verbindingswoorden *(zwak signaal)*
 
@@ -135,10 +147,10 @@ Hier verdwijnt alleen de aankondiging ("een voor de hand liggende aanpak zou zij
 **Waarom het kan storen**: de lezer weet niet meer hoe zeker de schrijver is.
 **Passend als**: de onzekerheid echt is. Eén voorbehoud per bewering is gewoon Nederlands. Juridische en veiligheidsvoorbehouden blijven altijd.
 **Herschrijf als**: drie voorbehouden hetzelfde zeggen.
-**Bewaak**: de mate van zekerheid. "Mogelijk" wordt niet "waarschijnlijk", "het lijkt erop" wordt geen feit.
+**Bewaak**: de mate en de bron van zekerheid. "Mogelijk" wordt niet "waarschijnlijk", "het lijkt erop" (aanwijzing) wordt geen feit en ook geen "waarschijnlijk" (inschatting). Gestapelde voorbehouden die hetzelfde zeggen, drukken één twijfel uit: houd die twijfel, maar zeg hem één keer, zonder er een eigen oordeel ("erg onzeker") van te maken.
 
 **Voor:** "Het zou eventueel mogelijk kunnen zijn dat het beleid wellicht enig effect heeft."
-**Na:** "Het beleid heeft mogelijk enig effect."
+**Na:** "Het beleid heeft misschien enig effect."
 
 ### 10. Passief en zinnen zonder onderwerp *(zwak signaal)*
 
@@ -164,7 +176,7 @@ Hier verdwijnt alleen de aankondiging ("een voor de hand liggende aanpak zou zij
 > - **Prestaties:** De prestaties zijn verbeterd door geoptimaliseerde algoritmes.
 > - **Beveiliging:** De beveiliging is versterkt met end-to-end-versleuteling.
 
-**Na:** "De update brengt een nieuwe interface, betere prestaties door geoptimaliseerde algoritmes en sterkere beveiliging met end-to-end-versleuteling."
+**Na:** "Een nieuwe interface verbetert de gebruikservaring, geoptimaliseerde algoritmes verbeteren de prestaties en end-to-end-versleuteling versterkt de beveiliging."
 
 ### 12. Versierde koppen *(zwak signaal)*
 
@@ -172,13 +184,13 @@ Hier verdwijnt alleen de aankondiging ("een voor de hand liggende aanpak zou zij
 **Waarom het kan storen**: Nederlandse koppen hebben alleen een hoofdletter aan het begin en bij eigennamen.
 **Passend als**: een merknaam of officiële titel; emoji in een kanaal of huisstijl die ze gebruikt.
 **Herschrijf als**: de kop Engelse hoofdlettergebruik volgt of niet zegt wat de sectie bevat.
-**Bewaak**: alles wat in de kop of het label staat, zoals "Q3".
+**Bewaak**: alles wat in de kop of het label staat. Zegt een label iets wat de zin niet zegt (zoals "Lanceerfase"), verwerk dat dan in de zin.
 
 **Voor:** `## Strategische Onderhandelingen En Mondiale Partnerschappen`
 **Na:** `## Strategische onderhandelingen en mondiale partnerschappen`
 
 **Voor:** "🚀 **Lanceerfase:** Het product wordt gelanceerd in Q3"
-**Na:** "Het product wordt in Q3 gelanceerd."
+**Na:** "Lanceerfase: het product wordt in Q3 gelanceerd."
 
 ### 13. Kop gevolgd door een herhaling *(zwak signaal)*
 
@@ -220,7 +232,7 @@ Het feit eronder klopt meestal. Houd het feit, maak de verpakking gewoner, en ho
 **Bewaak**: wat het woord beweerde. Zegt het woord iets wat de rest van de zin niet zegt (belang, omvang, gemak: "essentieel", "een breed scala", "naadloos"), dan blijft die bewering in gewone woorden. Versterkt het alleen ("robuust" als loze lof), dan mag het weg.
 
 **Voor:** "Daarnaast biedt het platform een breed scala aan innovatieve tools die naadloos integreren in het bestaande technologische landschap."
-**Na:** "Het platform heeft ook veel nieuwe tools die je zonder moeite koppelt aan bestaande systemen."
+**Na:** "Het platform heeft ook een brede reeks vernieuwende tools die probleemloos samenwerken met bestaande systemen."
 
 ### 16. Opgeblazen belang *(sterk signaal in groepen)*
 
@@ -228,16 +240,16 @@ Het feit eronder klopt meestal. Houd het feit, maak de verpakking gewoner, en ho
 **Waarom het kan storen**: het belang wordt verkondigd in plaats van getoond.
 **Passend als**: het belang zelf het onderwerp is, of in een jaarverslag of opiniestuk waar de lezer een oordeel verwacht.
 **Herschrijf als**: de woorden zwaarder zijn dan de bewering. Maak ze gewoner, maar houd het oordeel.
-**Bewaak**: het oordeel ("belangrijk", "optimistisch"). Schrap het alleen als de gebruiker om inkorten vraagt.
+**Bewaak**: het oordeel ("belangrijk", "optimistisch"). Schrap het alleen als de gebruiker om een samenvatting of om schrappen vraagt.
 
 **Voor:** "Het CBS, dat statistieken over de Nederlandse economie publiceert, speelt een cruciale rol in het statistische landschap en vormt een onmisbare schakel in de evolutie van datagedreven beleid."
-**Na:** "Het CBS publiceert statistieken over de Nederlandse economie en is daarmee onmisbaar voor beleid dat op data steunt."
+**Na:** "Het CBS publiceert statistieken over de Nederlandse economie, speelt een cruciale rol in de statistiek en is onmisbaar voor de ontwikkeling van beleid dat op data steunt."
 
 **Voor:** "Ondanks uitdagingen zoals vergrijzing en de sluiting van het streekziekenhuis blijft de gemeente zich gestaag ontwikkelen en kijkt zij vol vertrouwen naar de toekomst."
-**Na:** "De gemeente vergrijst en het streekziekenhuis is gesloten, maar ze blijft zich ontwikkelen en kijkt met vertrouwen vooruit."
+**Na:** "De gemeente heeft onder meer te maken met vergrijzing en de sluiting van het streekziekenhuis, maar ontwikkelt zich gestaag en kijkt vol vertrouwen vooruit."
 
 **Voor:** "De toekomst ziet er veelbelovend uit. Spannende tijden liggen voor de deur."
-**Na:** "De vooruitzichten zijn goed."
+**Na:** "De vooruitzichten zijn goed, en er staat veel te gebeuren."
 
 ### 17. Promotietaal *(zwak signaal)*
 
@@ -248,7 +260,7 @@ Het feit eronder klopt meestal. Houd het feit, maak de verpakking gewoner, en ho
 **Bewaak**: elk kenmerk dat de tekst noemt.
 
 **Voor:** "Gelegen in het bruisende hart van Zuid-Holland biedt Gouda, met zijn beroemde kaasmarkt, een betoverend samenspel van rijke historie en eigentijdse dynamiek."
-**Na:** "Gouda ligt in Zuid-Holland, is beroemd om de kaasmarkt en combineert een rijke geschiedenis met een eigentijds karakter."
+**Na:** "Gouda ligt midden in Zuid-Holland, is beroemd om de kaasmarkt en combineert een rijke geschiedenis met eigentijdse levendigheid."
 
 ### 18. Geleende autoriteit *(zwak signaal)*
 
@@ -266,7 +278,7 @@ Het feit eronder klopt meestal. Houd het feit, maak de verpakking gewoner, en ho
 `Let op: om welke studies gaat het? De bron ontbreekt.`
 
 **Voor:** "Het bedrijf is veelvuldig besproken in NRC, de Volkskrant, het FD en diverse internationale publicaties."
-**Na:** "Het bedrijf kwam vaak in de pers, onder meer in NRC, de Volkskrant, het FD en internationale media."
+**Na:** "Het bedrijf is vaak besproken in NRC, de Volkskrant, het FD en verschillende internationale media."
 
 ### 19. Vage verbanden *(zwak signaal)*
 
@@ -294,7 +306,7 @@ Het feit eronder klopt meestal. Houd het feit, maak de verpakking gewoner, en ho
 **Bewaak**: de interpretatie is een bewering van de schrijver; ze blijft, als eigen zin.
 
 **Voor:** "Het beleid koppelt subsidies voor zonnepanelen aan strengere uitstootnormen, daarmee de balans benadrukkend tussen welvaart en milieu, bijdragend aan een bredere transitie."
-**Na:** "Het beleid koppelt subsidies voor zonnepanelen aan strengere uitstootnormen. Daarmee zoekt het een balans tussen welvaart en milieu en draagt het bij aan een bredere transitie."
+**Na:** "Het beleid koppelt subsidies voor zonnepanelen aan strengere uitstootnormen. Daarmee benadrukt het de balans tussen welvaart en milieu en draagt het bij aan een bredere transitie."
 
 ### 22. Stapels bijvoeglijke naamwoorden *(zwak signaal)*
 
@@ -308,10 +320,12 @@ Het feit eronder klopt meestal. Houd het feit, maak de verpakking gewoner, en ho
 
 **Herken je aan**: In een wereld waarin..., In tijden van..., In het huidige digitale tijdperk...
 **Herschrijf als**: de opener een algemeenheid is voor een concrete aanleiding.
-**Bewaak**: een bewering die in de opener zit en die de tekst nodig heeft ("data wordt steeds waardevoller"). Een algemeen decor zonder bewering ("in het snel veranderende digitale landschap") mag weg.
+**Bewaak**: een bewering die in de opener zit en die de tekst nodig heeft ("data is waardevol"). Een algemeen decor zonder bewering ("in het snel veranderende digitale landschap") mag weg.
 
 **Voor:** "In een wereld waarin data het nieuwe goud is, stellen wij een datastrategie op, omdat klanten steeds vaker om rapportages vragen."
-**Na:** "Data wordt steeds waardevoller en klanten vragen vaker om rapportages. Daarom stellen we een datastrategie op."
+**Na:** "Data is waardevol geworden. Omdat klanten steeds vaker om rapportages vragen, stellen we een datastrategie op."
+
+Alleen de vraag van klanten is de reden; de waarde van data is een aparte bewering. Maak er geen gezamenlijke oorzaak van met "daarom".
 
 ### 24. Vage afsluiters van opsommingen *(zwak signaal)*
 
@@ -340,7 +354,7 @@ Vulzinnen en gewone alternatieven:
 - "Het is belangrijk om op te merken dat": weglaten, tenzij de nadruk de lezer waarschuwt
 
 **Voor:** "Derhalve dient opgemerkt te worden dat de onderhavige methode nadere toelichting behoeft."
-**Na:** "De methode moet dus beter worden uitgelegd."
+**Na:** "Deze methode moet dus verder worden toegelicht."
 
 **Voor:** "Dit werkt, echter, niet altijd."
 **Na:** "Maar dit werkt niet altijd."
@@ -365,7 +379,7 @@ Vulzinnen en gewone alternatieven:
 
 - valse vrienden: "het maakt zin" (is logisch), "eventueel" voor eventually (uiteindelijk), "ik realiseerde dat" (besefte), "controleren" voor to control (beheersen);
 - letterlijke uitdrukkingen: "in termen van", "aan het eind van de dag", "dat gezegd hebbende";
-- Engelse zinsbouw: bijzin voorop met komma, nominalisaties ("het implementeren van");
+- zinsbouw naar Engels model, zoals een voorzetselgroep voorop met een komma vóór de persoonsvorm ("Door het implementeren van deze aanpak, verwachten..."). Een bijzin voorop met komma is gewoon Nederlands;
 - komma voor "en" in een opsomming;
 - Engelse notatie: "€12,500", "March 5", "5 PM".
 
@@ -373,7 +387,9 @@ Vulzinnen en gewone alternatieven:
 **Bewaak**: elke propositie en de verbanden ertussen. Een idioom wordt een Nederlands idioom met dezelfde betekenis. Zet notatie alleen om als dat eenduidig is ("03/04/2026" blijft staan).
 
 **Voor:** "Door het implementeren van deze aanpak, verwachten de onderzoekers dat significante verbeteringen zullen worden gerealiseerd. In termen van budget maakt het zin om klein te beginnen."
-**Na:** "De onderzoekers verwachten dat deze aanpak flinke verbeteringen oplevert. Qua budget is het logisch om klein te beginnen."
+**Na:** "De onderzoekers verwachten dat deze aanpak aanzienlijke verbeteringen oplevert. Qua budget is het logisch om klein te beginnen."
+
+Gaat het om statistische significantie, dan blijft "significante" staan.
 
 ### 28. Je en u, en "jouw" *(sterk signaal bij menging)*
 
@@ -398,7 +414,7 @@ Nederlandse samenstellingen schrijf je aaneen: "klantervaring", "projectmanager"
 
 ### 31. Leestekens en afsluiters *(zwak signaal)*
 
-- **Dubbele punt.** Erna is een kleine letter gebruikelijk ("Let op: dit geldt..."). Een hoofdletter hoort bij een citaat of eigennaam; bij een zelfstandige zin komen beide voor. Volg dan de input; maak er geen fout van.
+- **Dubbele punt.** Na een verklaring volgt een kleine letter, ook als er een volledige zin volgt ("Eén ding stond vast: dit mocht nooit meer gebeuren."). Een hoofdletter hoort bij een citaat ("Hij vroeg: 'Komt u ook?'"), een eigennaam en een opsomming van meerdere volledige zinnen (Taaladvies, "Hoofdletter na dubbele punt"). Is de context onduidelijk, dan is de hoofdletter niet automatisch fout; kijk wat er volgt.
 - **Uitroeptekens** in zakelijke tekst zijn zelden nodig. In een persoonlijk bericht kunnen ze echt zijn.
 - **"Kortom," "Concluderend," "Al met al,"** bovenaan een slotalinea die herhaalt. Een samenvatting in een lang stuk mag.
 - **Maandnamen** met kleine letter ("januari"). Dit is spelling.
@@ -430,10 +446,10 @@ Nederlandse samenstellingen schrijf je aaneen: "klantervaring", "projectmanager"
 
 **Herken je aan**: hoewel specifieke details beperkt zijn, op basis van beschikbare informatie, groeide waarschijnlijk op in.
 **Herschrijf als**: de omhaal langer is dan de bewering.
-**Bewaak**: de bewering en de onzekerheid. Een gok uit de bron blijft een gok, als gok gemarkeerd.
+**Bewaak**: de bewering en de soort onzekerheid. Een gok uit de bron blijft een gok; "lijkt" blijft een aanwijzing en wordt geen "vermoedelijk".
 
 **Voor:** "Hoewel specifieke details beperkt zijn op basis van beschikbare informatie, lijkt het bedrijf ergens in de jaren 90 te zijn opgericht."
-**Na:** "Het precieze oprichtingsjaar is niet bekend; het bedrijf is vermoedelijk in de jaren negentig opgericht."
+**Na:** "Er zijn weinig precieze gegevens, maar het bedrijf lijkt ergens in de jaren negentig te zijn opgericht."
 
 ### 35. Uitleg die de lezer al heeft *(zwak signaal)*
 
@@ -447,9 +463,9 @@ Geldt voor antwoorden in een gesprek, mailwisseling of ticket.
 > Klopt, dit is een workaround en geen echte oplossing. De echte oplossing zit in de koppeling met het boekhoudpakket: bij elke import moet ook het btw-nummer mee. Ik heb in de testomgeving gekeken: van de 120 imports gingen er 6 mis, dus opruimen valt mee. Omdat die koppeling door meerdere klanten wordt gebruikt, pak ik dat liever op in een apart ticket. De workaround kan tot die tijd blijven staan.
 
 **Na:**
-> Eens, dit is een workaround. De echte oplossing pak ik liever op in een apart ticket, omdat meerdere klanten de koppeling met het boekhoudpakket gebruiken. Tot die tijd kan de workaround blijven staan.
+> Eens, dit is een workaround en geen echte oplossing. Die echte oplossing zit in de koppeling met het boekhoudpakket; die pak ik liever op in een apart ticket, omdat meerdere klanten de koppeling gebruiken. Tot die tijd kan de workaround blijven staan.
 >
-> De oplossing zelf: bij elke import moet ook het btw-nummer mee. In de testomgeving gingen 6 van de 120 imports mis, dus het opruimen valt mee.
+> De oplossing zelf: bij elke import moet ook het btw-nummer mee. Ik heb in de testomgeving gekeken: 6 van de 120 imports gingen mis, dus het opruimen valt mee.
 
 ---
 
@@ -458,7 +474,8 @@ Geldt voor antwoorden in een gesprek, mailwisseling of ticket.
 | Patroon | Herken je aan | Herstel |
 |---|---|---|
 | Te kort | Inhoudelijke punten, bewijs of een afweging verdwenen omdat korter natuurlijker leek | Elk punt terug; alleen opvulling mag weg |
-| Stelliger dan de bron | "Het lijkt erop dat X" wordt "X" | Zekerheid van de bron terug |
+| Stelliger dan de bron | "Het lijkt erop dat X" wordt "X" of "waarschijnlijk X" | Zekerheid en soort zekerheid van de bron terug |
+| Andere handeling | "Zullen we donderdag overleggen?" wordt "We overleggen donderdag." | Vraag of voorstel terug |
 | Voorwaarde weg | "zodra", "tenzij", "alleen als" verdwenen | Voorwaarde terug |
 | Registerverschuiving | u wordt je, "Beste" wordt "Hoi", "Met vriendelijke groet" wordt "Groet", zonder dat kanaal of verzoek daarom vraagt | Register van de input |
 | Staccato | "Niet bij alles. Bij architectuur al helemaal niet." | Gewone zinnen; zie patroon 2 |

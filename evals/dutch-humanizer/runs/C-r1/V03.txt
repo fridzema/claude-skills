@@ -1,0 +1,1 @@
+Hoi allemaal, het lijkt erop dat de nightly build faalt op de integratietests. Ik kijk er vanmiddag naar en hou jullie op de hoogte.

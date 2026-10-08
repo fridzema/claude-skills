@@ -45,11 +45,11 @@ De tabel beschrijft wat gebruikelijk is. Laten de voorbeelden zien dat de schrij
 5. **Schrijf.** Vervang formulematige constructies door hoe deze schrijver het zou zeggen. Maak de stem zichtbaar: neem de zinslengte, de mate van droogheid of humor en de typische zinsbouw echt over, niet alleen het register. Een algemene, nette tekst is geen stemkalibratie. Laat de inhoud ongemoeid.
 6. **Controleer**: klinkt het als deze persoon, in dit kanaal? En staat alles uit de input er nog, zonder iets uit de voorbeelden?
 
-Vraag alleen iets als de voorbeelden elkaar echt tegenspreken en de keuze ertoe doet, bijvoorbeeld u tegenover je naar een klant.
+Eén kort voorbeeld of voorbeelden die elkaar tegenspreken zeggen weinig. Trek dan geen stellige conclusies: neem alleen over wat duidelijk terugkomt en houd de rest bij het register van de input. Vraag alleen iets als de keuze ertoe doet, bijvoorbeeld u tegenover je naar een klant.
 
 ## Waarborgen
 
-- **Geen feiten uit de voorbeelden.** Namen, plaatsen, huisdieren, ervaringen en meningen uit een voorbeeld komen niet in de output, tenzij ze ook in de input staan.
+- **Geen feiten of privédetails uit de voorbeelden.** Namen, plaatsen, huisdieren, ervaringen en meningen uit een voorbeeld komen niet in de output, tenzij ze ook in de input staan.
 - **Geen verzonnen ervaringen.** De stem levert toon, geen anekdotes.
 - **Geen toevallige fouten.** Typefouten en d/t-fouten neem je niet over.
 - **Niet overdrijven.** Een kenmerkende uitdrukking hooguit zo vaak als de schrijver haar gebruikt. Niet in elke alinea.

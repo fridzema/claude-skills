@@ -1,0 +1,1 @@
+Draai eerst `make migrate` en start daarna pas de app. De migratie duurt zo'n twee minuten en je kunt hem niet terugdraaien.

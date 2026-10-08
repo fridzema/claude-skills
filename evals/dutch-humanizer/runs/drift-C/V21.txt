@@ -1,0 +1,1 @@
+Hoi Lisa, we verwachten de release in week 48, afhankelijk van de uitkomst van de pentest. Komen daar kritieke bevindingen uit, dan schuift de release minimaal een week op.

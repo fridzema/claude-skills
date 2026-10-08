@@ -2,6 +2,50 @@
 
 Alle noemenswaardige wijzigingen aan deze skill. Formaat volgens [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), versies volgens [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.0] — 2026-10-08
+
+Betrouwbaarheidsronde op basis van de opdracht v0.7.0. Alle 22 gemelde fouten in het controlescript zijn gereproduceerd en opgelost; het redactionele contract is aangescherpt; de evaluatie is voor het eerst tegen een baseline en zonder skill uitgevoerd. Volledig rapport: `evals/dutch-humanizer/rapport-v0.7.0.md` in de repository.
+
+### Gerepareerd (controlescript)
+
+- **Getallen**: `Decimal` uit de tekens volgens locale in plaats van cijfers aan elkaar plakken. 1,5% naar 15%, 415% naar 41,5% en -5 naar 5 worden nu gezien; 0,040 naar 0,04 is een precisiewijziging, geen andere waarde.
+- **Eenheden**: hoofdlettergevoelig (MB tegenover Mb); verdwenen en toegevoegde eenheden; procent tegenover procentpunt, werkdag tegenover kalenderdag; begrenzing (maximaal, minimaal, meer dan).
+- **Notatie**: `--source-locale` en `--target-locale`; bij een onbekende locale blijft "1.234" dubbelzinnig en volgt QTY_AMBIGUOUS.
+- **Aantallen**: multipliciteit voor getallen, datums, code, citaten, URL's en paden; tweemaal 21% naar eenmaal wordt gezien.
+- **Letterlijke inhoud**: code zonder witruimtenormalisatie (spaties in strings, inspringing); verdwenen, gewijzigde en toegevoegde code; citaten van één woord; API- en bestandspaden; versienummers.
+- **Signaalwoorden**: gelijkwaardigheidsgroepen verwijderd. "Tenzij" naar "mits" en "moet" naar "verboden" heten niet langer "meestal gelijkwaardig". Families per betekenis (ontkenning, verplichting, "moet ... niet", "hoeft ... niet", verbod, toestemming, mogelijkheid, onzekerheid als aanwijzing of inschatting, voorwaarde, uitzondering, termijn), toevoegingen en verwijderingen in beide richtingen.
+- **Lege output** bij `create` geeft ERROR; een lege bron is expliciet gedefinieerd.
+- **Strikte stijl** controleert alle bewerkbare output, niet alleen nieuwe tekens; citaten en code blijven uitgezonderd.
+
+### Toegevoegd
+
+- `scripts/dhcheck/`: pure in-memory kern (`analyze`) met modules voor Markdown-spans, hoeveelheden en signalen; `check.py` is de CLI-adapter. Oude aanroep en vlaggen werken nog.
+- `--format json` (schema_version 1, stabiele regelcodes, bron- en outputposities, uitgevoerde en overgeslagen controles), `--stdin` (geen tekstbestanden nodig), `--task` (rewrite, create, translate, shorten, summarize).
+- Begrensde Markdown-scanner volgens CommonMark: ongesloten fences, backtickreeksen van verschillende lengte, geneste linkhaken, escapes, afbakenende aanhalingstekens rond de hele input, apostrofs.
+- Tests: 85 (was 50), waaronder 26 regressies uit de opdracht, 32 correcte parafrases voor vals-positieven, perturbaties met vaste seed, randgevallen, grote input en CLI vanuit een andere map.
+
+### Gewijzigd (skill)
+
+- **Taken** `shorten` (inkorten zonder feiten te schrappen) en `summarize` (alleen op uitdrukkelijk verzoek) naast `rewrite`, `create`, `translate`.
+- **Communicatieve handelingen** beschermd: voorstel, vraag, verwachting en excuus blijven wat ze zijn. Een stijlopdracht voegt geen verplichting of belofte toe. Onbewezen bronbeweringen blijven beweringen.
+- **Werkwijze**: contract, inventaris, gerichte redactie, mechanische controle, inhoudelijke controle in twee richtingen, hooguit twee herstelrondes, en ook de laatste tekst opnieuw controleren.
+- **Opleveren**: ook bij ongewijzigde tekst alleen de tekst, zonder toelichting. Bij `shorten` geen toelichting; bij `summarize` of uitdrukkelijk schrappen één regel over wat wegviel.
+- **Privacy**: het script via de skillmap aanroepen, tekst via stdin of een tijdelijke map buiten het project.
+- **Dubbele punt**: volgens Taaladvies een kleine letter na een verklaring, ook bij een volledige zin; hoofdletter bij citaat, eigennaam en opsomming van volledige zinnen.
+- **"Het lijkt erop"** is een aanwijzing en wordt niet "waarschijnlijk"; "zodra" wordt niet "na".
+- **Voorbeelden**: 66 voor/na-paren in twee richtingen geaudit (9 kritieke en ongeveer 37 kleine bevindingen, verwerkt; auditlog in de repository). Onder meer: geen nieuw causaal verband in de LinkedIn-post, "in 3 dagen" in plaats van "in 3", "roteren" blijft roteren, het essay behoudt elke bewering. Nieuwe voorbeelden van bewust laten staan.
+- **Generalisaties verwijderd**: "Zakelijk Nederlands is van nature direct", "Nederlands volgt vaker dan Amerikaans-Engels ...", "AI-tekst maakt er ... van".
+- `references/bronnen.md`: regeltabel met type, bron, uitzondering, controledatum en gekoppelde test.
+- `SKILL.md` korter: 1.757 woorden (was 1.879).
+
+### Verplaatst
+
+- De 42 ontwikkelcases, de rubric en het evaluatieverslag van v0.6.0 staan nu in `evals/dutch-humanizer/` in de repository, niet meer in het skillpakket. Het pakket bevat alleen de tests van het meegeleverde script.
+
+### Evaluatie
+
+Op 26 bevroren validatiecases, drie runs, geblindeerd beoordeeld door een ander model: zonder skill 53 van 78 geslaagd (2 kritiek), v0.6.0 74 van 78, v0.7.0 75 van 78 (geen kritiek). Tussen v0.6.0 en v0.7.0 is het aantal geslaagde cases niet aantoonbaar verschillend; v0.7.0 maakt minder onnodige wijzigingen en laat bij een tweede bewerking de eigen tekst ongewijzigd (10 van 10, tegen 0 van 10). Activatie en menselijke beoordeling: niet uitgevoerd.
+
 ## [0.6.0] — 2026-10-08
 
 Semantische gelijkwaardigheid is nu de hoogste redactionele prioriteit. De skill is een redacteur, geen samenvatter: een patroon weghalen mag nooit informatie, voorwaarden, zekerheid of technische precisie kosten.
@@ -277,6 +321,7 @@ Initial bootstrap of the `claude-skills` collection.
   "Signs of AI writing" plus NL-specifieke patronen. 37 patronen, register-
   detectie, voice-calibration via een `references/voorbeeld.md`.
 
+[0.7.0]: https://github.com/fridzema/claude-skills/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/fridzema/claude-skills/compare/v0.4.0...v0.6.0
 [0.4.0]: https://github.com/fridzema/claude-skills/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/fridzema/claude-skills/compare/v0.2.0...v0.3.0

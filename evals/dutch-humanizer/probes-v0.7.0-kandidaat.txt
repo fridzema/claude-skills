@@ -1,0 +1,27 @@
+P01 PASS decimal-shift                WARNING percentage mogelijk veranderd: 1,5% wordt 15%
+P02 PASS coverage-shift               WARNING percentage mogelijk veranderd: 415% wordt 41,5%
+P03 PASS negative-sign                WARNING teken gewijzigd: -5 graden werd 5 graden; controleer de zin
+P04 PASS precision-only               WARNING weergaveprecisie gewijzigd: 0,040 mm werd 0,04 mm (zelfde numerieke wa
+P05 PASS decimal-equivalent           WARNING weergaveprecisie gewijzigd: 1,50% werd 1,5% (zelfde numerieke waarde);
+P06 PASS unit-case                    WARNING eenheid of valuta bij 10 Mb wijkt af van de input (10 MB); controleer 
+P07 PASS unit-removed                 WARNING eenheid verdwenen: 10 km werd 10; controleer de zin
+P08 PASS unit-added                   WARNING eenheid toegevoegd: 10 werd 10 km; controleer de zin
+P09 PASS locale-en-to-nl              INFO input lijkt niet Nederlands; controles op verdwenen namen zijn overges
+P10 PASS locale-ambiguous             WARNING notatie '1.234' is dubbelzinnig (mogelijk 1234 of 1.234); de output ge
+P11 PASS tenzij-to-mits               WARNING voorwaarde of uitzondering: 'tenzij' komt niet meer voor; nieuw: 'mits
+P12 PASS tenzij-to-mits-geen          WARNING ontkenning: nieuw in de output: 'niet'. Mogelijk is de betekenis veran; WARNING voorwaarde of uitzondering: 'tenzij' komt niet meer voor; nieuw: 'mits
+P13 PASS obligation-to-prohibition    WARNING verplichting: 'moet' komt niet meer voor. Mogelijk is de betekenis ver; WARNING verbod: nieuw in de output: 'verboden'. Mogelijk is de betekenis veran
+P14 PASS permission-to-obligation     WARNING verplichting: nieuw in de output: 'moet'. Mogelijk is de betekenis ver; INFO mogelijkheid (kunnen): 'kunt' komt niet meer voor. Mogelijk is de bete
+P15 PASS added-uncertainty            WARNING onzekerheid: nieuw in de output: 'mogelijk'. Mogelijk is de betekenis 
+P16 PASS moet-niet-to-hoeft-niet      WARNING verplichting: 'moet ... niet' komt niet meer voor; nieuw: 'hoeft'. Mog
+P17 PASS removed-occurrence           WARNING 21% komt minder vaak voor dan in de input
+P18 PASS swapped-values               WARNING 20 gram staat mogelijk bij een andere zaak dan in de input (daar bij: 
+P19 PASS api-path                     WARNING pad uit de input ontbreekt of is gewijzigd: /api/v1/orders; WARNING pad staat niet in de input: /api/v1/order
+P20 PASS code-string-space            ERROR code gewijzigd of verwijderd: print("a b") (in de output: 'print("a b"
+P21 PASS code-indent                  ERROR code gewijzigd of verwijderd: if ready: ship() log() (in de output: 'i
+P22 PASS repeated-inline-code         ERROR code gewijzigd of verwijderd: make test
+P23 PASS added-code-in-rewrite        ERROR code staat niet in de input; een herschrijving voegt geen code toe: cu
+P24 PASS quoted-single-word           WARNING citaat of letterlijke tekst niet ongewijzigd teruggevonden: "ja"
+P25 PASS empty-create                 ERROR de output is leeg; er is geen tekst opgeleverd
+P26 PASS good-preserved               -
+26/26 PASS

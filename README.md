@@ -11,7 +11,7 @@ distributable `.skill` archives on demand.
 
 | Skill | Description |
 |---|---|
-| [`dutch-humanizer`](./dutch-humanizer) | Redigeert, schrijft of vertaalt Nederlandse tekst zodat die natuurlijk leest, met strikt behoud van betekenis. Licht of volledig redigeren, nl-NL/nl-BE, stemkalibratie op één of meer voorbeelden, controlescript met unittests en 42 redactionele testcases. Zie [`dutch-humanizer/README.md`](./dutch-humanizer/README.md). |
+| [`dutch-humanizer`](./dutch-humanizer) | Redigeert, schrijft of vertaalt Nederlandse tekst zodat die natuurlijk leest, met strikt behoud van betekenis en communicatieve handeling. Controlescript met Decimal-getallen, letterlijke code en citaten en signaalfamilies; evaluatie tegen baseline in [`evals/dutch-humanizer/`](./evals/dutch-humanizer). Zie [`dutch-humanizer/README.md`](./dutch-humanizer/README.md). |
 
 ## Install
 
@@ -43,6 +43,7 @@ claude-skills/
 │   ├── references/       # optional supporting docs
 │   ├── scripts/          # optional executable helpers
 │   └── assets/           # optional static files
+├── evals/<skill-name>/   # development evaluations (not packaged)
 ├── bundle.sh             # zip skills into dist/*.skill
 ├── dist/                 # build output (gitignored)
 ├── LICENSE

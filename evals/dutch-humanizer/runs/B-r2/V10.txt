@@ -1,0 +1,3 @@
+Draai `make migrate` voordat je de app start. De migratie duurt ongeveer twee minuten en is niet terug te draaien.
+
+Deze tekst leest al natuurlijk; er viel niets te verbeteren.

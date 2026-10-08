@@ -1,6 +1,6 @@
 # Voorbeeld: zakelijke mail
 
-Zakelijk Nederlands is van nature direct. AI-tekst stapelt beleefdheidsformules en voorbehouden. De herschrijving maakt de mail directer, maar houdt elk feit, elk voorstel en het register (aanhef, afsluiting) vast.
+Een zakelijke mail helpt de lezer als de kern snel duidelijk is. Formulematige mails stapelen beleefdheidsformules en voorbehouden. De herschrijving maakt de mail directer, maar houdt elk feit, elk voorstel en het register (aanhef, afsluiting) vast.
 
 ## Voor
 
@@ -21,18 +21,18 @@ Zakelijk Nederlands is van nature direct. AI-tekst stapelt beleefdheidsformules 
 
 > Beste team,
 >
-> Een korte update over het Q2-project en een vraag over Q3.
+> Een update over belangrijke ontwikkelingen in het Q2-project, en een vraag over Q3.
 >
-> Ondanks de krappe bezetting heeft het team de belangrijkste mijlpalen gehaald. De migratie was zelfs twee weken eerder klaar dan gepland. Daarvoor hebben we wel de testfase ingekort, en daar wil ik het met jullie over hebben.
+> Ondanks problemen met capaciteit en middelen heeft het projectteam de belangrijkste mijlpalen gehaald. De migratie was zelfs twee weken eerder klaar dan gepland. Daarvoor is wel de testfase ingekort, en dat moeten we nog bespreken.
 >
-> Voor Q3 zie ik twee opties, en ik wil daar graag samen een besluit over nemen:
+> Voor Q3 zou ik graag twee scenario's met jullie bekijken, zodat we tot een breed gedragen besluit komen:
 >
 > 1. Doorgaan met de huidige scope, livegang eind Q3.
 > 2. De scope inkrimpen, livegang half augustus.
 >
-> Zullen we daarvoor donderdag om 14:00 een halfuur plannen?
+> Ik stel voor dat we daarvoor donderdag om 14:00 een halfuur plannen.
 >
-> Vragen of opmerkingen? Laat het me weten. Ik heb er vertrouwen in dat we samen mooie resultaten halen.
+> Vragen of opmerkingen? Laat het me weten. Ik kijk uit naar de samenwerking en heb er alle vertrouwen in dat we samen mooie resultaten halen.
 >
 > Met vriendelijke groet,
 > Marieke
@@ -40,7 +40,7 @@ Zakelijk Nederlands is van nature direct. AI-tekst stapelt beleefdheidsformules 
 ## Als de input vaag is
 
 **Voor:** "We hebben de afgelopen periode aanzienlijke vooruitgang geboekt op diverse fronten. Er zijn echter nog enkele aandachtspunten die nadere bespreking behoeven. Ik stel voor dat we hiervoor een meeting inplannen."
-**Na:** "We zijn op verschillende fronten flink opgeschoten. Er zijn nog een paar punten die we moeten bespreken. Ik stel voor dat we daar een overleg voor plannen."
+**Na:** "We zijn op verschillende fronten flink opgeschoten. Er zijn nog wel een paar punten die we moeten bespreken. Ik stel voor dat we daar een overleg voor plannen."
 
 De Na wordt niet concreter dan de Voor: geen dag, geen tijd, geen opties. Wil de gebruiker een concretere mail, vraag dan om de feiten.
 
@@ -52,6 +52,13 @@ De Na wordt niet concreter dan de Voor: geen dag, geen tijd, geen opties. Wil de
 
 ## Bewust behouden
 
-- Aanhef "Beste team" en afsluiting "Met vriendelijke groet": geen AI-patroon.
-- Elk feit: Q2-project, krappe bezetting, mijlpalen, twee weken eerder, ingekorte testfase, beide opties met hun datum, donderdag 14:00, een halfuur.
-- Het doel "een breed gedragen besluit" ("samen een besluit nemen"), de uitnodiging voor vragen en het vertrouwen van de schrijver. Die zeggen iets; ze worden alleen gewoner geformuleerd.
+- Aanhef "Beste team" en afsluiting "Met vriendelijke groet": geen formule om weg te halen.
+- Elk feit: Q2-project, problemen met resourcing (als "capaciteit en middelen", niet ingevuld als "bezetting"), mijlpalen, twee weken eerder, ingekorte testfase zonder nieuwe actor, beide scenario's met hun datum, donderdag 14:00, een halfuur.
+- Het voorstel blijft een voorstel ("ik stel voor"), het doel "een breed gedragen besluit" blijft, net als de uitnodiging voor vragen, het uitkijken naar de samenwerking en "alle vertrouwen". Die zeggen iets; ze worden alleen gewoner geformuleerd.
+
+## Bewust laten staan
+
+**Input:** "Hoi Sanne, de offerte van Bouwbedrijf Kok is binnen. De prijs valt mee, maar de fundering rekenen ze apart. Kun jij morgen bellen wat dat kost? Groet, Ruud"
+**Output:** dezelfde tekst, ongewijzigd.
+
+De mail is al direct en natuurlijk. "Hoi" en "Groet" passen bij een interne mail; er is niets formulematigs om weg te halen. Lever alleen de tekst, zonder toelichting.

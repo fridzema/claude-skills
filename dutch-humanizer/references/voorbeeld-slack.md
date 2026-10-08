@@ -1,6 +1,6 @@
 # Voorbeeld: Slack- of Teams-update bij een incident
 
-In chat valt AI-toon het meest op. Een formeel incidentbericht leest direct als gegenereerd. Chat is kort en begint met het belangrijkste. Kort betekent hier: minder woorden, niet minder feiten.
+In chat valt een formele toon het meest op: een incidentbericht in briefvorm leest stijf. Chat is kort en begint met het belangrijkste. Kort betekent hier: minder woorden, niet minder feiten.
 
 ## Voor
 
@@ -20,18 +20,18 @@ In chat valt AI-toon het meest op. Een formeel incidentbericht leest direct als 
 
 > Incident: sinds 14:07 meer time-outs in de checkout, vooral bij de betaalstap.
 >
-> Engineering zoekt de oorzaak, met de hoogste prioriteit. Eerste vermoeden: de betaalprovider, nog niet bevestigd.
+> Engineering zoekt de oorzaak. Dit heeft de hoogste prioriteit. Eerste aanwijzingen: mogelijk heeft het met de betaalprovider te maken, nog niet definitief bevestigd.
 >
 > Volgende update uiterlijk 14:30, of eerder zodra we meer weten.
 >
-> Vragen van klanten of andere betrokkenen? Verwijs ze naar support voor de actuele status.
+> Vragen van klanten of andere betrokkenen? Verwijs ze gerust naar support voor de actuele status.
 
 ## Wat is aangepakt
 
 - Aanhef en slotformule: "Beste team" en "Bedankt voor jullie begrip!" passen niet in een chatkanaal. Het kanaal is hier een reden om het register te veranderen.
 - Vulzinnen: "Ik wil jullie informeren over", "In de tussentijd vragen we om jullie geduld".
 - Ambtelijk: "lopend incident dat momenteel onze checkout-functionaliteit beïnvloedt".
-- Gestapelde voorbehouden: "eerste indicaties dat het mogelijk gerelateerd is ... nog niet definitief bevestigd" wordt "eerste vermoeden, nog niet bevestigd". Dezelfde onzekerheid, minder woorden.
+- Gestapelde voorbehouden: "eerste indicaties dat het mogelijk gerelateerd is ... nog niet definitief bevestigd" wordt "eerste aanwijzingen: mogelijk heeft het met de betaalprovider te maken, nog niet definitief bevestigd". Dezelfde soort onzekerheid (aanwijzingen, geen inschatting), minder woorden. "Vermoeden" zou de bron sterker maken dan ze is.
 
 ## Bewust behouden
 

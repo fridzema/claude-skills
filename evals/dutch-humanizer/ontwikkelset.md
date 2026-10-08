@@ -363,3 +363,12 @@ Voor de groep die onder de genoemde uitzondering valt, gelden de nieuwe ruilrege
 **Invarianten:** compliment, morgen 9 uur, oplevering, laptop meenemen, informele toon.
 **Wel:** emoji mogen blijven.
 **Niet:** formeel worden; emoji verplicht weghalen.
+
+
+## 43 Inkorten met termijn (C), uit validatieset V20
+
+**Verzoek:** Maak dit korter.
+**Input:** Wij willen u er graag op wijzen dat het voor de goede orde van belang is dat u uw parkeervergunning uiterlijk 30 november verlengt. Indien u dit niet doet, vervalt uw vergunning per 1 december en kunt u niet meer in de wijk parkeren.
+**Invarianten:** uiterlijk 30 november verlengen; gevolg: vervalt per 1 december; niet meer in de wijk parkeren; u-vorm
+**Niet:** termijn weg; gevolg weg; toelichting als alleen opvulling wegviel.
+**Herkomst:** validatieset V20, verplaatst op 2026-10-08 na gebruik voor reparatie.

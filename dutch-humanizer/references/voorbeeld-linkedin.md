@@ -1,6 +1,6 @@
 # Voorbeeld: LinkedIn-post
 
-AI-posts op LinkedIn volgen een vast recept: haak, drietal met vette labels, "het resultaat?", niet-X-maar-Y, emoji. De herschrijving haalt het recept weg, niet de inhoud. Elke maatregel, elk cijfer en het doel van de post (reacties uitlokken) blijven. Hashtags zijn op LinkedIn functioneel en mogen blijven.
+Formulematige LinkedIn-posts volgen een vast recept: haak, drietal met vette labels, "het resultaat?", niet-X-maar-Y, emoji. De herschrijving haalt de verpakking weg (emoji, vet, vraag-en-antwoord), niet de inhoud. Het contrast over tools en mindset blijft bewust staan: het is de les van de schrijver, geen stroman. Elke maatregel, elk cijfer en het doel van de post (reacties uitlokken) blijven. Hashtags zijn op LinkedIn functioneel en mogen blijven.
 
 ## Voor
 
@@ -22,27 +22,30 @@ AI-posts op LinkedIn volgen een vast recept: haak, drietal met vette labels, "he
 
 ## Na (volledige herschrijving)
 
-> Onze conversie zakte vorig kwartaal van 18% naar 12%. In plaats van te wanhopen zochten we het uit, met data en met onze klanten: we belden 30 verloren deals na. Ons offertetraject bleek gemiddeld 11 werkdagen te duren. Concurrenten deden het in 3.
+> Een grote verbetering voor onze sales-pipeline.
 >
-> We veranderden drie dingen:
+> Onze conversie zakte vorig kwartaal van 18% naar 12%. In plaats van te wanhopen kozen we voor een vernieuwende, datagedreven en klantgerichte aanpak. We belden 30 verloren deals na en ontdekten dat ons offertetraject gemiddeld 11 werkdagen duurde. Concurrenten deden het in 3 dagen.
 >
-> 1. Voor de drie meest voorkomende cases is er een standaardofferte. Die kost nu een uur in plaats van twee dagen.
-> 2. Het salesteam mag tot een vooraf afgesproken bedrag zelf akkoord geven.
-> 3. We gaven het team de ruimte om zelf verantwoordelijkheid te nemen.
+> Drie inzichten die alles veranderden:
 >
-> De conversie staat nu op 19%, hoger dan ooit. Dat kwam door een andere manier van werken, niet door nieuwe tools.
+> 1. Standaardiseren: voor de drie meest voorkomende cases is er een standaardofferte. Die kost nu een uur in plaats van twee dagen.
+> 2. Vertrouwen: het salesteam mag tot een vooraf afgesproken bedrag zelf akkoord geven.
+> 3. Mindset: we gaven het team de ruimte om zelf verantwoordelijkheid te nemen.
 >
-> Wat was jouw belangrijkste les dit kwartaal?
+> Het resultaat: een conversie van 19%, hoger dan ooit. Het gaat niet om de tools, maar om de mindset.
+>
+> Wat is jouw belangrijkste les van dit kwartaal?
 >
 > #sales #leadership #growth
 
 ## Wat is aangepakt
 
-- Emoji en de haak ("gamechanger", "alles veranderden").
-- "Echter" en de stapel "datagedreven, klantgerichte en innovatieve". De betekenis blijft: de aanpak steunde op data en op klanten.
-- Vette labels met ✅: een genummerde lijst met dezelfde drie maatregelen.
-- "Het resultaat?": een gewone zin.
-- "Het gaat niet om de tools, het gaat om de mindset" wordt een gewone zin met dezelfde bewering. Het contrast blijft, omdat de schrijver echt een tegenstelling bedoelt.
+- Emoji en de haak: "Een gamechanger" wordt een gewoon oordeel ("een grote verbetering"); het oordeel zelf blijft.
+- "Echter". De drie kenmerken van de aanpak (vernieuwend, datagedreven, klantgericht) blijven.
+- Vette labels met ✅: een genummerde lijst met dezelfde drie inzichten en hun labels.
+- "Het resultaat?" wordt "Het resultaat:". De vraag-en-antwoordvorm gaat weg, het oorzakelijke verband blijft.
+- "Het gaat niet om de tools, het gaat om de mindset" blijft een algemene les in gewone woorden. Eerdere versies maakten er "Dat kwam door een andere manier van werken" (nieuwe oorzaak) en "Het ging ons niet om de tools" (motief in het verleden) van; beide veranderen de bewering.
+- "Concurrenten deden het in 3 dagen": de eenheid blijft. Naast "11 werkdagen" zou "in 3" suggereren dat het ook werkdagen zijn.
 
 ## Bewust behouden
 
@@ -53,6 +56,6 @@ AI-posts op LinkedIn volgen een vast recept: haak, drietal met vette labels, "he
 ## Als de input vaag is
 
 **Voor:** "🚀 Trots! Ons team heeft het afgelopen jaar een ongelooflijke groei doorgemaakt. Het gaat niet om de cijfers, het gaat om de mensen."
-**Na:** "Ik ben trots op ons team. We zijn het afgelopen jaar enorm gegroeid. Waar het ons om gaat: de mensen, niet de cijfers."
+**Na:** "Ik ben trots: ons team is het afgelopen jaar enorm gegroeid. Het gaat niet om de cijfers, maar om de mensen."
 
 Verzin geen cijfers, oorzaken of voorbeelden om de post overtuigender te maken.
